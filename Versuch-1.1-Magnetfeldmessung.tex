@@ -1,0 +1,251 @@
+% Klassifiziert den Dokumenten-Typ
+% Doku: http://exp1.fkp.physik.tu-darmstadt.de/tuddesign/
+% Farben: http://www.tu-darmstadt.de/media/medien_stabsstelle_km/services/medien_cd/das_bild_der_tu_darmstadt.pdf
+%  bigchapter: Chapter haben doppelte Schriftgröße
+%  linedtoc: Linien im Inhaltsverzeichnis wie bei Überschriften
+%  colorbacktitle: Der Dokumenten-Titel wird mir der Accentfarbe hinterlegt
+\documentclass[bigchapter,colorback,accentcolor=tud4b,linedtoc,11pt]{tudreport}
+
+% Input Dokument hat das Encoding UTF-8
+\usepackage[utf8]{inputenc}
+% Wichtiges Paket für Links und verlinktes Inhaltsverzeichnis
+\usepackage[ngerman]{hyperref}
+% Paket für Fußnoten
+\usepackage[stable]{footmisc}
+% Paket für amsmath (aligned mathe formeln)
+\usepackage{amsmath}
+% Paket für Bibliotheks-Verzeichnis, square: Verwende eckige statt runde klammern
+% \usepackage[square]{natbib}
+% Paket zum Plotten von Datensätzen
+\usepackage{pgfplots}
+\pgfkeys{%
+  /pgfplots/Streudaten/.style={%
+    /pgf/number format/use comma,
+    legend pos=north east,
+    xlabel=Streuvektor s in 1/nm,
+    x tick label style={/pgf/number format/1000 sep=},
+    ylabel=$I\cdot s^{2}$,
+    y tick label style={/pgf/number format/1000 sep=},
+    width=0.38\linewidth,
+    height=0.40\linewidth,
+    scale only axis,
+    xmin=0,
+    xmax=0.44,
+    grid=both,
+    ymin=-10,
+    %ymax=0.0045,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin}
+  }
+}
+
+\pgfkeys{%
+  /pgfplots/Autokorrel/.style={%
+    /pgf/number format/use comma,
+    legend pos=north east,
+    xlabel=u  in  nm,
+    x tick label style={/pgf/number format/1000 sep=},
+    ylabel=$K(u)$ in $\frac{e}{nm^{6}}$,
+    y tick label style={/pgf/number format/1000 sep=},
+    width=0.38\linewidth,
+    height=0.30\linewidth,
+    scale only axis,
+    xmin=0,
+    xmax=25,
+    grid=both,
+    ymin=-105,
+    ymax=155,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin}
+  }
+}
+
+\pgfkeys{%
+  /pgfplots/tabh/.style={%
+    /pgf/number format/use comma,
+    legend pos=north east,
+    x tick label style={/pgf/number format/1000 sep=},
+    xlabel=Unterkühlung in $K$,
+    y tick label style={/pgf/number format/1000 sep=},
+    width=0.38\linewidth,
+    height=0.30\linewidth,
+    scale only axis,
+    xmin=0,
+    xmax=100,
+    grid=both,
+    ymin=3,
+    ymax=6,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin}
+  }
+}
+
+% Anhänge für Original-Messdaten
+\usepackage{fancyvrb}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ fontsize=\scriptsize,
+ %
+ labelposition=topline,
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+
+% Polar Plots
+\usetikzlibrary{pgfplots.polar}
+% Verwende deutsche Bezeichner für Inhaltsverzeichnis, ... (ngerman = New German: neue Rechtschreibung)
+\usepackage{ngerman}
+% Deutsche Zahlen (entfernt z.B. das Leerzeichen nach einem Dezimal-Komma)
+\usepackage{ziffer} 
+
+\usepackage[verbose]{placeins}
+
+%wegen Grafikverschiebung hinzugefügt
+\usepackage{float}
+
+%\usepackage{graphicx}
+%\usepackage{caption}
+\usepackage{subcaption} %Für subfigures
+
+% PDF-Optionen
+\hypersetup{%
+  pdftitle={TU Darmstadt \- Physikalisches Praktikum für Fortgeschrittene},
+  pdfauthor={Esra Bauer und Sören Link},
+  pdfsubject={Versuch 1.1},
+  pdfview=FitH,
+}
+% Nummeriere formeln in Subsections einzeln
+% Kleines makro zur assymetrischen Fehlerangabe
+
+% Entspricht-Zeichen
+\usepackage{scalerel}
+
+\newcommand\equalhat{%
+\let\savearraystretch\arraystretch
+\renewcommand\arraystretch{0.3}
+\begin{array}{c}
+\stretchto{
+    \scalerel*[\widthof{=}]{\wedge}
+    {\rule{1ex}{3ex}}%
+}{0.5ex}\\ 
+=%
+\end{array}
+\let\arraystretch\savearraystretch
+}
+%BEGINN TITELSEITE
+
+\title{Magnetfeldmessung}
+
+\subtitle{Esra Bauer  \\Sören Link}
+
+\subsubtitle{Betreuer: Thore Bahlo \hfill Versuchsdatum: 28. Januar 2015}
+
+\author{Esra Bauer, Sören Link}
+
+%\settitlepicture{img/title.jpg}
+
+\institution{Physikalisches Praktikum \\für Fortgeschrittene \\ Versuch 1.1}
+
+\date{\today}
+
+
+%ENDE TITELSEITE
+
+\begin{document}
+%ANFANG DOKUMENT
+
+%Titelseite einfügen
+\maketitle
+
+%Inhaltsverzeichnis einfügen
+\tableofcontents
+
+%ANFANG INHALT
+
+\chapter{Einleitung}
+
+In diesem Versuch geht es um die Vermessung von Elektromagneten, wie sie in Teilchenbeschleunigeranlagen eingesetzt werden. In diesem Gebiet ist oft eine hohe Genaugkeit für die Fokussierung und Richtung des Teilchenstrahls erforderlich, weshalb die Magnete präzise gefertigt und montiert werden müssen. Anhand  des Praktikumsversuchs wird aufgezeigt, wie man die charakteristischen Größen der jeweiligen Magnete, also die magnetische Flussdichte eines Dipolmagneten und den Feldgradienten eines Quadrupolmagneten quantitativ untersuchen kann und somit z.B. Rückschlüsse auf die Qualität des Magneten oder dessen Ausrichtung treffen kann.
+
+\chapter{Grundlagen}
+\section{Elektromagnetismus}
+
+
+\subsection{Funktionsweise}
+
+TODO: Ferromagnetismus, Hysterese
+
+\subsection{Bauformen}
+
+TODO: Dipol- Quadrupolmagneten, Multipole
+
+\section{Bewegung geladener Teilchen im Magnetfeld}
+
+TODO: Hall-Effekt, Induktion
+
+\section{Diskrete Fourier-Transformation}
+
+
+\chapter{Durchführung}
+\section{Vermessung des Gradientenprofils des Quadrupols}
+
+6 versch. Ströme (M2, M3) und versch. positionen
+
+\section{Vermessung des Dipols in der xy-Ebene}
+
+Fester strom, alle positionen
+
+\section{Magnetfeld des Dipols in Abhängigkeit des Spulenstroms}
+
+Feste position, versch. ströme
+
+\section{Messung der Multipolanteile mit rotierender Spule}
+
+\section{Messung am Oszi zur DFT}
+
+TODO: ggf. anderer Titel, finde meine Notizen dazu gerade nicht
+
+\chapter{Auswertung}
+
+\section{Vermessung des Gradientenprofils des Quadrupols}
+
+6 versch. Ströme (M2, M3) und versch. positionen
+
+\section{Vermessung des Dipols in der xy-Ebene}
+
+Fester strom, alle positionen
+
+\section{Magnetfeld des Dipols in Abhängigkeit des Spulenstroms}
+
+Feste position, versch. ströme
+
+\section{Messung der Multipolanteile mit rotierender Spule}
+
+\section{Messung am Oszi zur DFT}
+
+\chapter{Fazit}
+
+
+%ENDE INHALT
+\cleardoublepage{}
+% Eintrag fürs Inhaltsverzeichnis
+\newpage
+\begin{thebibliography}{100}
+  \bibitem{anleitung} \url{Versuchsanleitung}
+\end{thebibliography}
+\end{document}
