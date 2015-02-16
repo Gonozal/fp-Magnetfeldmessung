@@ -204,27 +204,67 @@ TODO: Hall-Effekt, Induktion
 \chapter{Durchführung}
 \section{Vermessung des Gradientenprofils des Quadrupols}
 
-6 versch. Ströme (M2, M3) und versch. positionen
+Zerst muss überprüft werden, ob die Achsen des Quadrupols und der zum Messen benutzten CNC-Einheit parallel zueinander sind. Dazu wird eine Messung entlang der X-Achse der CNC-Einheit aufgenmmen, welche parallel zur s-Achse einen potentiell durch den Quadrupol geführten Teilchenstrahl liegen sollte. Bei korrekter Positioneirung des Quadrupols ist zwischen dem steilen Anstieg bzw.\ Abfall an den Rändern des Quadrupols ein bereich konstanter Magnetfeldstärke zu erwarten.
+\begin{figure}[H]
+\centering
+\includegraphics[width=130mm]{img/magnetfeldplateau.png}
+\caption{Erwarter Verlauf des gemessenen Magnetfeldes bei korrekter Ausrichtung des Quadrupols \cite{anleitung}}
+\end{figure}
+In unserem fall war der Quadrupol bereits sehr gut ausgerichtet, im Plateau-Bereich im Inneren des Quadrupols hat sich die Magnetfeldstärke über eine Distanz von etwa $5 cm$ um weniger als $1\%$ verändert. Die Masse und unhandlichen Ausmaße des verwendete Magneten ließen es als sehr unwahrscheinlich erscheinen, duch eine manuelle Korrektur der Ausrichtung des Quadrupols eine Verbesserung zu erzielen, weswegen wir keine veränderungen an der Ausruchtung des Magneten durchgeführt haben.
+
+\begin{center}
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+    legend pos=north west,
+    title={Kalibrationsmessung des Quadrupols},
+    xlabel=$x$ in $mm$,
+    ylabel=$B$ in $mT$,
+    width=0.9\textwidth,
+    height=7cm,
+    xmin=0,
+    xmax=225,
+    grid=both,
+    ymin=0,
+    ymax=112,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin},
+]
+\addplot[red, smooth, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25]
+table[x expr=\thisrowno{0} * 5, y expr=\thisrowno{2} * (-1)] {data/Ausrichtung.txt};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Gemessenes Magnetfeld für die Kalibrationsmessung in Abhängigkeit der Position der Hallsonde entlang der s- bzw.\ x-Achse im Quadrupol. Die Nahezu konstante Feldstärke im Plateaubereich spricht für eine beinahe exakte Ausrichtung des Quadrupols.}
+\end{figure}
+\end{center}
+
+
+Zur Vermessung des Quadrupols wird die Magnetfeldstärke im zuerst bei $0 A$ betriebenen Magneten mit einer Hall-Sonde an 45 Messpunkte in $5 mm$ Abständen entlang der X-Achse der CNC-Einheit aufgenommen, wobei soch sowohl die ersten als auch die letzten 6 Messpunkte außerhalb des Quadrupols befinden. Diese Messreihe wird anschließend für 5 weitere Positionen im Quadrupol in Abständen von $8mm$ entlang der Y-Achse der CNC-Einheit widerholt. Diese Messreihe aus insgesamt 270 Messpunkten wurde von einem Computerprogramm nach Eingabe der gewünschten Parameter automatisch durchgeführt.
+
+Im Anschluss wird die Messung für 5 weitere Stromstärken in Schritten von 2A von 10A bis 2A widerholt.
 
 \section{Vermessung des Dipols in der xy-Ebene}
+Analog zur Vermessung des Quadrupols wird der der "`Steerer"' Dipol vermessen. Entlang der S-Achse des Magneten bzw.\ der x-Achse der CNC-Einheit werden bei $5 A$ Betriebsstrom 51 Messpunkte im Abstand von $1 cm$ aufgenommen. Diese Messreihe wird für 11 veschiedene Positionen entlang der y-Achse mit einem Abstand von $2 mm$ automatisiert durchgeführt.
 
-Fester strom, alle positionen
+Im Gegensatz zum Quadrupol besitzt der Dipol keine abschirmende Eisenplatte an den offenen Enden des Magneten, wodurch das vom Dipol erzeugte Magnetfeld außerhalb der geometrischen Länge des Magneten deutlich langsamer abfällt. Aus diesem Grund werden jeweils 10 Magnetfeldmessungen (entsprechen $10 cm$) außerhalb des Magneten durchgeführt.
 
 \section{Magnetfeld des Dipols in Abhängigkeit des Spulenstroms}
 
-Feste position, versch. ströme
+Um den Effekt der Hysterese auf den verwendeten Dipolmagneten zu bestimmen, wird an einer festen Position im Dipol bei Stromstärken in 1A-Schritten von 5A bis 0A die Magnetfeldstärke gemessen. Bei dieser Messung ist besonders darauf zu Achten, die Stromstärke monoton auf den nächsten Messwert herunter zu regeln, da sonst durch die Eigenschaften der Hysterese die Messung verfälscht werden würde.
 
 \section{Messung der Multipolanteile mit rotierender Spule}
+Die Vermessung des Multipolanteils im Quadrupol wird mit einer rotierenden Spule im Zentrum des Magneten durchgeführt. Allerdings ergibt sich bei einer solchen Messung das Problem, dass sich durch die Symmetrie des Quadrupols in einer um das Zentrum des Magneten rotierenden Spule alle induzierten Ströme aufheben. Aus diesem Grund wurde die Messspule außermittig an die rotierende Achse des Messgerätes angebracht, was bei korrekter Ausrichtung im Quadrupol zu einer kreisförmigen Rotation der Messpule um den Mittelpol des Magneten führt.
 
-\section{Messung am Oszi zur DFT}
+Die zentrale Positionierung der Rotationsachse der Spule erwieß sich dabei als kein triviales Unterfangen, da wir keine Möglichkeit hatten, das innere des Quadrupols und die Position der Sonde genau zu vermessen
 
-TODO: ggf. anderer Titel, finde meine Notizen dazu gerade nicht
 
 \chapter{Auswertung}
 
 \section{Vermessung des Gradientenprofils des Quadrupols}
 
-6 versch. Ströme (M2, M3) und versch. positionen
 
 \section{Vermessung des Dipols in der xy-Ebene}
 
@@ -232,7 +272,6 @@ Fester strom, alle positionen
 
 \section{Magnetfeld des Dipols in Abhängigkeit des Spulenstroms}
 
-Feste position, versch. ströme
 
 \section{Messung der Multipolanteile mit rotierender Spule}
 
