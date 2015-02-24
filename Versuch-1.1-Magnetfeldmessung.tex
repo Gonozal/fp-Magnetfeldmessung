@@ -201,7 +201,7 @@ Die zentrale Positionierung der Rotationsachse der Spule erwieß sich dabei als 
 \chapter{Auswertung}
 
 \section{Vermessung des Remanenzgradientenprofils des Quadrupols}
-Zuerst wird das Remanenzgradientenprofil, also das Gradientenprofil des Quadrupols ohne angelegten Strom bestimmt. Dazu werden bei festgehaltenem x-Wert in y-Richtung benachtbarte Messwerte des Magnetfeldes voneinaner subtrahiert.
+Zuerst wird das Remanenzgradientenprofil, also das Gradientenprofil des Quadrupols ohne angelegten Strom bestimmt. Dazu werden bei festgehaltenem x-Wert in y-Richtung benachtbarte Messwerte des Magnetfeldes voneinaner subtrahiert, was für jeden x-Wert 5 Gradienten in y-Richtung ergibt. Anschließende Mittelung über all 5 Werte und Bildung der Standardabweichung ergeben die Werte sowie die Fehler für das Gradientenprofil.
 \begin{center}
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -233,14 +233,22 @@ table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-0A-MeanGradien
 \addlegendentry{Fitgerade des Randfeldes}
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{}
+\captionof{figure}{Plateauförmiges Gradientenprofil des Quadrupols ohne angelegten Strom, der auf Grund von Hysterese trotzdem ein Magnetfeld erzeugt. Zu sehen sind weiterhin Fitgeraden im Plateau- und Randfeld, welche Aufschluss über die Abschirmung und Ausrichtung des Quadrupolmagneten geben}
 \end{figure}
 \end{center}
 
+Der Anstieg des Magnetfeldgradienten im Randfeld des Quadrupols gibt Aufschluss darüber, wie gut der Magnet nach außen hin abgeschirmt ist, je höher die Steigung der durch das Randfeld gefitteten Geraden, desto effektiver werden sowohl äußere als auch vom Quadrupol selbst erzeugte Magnetfelder abgeschirmt. Eine gute Abschirmung ist insbesondere beim Betrieb mehrerer Magnete in geringem Abstand wichtig, wie es zum Beispiel bei der Fokusierung von Teilchenstrahlen der Fall sein kann.
+
+
+
+Während die Steigung der Fitgerade durch den Gradienten des Randfeldes möglichst groß sein soll, ist bei Messung entlang der Teilchenstrahlachse eine geringe Steigung erstrebenswert. Eine betragsmäßig große Steigung im Plaeaugradienten weißt entweder auf einen großen Winkel zwischen Teilchenstrahlachse und magnetischer Achse des Quadropols oder auf einen Defekt im Magneten hin.
 
 \subsection{Fitwerte}
+Sowohl im Rand- als auch im Plateaubereich des Magneten haben wir lineare Fits verwendet: 
+$$f(x) = a \cdot x + b$$
+Folgende Werte haben sich ergeben:
 
-Randbereich: $f(x) = a \cdot x + b$
+Randbereich:
 \begin{center}
   \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.5cm}|}
     \hline
@@ -251,7 +259,7 @@ Randbereich: $f(x) = a \cdot x + b$
 \end{center}
 
 
-Plateaubereich: $f(x) = a \cdot x + b$
+Plateaubereich:
 \begin{center}
   \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.5cm}|}
     \hline
@@ -262,6 +270,7 @@ Plateaubereich: $f(x) = a \cdot x + b$
 \end{center}
 
 \section{Vermessung der Gradientenprofile des Quadrupols}
+Analog zum Remanenzgradientenprofils wurden die Gradientenprofile des Quadrupols für Stromstärken von $I=2A$ bis $I=10A$ vermessen und ausgwertet.
 \begin{center}
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -275,8 +284,8 @@ Plateaubereich: $f(x) = a \cdot x + b$
     xmin=0,
     xmax=220,
     grid=both,
-    ymin=-0.03,
-    ymax=6,
+    ymin=-0.1,
+    ymax=6.2,
     tick align=outside,
     tickpos=left,
     minor x tick num=3,
@@ -284,30 +293,31 @@ Plateaubereich: $f(x) = a \cdot x + b$
     minor grid style={dotted,thin},
     seperators
 ]
-\addplot[red, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
-table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-2A-MeanGradients.txt};
-\addlegendentry{I=2A}
-\addplot[blue, only marks, mark=+, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
-table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-4A-MeanGradients.txt};
-\addlegendentry{I=4A}
-\addplot[yellow, only marks, mark=*, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
-table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-6A-MeanGradients.txt};
-\addlegendentry{I=6A}
-\addplot[orange, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
-table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-8A-MeanGradients.txt};
-\addlegendentry{I=8A}
 \addplot[teal, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
 table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-10A-MeanGradients.txt};
 \addlegendentry{I=10A}
+\addplot[orange, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-8A-MeanGradients.txt};
+\addlegendentry{I=8A}
+\addplot[yellow, only marks, mark=*, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-6A-MeanGradients.txt};
+\addlegendentry{I=6A}
+\addplot[blue, only marks, mark=+, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-4A-MeanGradients.txt};
+\addlegendentry{I=4A}
+\addplot[red, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-2A-MeanGradients.txt};
+\addlegendentry{I=2A}
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{}
+\captionof{figure}{Gradientenverlauf des Quadrupols für angelegte Stromstärken von 2A bis 10A. Bei zunehmender Stromstärke ist ein deutlicher Anstieg des Magnetfeldgradienten zu beoabchten.}
 \end{figure}
 \end{center}
 
 \subsection{Bestimmung der magnetischen Länge des Quadrupols}
+Durch Mittelung über alle Gradientenwerte je einer Stromstärke im Plateaubereich lässt sich der maximale Gradient $g_{max}$ für diese Stromstärke bestimmen. Die gesamtfläche unter allen Messpunkten lässt sich numerisch mit Hilfe der Trapezformel bestimmen, woraus sich die magnetische Länge des Quadrupols bestimmen lässt: $$L_m = \frac{\int_{0}^{220} g dx}{g_{max}}$$
 
-
+Einsetzen der zuvor bestimmten Werte für alle von uns verwendeten Stromstärken liefert folgende Ergebnisse für die magnetische Länge des Quadrupols:
 \begin{center}
   \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
     \hline
@@ -321,25 +331,142 @@ table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-10A-MeanGradie
 	\end{tabular}
 \end{center}
 
-Aus den einzelnen Werten der magnetischen Länge lässt sich duch Bilden des Mittelwerts ein endgültiger Wert für $L_m$ berechnen. Wir erhalten $L_m=125,7mm\pm0,6mm$
+Aus den einzelnen Werten der magnetischen Länge lässt sich duch Bilden des Mittelwerts ein endgültiger Wert für $L_m$ berechnen. Wir erhalten $$L_m=125,7mm\pm0,6mm$$
+
+Dieser Wert liegt wie erwartet etwas oberhalb der geometrische Länge, welche wir auf $(120 \pm 10)mm$ abgeschätzt haben. Der relativ große Fehler von 1cm beim Messen der geometrischen länge liegt in der Tatsache begründet, dass sich eine Längenmessung mit Hilfe eines Zollstocks im inneren des abgeschirmten Quadrupols selbst zu zweit als äußerst schwer herausgestellt hat.
+
+\section{Strom-Gradienten-Kalibrierung}
+
+\begin{center}
+  \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
+    \hline
+    Strom in $A$ & Gradient $g$ in $mT/mm$ & $\Delta g$ in $mm$ \\ \hline
+    0            & 0,062                   & 0,001              \\ \hline
+    2            & 1,236                   & 0,006              \\ \hline
+    4            & 2,410                   & 0,012              \\ \hline
+    6            & 3,579                   & 0,016              \\ \hline
+    8            & 4,738                   & 0,022              \\ \hline
+    10           & 5,876                   & 0,027              \\ \hline
+	\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+    legend pos=south east,
+    title={Strom-Gradienten-Kalibrierung des Quadrupols},
+    xlabel=$I$ in $A$,
+    ylabel=$\nabla_y (B)$ in $\frac{mT}{mm}$,
+    width=0.9\textwidth,
+    height=9cm,
+    xmin=-0.5,
+    xmax=10.5,
+    grid=both,
+    ymin=-0.2,
+    ymax=6.5,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin},
+    seperators
+]
+\addplot[red, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.02, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-CurrentGradient.txt};
+\addlegendentry{Magnetfeldgradient}
+\addplot[teal, mark=x, mark size=0pt, samples=10, domain=-0.5:10.5] {0.0731429 + 0.582071*x};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Der lineare Zusammenhang zwischen Magnetfeldgradient im Quadrupol und angelegter Stromstärke ist hier sehr gut zu erkennen. Die Messunsicherheiten belaufen sich bei den meisten Werten auf deutlich unter 1\% des Messwertes und sind zu geringfügig um sichtbar zu sein.}
+\end{figure}
+\end{center}
+
+\subsection{Fitwerte}
+
+Zur Strom-Gradienten-Kalibrierung wurde ein linear Fit der Form $g(I) = m \cdot I + g_0$ verwendet.
+\begin{center}
+  \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.5cm}|}
+    \hline
+    Fitparameter & Wert    & Standardabweichung \\ \hline
+    $m$          & $0,582$ & $0,002$            \\ \hline
+    $g_0$        & $0,073$ & $0,010$            \\ \hline
+	\end{tabular}
+\end{center}
 
 \section{Vermessung des Dipols in der xy-Ebene}
-
-Fester strom, alle positionen
-
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{img/steererxy.png}
-\caption{Magnetfeldstärke im Steerer in Abhängigkeit von der Position. Wie erwartet ergibt sich ein starker Gradient an den offenen enden des Steerers. Das Feld ist im inneren des Steerers allerdings nicht homogen sondern weist deutliche Schwankungen auf.}
+\caption{Magnetfeldstärke im Steerer in Abhängigkeit von der Position. Wie erwartet ergibt sich ein starker Gradient an den offenen enden des Steerers. Das Feld im inneren des Steerers ist allerdings nicht wie erwartet perfekt homogen sondern weist deutlich messbare Schwankungen auf.}
 \end{figure}
 
-\section{Magnetfeld des Dipols in Abhängigkeit des Spulenstroms}
+Der durch das Rechteck markierte Raum ist der von uns zur Bestimmung der Magnetfeldstärke verwendeten Bereiches. Sowohl in x- als auch in y-Richtung treten Außerhalb des Rechteckes Randeffekte auf, durch welche der Gradient des Magnetfeldes zunimmt. Durch Mittelwertbildung über alle im Rechteck befindlichen Messpunkte erhalten wir für die Magnetfeldstärke des Steerers $B=(7,229 \pm 0,074)mT$.
 
 
-\section{Messung der Multipolanteile mit rotierender Spule}
+Bei Wahl einer Toleranz von $2\%$ als Grenze des Feldglatten Bereiches erhalten wir $\Delta B=0,146mT$ und somit eine untere Schranke von $B_{min}=7,153mT$ sowie eine obere Schranke von $B_{max} = 7,445mT$. Der kleinste Wert des Magnetfeldes im Inneren des Steerers beträgt $7,173mT$ und verletzt somit nicht die Schranken des feldglatten Bereiches.
 
-\section{Messung am Oszi zur DFT}
+\section{Bestimung der Windungszahl Paltinensteerers}
+Der Zusammenhang zwischen Magnetfeld im Inneren einer Spule, angelegter Stromstärke und Windungszahl ist gegeben durch:
+
+$$B = \mu_{0} \cdot I \cdot \frac{N}{L}$$
+
+Die Höhe $L$ des Palatinensteerers haben wir mit Hilfe eines Zollstocks auf $L=(50\pm 2)mm$ bestimmt, wobei der Fehler von uns durch die nicht sehr gleichförmige Wicklung des Steerers und den damit zusammenhengenden Messschwierigkeiten mit 2mm relativ hoch angesetzt wurde.
+
+Der Strom des Steerers ist auf $I=(5,00 \pm 0,01)A$ eingestellt und für die Magnetfeldstärke haben wir den Mittelwert des zuvor bestimmten feldglatten Bereiches von $B=(7,299 \pm 0,0741)mT$ verwendet.
+
+Einsetzen ergibt folgende Spulenzahl:
+
+$$N= 58,1 \pm 2,4$$
+
+Dies deckt sich mit dem von uns durch abzählen der Windungen geschätzten Wer von 50 bis 60 Windungen.
+
+
+\section{Messung der Multipolanteile des Quadrupols}
+
+Im Idealfall besitzt ein Quadrupol nur eine Quadrupolkomponente, eine Dipolkomponente oder Komponenten höhrer Ordnung sind unerwünscht, treten jedoch in geringen Maßen bei den Meisten Quadrupolen auf. Da der von uns benutzte Quadrupol zu einer Zeit hergestellt wurde, in dem durch numerische Optimationsverfahren optimierte Quadrupole nur schwer herzustellen waren, erwarten wir einen signifikanten Anteil an unerwünschten Komponenten.
+
+Ein noch größerer Anteil unerwünschter Komponenten kommt vermutlich von der verwendeten Messmethode, insbesondere war die einzige uns zur Verfügung stehende Methode zur genauen Positionierung der rotierenden Spule unser Augenmaß. Des weiteren war aus messtechnischen Gründen die Spule außermittig an die Rotationsachse angebracht, was ein genaues Abschätzen der Positionierung weiter erschwerte. Um dies auszugleichen haben wir 3 Messungen an unterschiedlichen Positionen entlang der y-Achse durchgeführt.
+
+\begin{center}
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+    legend pos=north east,
+    title={Multipolanteile im Quadrupol},
+    xlabel=Multipolkomponente,
+    ylabel=Anteil der Multipolkomponente,
+    width=0.95\textwidth,
+    height=11cm,
+    ybar=0pt,
+    ymin=0,
+    ymax=1.05,
+    samples=2,
+    domain=1:2,
+    xtick=data,
+    bar width=20,
+    tick align=outside,
+    tickpos=left,
+    grid=both,
+    minor y tick num=4,
+    minor grid style={dotted,thin},
+    enlarge x limits={abs=0.5},
+    nodes near coords,
+    every node near coord/.append style={anchor=mid west, rotate=90},
+    nodes near coords align={vertical},
+    seperators
+]
+\addplot table[x index=0, y index=1] {data/fourier/F0017CH1-Furier.txt};
+\addplot table[x index=0, y index=1] {data/fourier/F0018CH1-Furier.txt};
+\addplot table[x index=0, y index=1] {data/fourier/F0019CH1-Furier.txt};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{}
+\end{figure}
+\end{center}
+
 
 \chapter{Fazit}
 

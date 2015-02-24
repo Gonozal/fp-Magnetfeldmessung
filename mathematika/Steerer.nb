@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     99861,       2018]
-NotebookOptionsPosition[     97846,       1961]
-NotebookOutlinePosition[     98201,       1977]
-CellTagsIndexPosition[     98158,       1974]
+NotebookDataLength[    100327,       2015]
+NotebookOptionsPosition[     98336,       1960]
+NotebookOutlinePosition[     98691,       1976]
+CellTagsIndexPosition[     98648,       1973]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
   RowBox[{"(*", 
@@ -175,7 +173,7 @@ Z1g4N+QGFgZI1qQ2zuPpQ+LHCn03tF2+J/4H++E50g==
   "]],
 
 Cell[BoxData[
- GraphicsBox[GraphicsComplexBox[CompressedData["
+ GraphicsBox[{GraphicsComplexBox[CompressedData["
 1:eJx1nAdUFL/XhhVELKgIUgSkCtK7FWUviAqoKEUQRHrvdRcUsYBi76KCBSsq
 9o4Vu+BPVAR7wQ4CdsWC+M/MziRncr5v8Lg8ZDLZnZ039ya5N3phyV6RMh06
 dBgj36ED8/p/H/1ByPYUO1LsQrEbxR5CnuVJlftQ5b5UuT9VPoUqDxIyhFDn
@@ -515,9 +513,9 @@ gSWT194j5Tev3hw8MZzsZ8d4gYozyH527P4hy2ZAHLvRiJ00X3op2c/u0Zpd
 UxcUkf3s6Pkkuj49n0L7L/T8A+1f0fMvdHwLnb9Hx8vQ8aT0fm90fDAdT07n
 X9DxnHT8J51vQcdn0/uT0PG0dPw2HS9Mx+fS8c90/DWd/0DH79Hxv3S+HL1e
 Tu+XRK8X0fs30fv30POD9P4w9PwEvf8M7b/R+93Q/hzdn9P24H/qUdu9
-   "], {{
-     {RGBColor[0.237736, 0.340215, 0.575113], EdgeForm[None], 
-      GraphicsGroupBox[{PolygonBox[CompressedData["
+    "], {{
+      {RGBColor[0.237736, 0.340215, 0.575113], EdgeForm[None], 
+       GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJxNlDtuU1EQhs99OCwB0cEG8vJ1YBEUiAJR4/gVJEBiFTQgIcU3sS9NJNhL
 EsfJMuiQKEhBbPP/ns8KxWjOOfP+Z+Y8efP+5bs8pfRJVIg6opzzUrQQXXI2
 n4kGWUqVqCO60n0uSjrnokx0nYL7zbIr8ZloIjrRvSfqix4rSFf8s/iHVkqN
@@ -534,15 +532,15 @@ jBhd8Npm9s7y4EfMWUUcx5uCyZD6L8GjT6w1ZmB4xQ7N2P85b1PuF+zXBDvb
 r6jf+fgvqdFL9NwYLIv4G86K+Avm9G1Mr2v81mB+w5/hOT1HryaHE3Ks8O++
 bOzXcfOYLffWs+P/aZeej+nRnJoa8GnQ7yLfzMghfe2Bnd+67L7zPsbG+v8A
 cV3NxA==
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwljzEKwkAQRSfZTbyAIGKjJ0iQIB7CQizE2lQiqOA9LCzSqE3Aw6TSY9gJ
 NgENwTdM8eDtzuz82dF6v9iFItIFD+dYpApEGrjiGcUp9xGM8SPy0Boc8Dgy
 30CIv6AIbMYbL3mzFZtxwT0hjtqTc+tEepDiOQzxfseyE3oHeOms96bgd29Z
 EyjxAhpqie6En5zNKhR85a1XM5f4j53C0P5Q4x9nvRXU+Myb68w5/oWU3hxa
 vPaWpXda0510N/1jhv8BlEsrnA==
-         "]]}]}, 
-     {RGBColor[0.2426669084149213, 0.34166437414797374`, 0.5698577019457182], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[0.2426669084149213, 0.34166437414797374`, 0.5698577019457182],
+        EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJxNkjFLA0EQhfdyuxfERgsREUF/gIoSjCmtbATFQrRS0wgqKmhnaWUTMBoL
 jQlEDOSXJKWxt9cqKEggkeA3zBQWjze3szvz5s3N5E83T1LOuRUQg2zknAcB
 9MEcyVnQs2+JGwl34CH4NtHcWNq5g+DcHfE7vBxpLanz4KkDf8FH8GGkeakR
@@ -553,7 +551,7 @@ g75reK2RNQ1bXufdhne86h2Gp+idp841fA9KxAV42s7H4UfTVpMZnGqugsm0
 vG1aRVsP3jDP18xL0SM1U0G9TuBOUM0fcDnR3RXhs6B6zoN6JzOKR92gvfpB
 e0ivLvxjelZlV1771GPltvn/HCvn4N+gei/t3xSvm8Yti4u2306s+lqW/wOZ
 +2lM
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwtkc8rRFEUx+97996ZZMNCohQrKyOZMH+BjSILscLbKIRiZ2llQ8aPBWOm
 nrzyl5ilsfcHWE0UrzzJ53Tu4vv6vHPOPT/Hkv3lvdgYM44cuuFTiYwp4CX4
 0xrThq/FB59Z5QSNwr3EeOJf+ffwqVWfxNThb2ybkeZswDMUq+EroWnYYetI
@@ -563,9 +561,9 @@ H95OwMNwD/Ud3MH267VHiZceq3BOD0mkNWVX1Vh3I/nu4IUwv9wgJ/7J6W5k
 hgx+dLoLmSEm/6HXWV5QDs87fSs5FuGPcF+pV8DdcE+J+YIzq7dsoQf4hGae
 I53pEn7zuhuxvcOF11pWdoF/iJkrse68wf+x19nlpkdwzWpu2cEU/A8ANk+s
 
-         "]]}]}, 
-     {RGBColor[0.2456254534638741, 0.34253399863675793`, 0.566704523113149], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[0.2456254534638741, 0.34253399863675793`, 0.566704523113149], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJw9Uz1LXEEUvXkz814kKZJCkIAQa3cDIghqFQhYSWA7Qdg1CEJw1yZgkcJC
 iIYUIbtCwMaVDRusVvA37FoKapvSwkokBOJH4TmcmxSX8+bOzJlzz71v7N1a
 pZGZWQUREB0sZoGzwBeFWQk4DGw+MqshWoi+4wBR9Tz3PySzPeBH4Dqije+X
@@ -578,7 +576,7 @@ jufAv97nG8TTpDp73hf2hB78CdJ8BfwZ1Z/3zl12/h5qyVHjSC5O8o1j3Qni
 zyz7QF30n742/s0aIkXpeeK+Hvt81Nxz+lr4rFHrjyDtb4DNID2fgZOcS3xP
 ZaqZtfO/mgh6Z5rzkiu/mcs/znDh/aN+1knd5OEs9z1HD8o+V9S1lWmdBc1W
 0zkeAErTe1U=
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwlkb8rhGEcwL/v+7zP+7oYGK5uUZSNUwZXdzcpZZKyKeVlUXJnUQaDQYmF
 OKVuuROdbqL8D2d3VqPBJEk5DD5f3+FTn+fX99czura1WA1FZAwiePYinUCk
 Buv4LjTwR/jFD6CLN2EHb/OoiG9CwvrNiTwQ5xzO8FwsEof2JsRHvL2twAB+
@@ -587,10 +585,10 @@ x785X8AzsfXiudPGU/biwHpo4TPQEatpHu+HrtidJfw2stpLcIMPeetdZ7SN
 3zmr/RKu8RZ5SmI1T7Hej602nfEr91+c1a45P/B77lfxsvaHv5MjDayHOr7i
 7W9074f1kbNZr8IwvhFZbTrDZbwcWqw+mMbnIpuF/tGn1udsltqj52zWWe1a
 QwEv8IaR/vfQwAed5ZqEYz3j8Itc43gO/wNNWEWB
-         "]]}]}, 
-     {RGBColor[
-      0.25252872524476394`, 0.34456312244392123`, 0.5593471058371545], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[
+       0.25252872524476394`, 0.34456312244392123`, 0.5593471058371545], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJxFkj1IAlAQgJ/6Xv7gFBSOtqZrDalBEC3h4hxJPxA0qE01BA1FRBGhEM1p
 ILQURLS0lXNLNgYRDY0RkWPfcQcNx/fe3b37fWPL9Uot6pybRmJILeJcHTlH
 uig66CqwwL0YUXt0yLlnmIErwbkm5x484v4rZ+TMO5eDBzBpbyXGNn5tmA/q
@@ -600,8 +598,8 @@ IRb/zye5kl45Aifxq3OehakhjdMi9nvQmayh6xK3hM8cXLI5Zr3upm29d6Rn
 fG7gZlDbPkw51ctc5Fyye9NmKH1lyF1FF4UXMa31Gna97uEKlpEB+hk4b+dd
 +OM1TjloXIkv/Sx4nd+61zm17S9925w/4FRM9/FAzaNWwxZMB91bNmishu2r
 Z//kKeic5D/IzE9sLzvw1P7bG9zDlkc/sPk1rLYM+xiXt/APNcJZZw==
-         "]], 
-        PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[CompressedData["
 1:eJwtkTtIA1EQRcfdt9lsSCWoKWNjYVIrmLUQxEbSpBbFDwgWWa20ECwEFUXE
 gFibCAGbCBY2dpraxlgKIhaWImJKzzBb3OW8N3fezmd0JanVPREZQw5t8MkO
 iFRQG97zRRrcL6ECHHPXhftoHq4GIot4z9EqPMRdT+yNBXjGmVdzfsj/cuYv
@@ -611,10 +609,10 @@ RmgZfuRuk9g0asN3nuVqTxPk9j3L1TeGOYeh1aI1nfC/W9961xlGvFfj3BJ7
 cwpez1i/6j+GO852VUd5+i06q+UVfx4uBhbTGW/D785mrzv4hT99m43O6Aw+
 SuO6syo851kvOTQJ76f7VM8FXMjY7kJiHbgR2Ox0B7vwg2+1aA9t+B+jyUp8
 
-         "]]}]}, 
-     {RGBColor[
-      0.25956742012640976`, 0.3877977541207089, 0.46301217474284295`], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[
+       0.25956742012640976`, 0.3877977541207089, 0.46301217474284295`], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkT9LwlEUhk9aSVqDCboWLZoFbUVao0XR4tJk6K+hLZMIGgqimgQhBT9B
 gVq7NTgI1uIH0MEQoi9QgdnYI7zD4XnPOff8uffOO9nkscvMwpgbq+Bswhas
 SW9B36RZZ8ysPGF2i/5FuzxmdfQU+RVYHjdbJH4Dv2n2Sm0felUbhZ/Ut9Bv
@@ -622,8 +620,7 @@ MMM5LzoHn7AN9ClMk7tDN+E69Tn6JOEuuSE6Div4D+gGXB3th07AH3Ipaneo
 PVSfPXiJ3aOXoaO5CzCvuxzBafwufebgjHST/heqLUE//gHxM1jVDvswxFtE
 mO+GAc6dcP6FHjHt3ybX190dZm3rLtdwoJ0/YIHzReLnMC/dg496n2c4q/5L
 8EvvvEb8ihlR9AAGtecfuqR/eYf/pDo8/g==
-         "]], PolygonBox[CompressedData["
-
+          "]], PolygonBox[CompressedData["
 1:eJwtkT0vg1EUx6/n3vs0WgYknYkFJTE23kaEWLqYCI/BhkYkBhY6NZFok34C
 knqZhcHQpCw+AANpIr4AkmL0Ozl3+Of5nefc8z/n3DuQbBe2ImPMEHKoYY15
 4XuOLuA2yRy8inqI91ElxFn4jaKRDmNW0Df8xPkiuRl0Cc+iTIjr8Guof0Cf
@@ -633,17 +630,16 @@ vdIogYtOWf5dwTalZ6WmzDzvTu9OetTgJNbdJV+Cb4OfzNhLvyOns8j5Krzg
 tf4UrcF/kc4vb1aCx2PdXWbOwFOhXu7/i/0Gw3zy5t3wo9f+4rcBj3rtLfse
 wA2vOTnTgvNOvcRzHu536iWe63DLal7u8wS+D+8lZ7rILwU/2aFN/A9pwVEq
 
-         "]]}]}, 
-     {RGBColor[0.2689898690048333, 0.4321635280703929, 0.3657437206593135], 
-      EdgeForm[None], 
-      GraphicsGroupBox[{
-        PolygonBox[{{785, 93, 757}, {1096, 246, 1080}, {1814, 552, 1794}, {
-         1666, 501, 1792}, {1168, 297, 1239}, {1668, 501, 1634}, {1170, 297, 
-         1154}, {783, 93, 882}, {1006, 195, 1076}, {1008, 195, 987}, {1376, 
-         399, 1354}, {1094, 246, 1153}, {1266, 348, 1244}, {906, 144, 885}, {
-         1374, 399, 1467}, {1502, 450, 1472}, {1500, 450, 1628}, {1264, 348, 
-         1350}, {904, 144, 984}, {636, 42, 754}}], PolygonBox[CompressedData["
-
+          "]]}]}, 
+      {RGBColor[0.2689898690048333, 0.4321635280703929, 0.3657437206593135], 
+       EdgeForm[None], 
+       GraphicsGroupBox[{
+         PolygonBox[{{785, 93, 757}, {1096, 246, 1080}, {1814, 552, 1794}, {
+          1666, 501, 1792}, {1168, 297, 1239}, {1668, 501, 1634}, {1170, 297, 
+          1154}, {783, 93, 882}, {1006, 195, 1076}, {1008, 195, 987}, {1376, 
+          399, 1354}, {1094, 246, 1153}, {1266, 348, 1244}, {906, 144, 885}, {
+          1374, 399, 1467}, {1502, 450, 1472}, {1500, 450, 1628}, {1264, 348, 
+          1350}, {904, 144, 984}, {636, 42, 754}}], PolygonBox[CompressedData["
 1:eJwtkjsvg2EYhl/f97UdnCL6B0QHJITEUGGuxmipoURqJ1FGQmMQi0ZSv6HF
 7BCLw8YPINH4CdI0qdl1e57hyne/fe/n+HassrO6HYUQJiCBLocpvuswHIdw
 xbkFy1CEGqbJvhB+uS+in/E8QRNa8Al17l7hB/2A5x6u4QZyMA6DMJRYjGJL
@@ -652,10 +648,10 @@ sBabR94q7MFxYrVUs47eja031ThFv9PTm/eoXqMMs/Dt4T9Jh7CEZzE2j7z7
 CSFjvainLLqdWKxyXCQWo1jtSLsqpOxe9TbQh3DgNVRrjtyzXkO1HlPmVY9t
 9IqflaNLvvnE3kI7LGjWtPUj/zfeXmS70JsfofO+b8V0mP8rNq2dncX2JlXf
 mXZX9P9GHhYie8OS71y7L6etlmrW0Hdw6zNoFu2o4TNq1j+1aVAM
-         "]]}]}, 
-     {RGBColor[
-      0.30374629892179944`, 0.4848528324451604, 0.26850287470566364`], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[
+       0.30374629892179944`, 0.4848528324451604, 0.26850287470566364`], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkL9LwlEUxW/ZDzApBJdGQdAWSWgJQiFEWnWIQnFIaAgqlCBoEJSGlspJ
 J5tsUHRqklp0dQvh69BfECESCS1SH+EMl89595337uH6Ty5TF4tmFqJc1C4H
 DzyAvlWz4PwSJpbMpsgdeE+FFszeoWfFzEFH4MeyWQ/9Clu8i+EfwGPOD/Rf
@@ -663,8 +659,7 @@ DzyAvlWz4PwSJpbMpsgdeE+FFszeoWfFzEFH4MeyWQ/9Clu8i+EfwGPOD/Rf
 LMIxvj56BD+lt+n7+CuPPwxj9Av0/fCNWW5mPsFTfGt4knBCpdEOdCvbOWwq
 fw/eKX8B5vT2Cla0q9I8p3ZSgSVmN+ifwY7y1+E1d1t4vqCjfR6Spyh/FW4q
 /x/+PeU/glntOQHL2nMGjpV/n/4/DOs/Ag==
-         "]], PolygonBox[CompressedData["
-
+          "]], PolygonBox[CompressedData["
 1:eJwtkcErRFEUxs+89+6bGhONbCynFDairCRT0mTLQmSyoCwUMllJUyMLG8xq
 rFixoLGykKzG1k7qzcJfIE2TKBvxO527+Hq/986533fuefnV7fmtQESGUISa
 ocgVzxbq5kPHiSQpkUtUhV+pn1J7Qu9whZ5vPU/9GC7FIl9wE73Rv0lPSezM
@@ -674,17 +669,17 @@ eTpPEZ5DXSnbXw4u+32pZw9858xLPRN4LLZZdKZ7eDawu+qdb+CHyLI0s49+
 Sdtd9c4H9J/7umauwxvO/pX298Pj/v/oztrkL8SWref34Lzfj+Y18P0JbXbd
 VwOuez+dMUt/0c+vO+vgPRBZv+avwSPOsvVMBd71+9AZG/BHYLvVfWTwTyLz
 0h3W4H8CUFMW
-         "]]}]}, 
-     {RGBColor[0.4867717082662038, 0.5951659032098152, 0.24940763465113397`], 
-      EdgeForm[None], 
-      GraphicsGroupBox[{
-        PolygonBox[{{941, 166, 920}, {832, 115, 802}, {940, 166, 1016}, {1409,
-          421, 1520}, {1042, 217, 1017}, {1410, 421, 1387}, {1725, 523, 
-         1695}, {1127, 268, 1106}, {1041, 217, 1105}, {684, 64, 801}, {687, 
-         64, 657}, {570, 13, 656}, {1198, 319, 1182}, {1126, 268, 1181}, {
-         1197, 319, 1279}, {1305, 370, 1386}, {1554, 472, 1521}, {1553, 472, 
-         1694}, {1306, 370, 1280}, {831, 115, 919}}], 
-        PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[0.4867717082662038, 0.5951659032098152, 0.24940763465113397`],
+        EdgeForm[None], 
+       GraphicsGroupBox[{
+         PolygonBox[{{941, 166, 920}, {832, 115, 802}, {940, 166, 1016}, {
+          1409, 421, 1520}, {1042, 217, 1017}, {1410, 421, 1387}, {1725, 523, 
+          1695}, {1127, 268, 1106}, {1041, 217, 1105}, {684, 64, 801}, {687, 
+          64, 657}, {570, 13, 656}, {1198, 319, 1182}, {1126, 268, 1181}, {
+          1197, 319, 1279}, {1305, 370, 1386}, {1554, 472, 1521}, {1553, 472, 
+          1694}, {1306, 370, 1280}, {831, 115, 919}}], 
+         PolygonBox[CompressedData["
 1:eJwtkr0vQ1EYxk/vvaeSlqE1sdVkZJe08fEH6EBqNJAQlTAQEkIYK0ws2omp
 ZWD0V1BR/4JvG4OP35P3DL/2uee+55znfd5bmF0uVyPn3CAkUOanO+XcIzqP
 3kw7twE/8AvHsXOrvDuHJvraO3cFD9CBKmtLsAf7MMwZQzAOE7BAzQrnn8GO
@@ -694,16 +689,16 @@ J3mrwQF8eOtVd+Y475C7epx5bqJPQ97y3EosQ2UpD/JyFFmt9oxEdkclZK7s
 B8I8VHMZWWbKTp7k7dPb3fKw681TLWSsrNVzJsxMs3uGp9hmptktBv/Kv9/b
 jNqhRrWTieWhHub0AYX5qp8Lnr9CfqrJ8dxIW/bylEevo9fCDDSLfyEWVXs=
 
-         "]]}]}, 
-     {RGBColor[0.7625690778287271, 0.7413533012764901, 0.2929552650886107], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[0.7625690778287271, 0.7413533012764901, 0.2929552650886107], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkD8LwXEQh8//JAtlVBYsBq+AkheAgSiDxaBYLJIMsvF7AQZGE1FWxQuQ
 QSTvAMnAgpJH3XA9n+4+37vvXaBUS1fNIuInLMTBJrIyiaTsIj2rSAi9gV6H
 SBDjl7wTYwFvBV6JNXoPk/ie6Cis4w2jL3BAbYwuwju1PD13MMesPnoKJ+p5
 wQo1N/kMnBJxtODxoE/INLxpnxj5Lm8M8lWY154JeNRdFtCnb994muzwIJ+F
 HX27hXP9w/+/M507gobeoQ2Xmv/Xz7p7BO3Sm9zYN6F3aMGy7jKEDZ37gT8f
 gjMN
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwtkT0vBGEQx8fts3sRkchJFK5CvDQKPXFy8QGcgtBpFCenJSISFx2XUNFY
 ne6QaAkfQBRCxDdALuKlQSJ+czPFb/c/+8zMM/PfnoXlUiUjIv0QYJjHNe8v
 KKKXYpEydEMeLhORC0jhCKbJaW8ReSK/C12JRGroeWhD/0R2dgxn6Fs/1zue
@@ -712,11 +707,11 @@ eqEP7iO7W+u30HW/7woe0L/s9IkeoG9HVuSU9wnswh6Ugu2jOy+ipxKr1ZpV
 9HlscXMH9F9ivfR8LbEe2msUxuDQ/StAHX0XbHf1pIbupCaX2E6624b7pf9n
 Mtg/SD1HcxsZ80I9WUF/R+a9zpwj/4B43z1Rb2Z8X535kf4jwXqrR6+cj8c2
 j+4zG5uH6qV6ot6kwWbXHcroda/XGbfR/9g0T4E=
-         "]], 
-        PolygonBox[{{862, 167, 941, 920, 921}, {1307, 1306, 1280, 320, 
-         1213}}]}]}, 
-     {RGBColor[0.859594028875945, 0.6713846062709135, 0.32031133287891933`], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{862, 167, 941, 920, 921}, {1307, 1306, 1280, 320, 
+          1213}}]}]}, 
+      {RGBColor[0.859594028875945, 0.6713846062709135, 0.32031133287891933`], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkL1LQmEUxk/dewMhXIQimkQpB/sTKm7R1uIXWENDW1y1oJagIGiIwJaa
 GqLb0hRR4CoKDi5lTUE0Kyi0XNeGfi/vGQ6/533e836cJ7m7n69NikiGcqjj
 KZFoQiQH112RMd4SPFA/gm3WPvoVnnsij8aHCfa+0SE847IrzvZgjNpGj3ho
@@ -724,8 +719,8 @@ iG6jP6BPHaFv4Zq+dQI7nJ+m9wHWWS9w5ylcxovTcw1LvFfHf4Lz1CG6Ahvs
 +fTcwKZrfbM/p38bo0f4W+gV9Cz6h/4//vDFuoX/DC/13Tf4q/3v8ELnrXo2
 C5PJHfzUs5vogL44+t6195r7u46d08y7AyvaU4Qb6qcdm6nJNoQBMyzi96Gj
 Ge7BgWaYNflrzgF80dlT6LLmswpndMYC/AfiDEH6
-         "]], 
-        PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[CompressedData["
 1:eJwtkTtLQ0EQhfdm770iSFAsxDL4avQvRKKtjS9QSztJfIApFYQUImijnRbG
 xkokiq2aH+CrEsRawYBN0hkLv+NscdhvZ3dmzuzmltdn1jLOuSEUo0M2WdYC
 qsFzBLORc+/s++Df1Lk26u5wrgeNEWtxVkdf3rnZ2O4qpwhfJs7dw/toAa4S
@@ -734,18 +729,18 @@ dhr8q34N3o6ttjxPwtPM0ozM4yv1monVVo/e1HKUK4+38EPIl8cGXE3tbhdv
 dQc3WJeoPYLK8JM375rhEx5P7C2U/03+Rdir/ws8lRrL0wY8SE45/McN9Y4y
 xvqjPFwK7yfPFXjFW3/13IHzifVSj3n4LDWv8twPb4X/00x78EfGvKuGJ381
 vId66K+KYR6dd8ID3vz8e4RHY5tVNSfgP+uKTks=
-         "]], 
-        PolygonBox[{{1693, 498, 1657, 1787, 1788}, {967, 219, 1046, 1018, 
-         1019}, {923, 922, 862, 116, 837}}]}]}, 
-     {RGBColor[0.7825060610980296, 0.4166538884620155, 0.2769719379105219], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{1693, 498, 1657, 1787, 1788}, {967, 219, 1046, 1018, 
+          1019}, {923, 922, 862, 116, 837}}]}]}, 
+      {RGBColor[0.7825060610980296, 0.4166538884620155, 0.2769719379105219], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkDEPwVAUhW8pZrulorH4ASaRJgw2EonZZsDCxF5i7qQWCzMSI4tYxJ+Q
 kBgZa/C99A6338nruee++5zusDVIiEiOSlJPPid4hztqi46gZ4t80CX4pjqW
 yA3+0iIuASs4S4lsOB/Al3rKaIcaofswwOuR04B1csdoFzb5t8CzhjU9X8KD
 +gvoOZkunqkd+4y/B0Oda+b76rnAo/aamXvdJYS++r8wr3ez4EN3L9Jb1X0n
 8GzHHrNHpDlXGKjf9GUz8TuY92jr3SrwD8snLrM=
-         "]], 
-        PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[CompressedData["
 1:eJwtkT0vg2EUhg/v8/oLPgaJRmPxA0wlTZgYiCbmbq22SJgYmBoxsjGohYFB
 F6MBm4EfoZKO7UrS6845w5X3zjnnOR/3O1fd22qNm9ksJChmZkd8y/BC4oNg
 ccxsB37RdxNmHZiGGbih/sH8zRq6x5sfyNAJDqjZhwEMYZEeA2pfoUf+M3lv
@@ -753,14 +748,14 @@ zThHP+Vmj/AF33Ad+2hGF90idk/tIRTQV8y6hBIsw1Lu/S5gE90gths7abeF
 5LO1wwq6A7fQgCacxL3KlyOm3DZU4J0b3sIDeVGJ3CRMBdJ/7PoPG9Sshwfy
 opT7btqxn9wjeVWDeuY363a90dv5zP+FPFhFN3O/XR600V16PMcNuqUevU7h
 DI7Db93URo8AxQs+Jw==
-         "]], 
-        PolygonBox[{{1385, 395, 1365, 1452, 1453}, {1562, 1561, 1523, 423, 
-         1436}, {1281, 372, 1216, 1201, 1202}, {586, 66, 692, 659, 660}, {
-         1779, 1778, 1693, 549, 1800}, {897, 896, 974, 191, 917}, {1021, 1020,
-          967, 168, 947}}]}]}, 
-     {RGBColor[
-      0.7465314050068165, 0.29550721601189817`, 0.24552529024662306`], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{1385, 395, 1365, 1452, 1453}, {1562, 1561, 1523, 423, 
+          1436}, {1281, 372, 1216, 1201, 1202}, {586, 66, 692, 659, 660}, {
+          1779, 1778, 1693, 549, 1800}, {897, 896, 974, 191, 917}, {1021, 
+          1020, 967, 168, 947}}]}]}, 
+      {RGBColor[
+       0.7465314050068165, 0.29550721601189817`, 0.24552529024662306`], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkS1IQ2EUhs92v61eQYNOiyCoGBXFgUwWDNoEg8UgE5zgbIJoEQRBjDM5
 BDUZLBpsgkuKySTqFubPViyC2AY+h3PC4Xnvue937vee27+8MV9KisgYFVGZ
 INKCDR52qEP0PZyjNtHDcB1PnBA5hW0OL9Iv0K+L9Wuw5HNycJX6Qk/CLtc1
@@ -769,8 +764,8 @@ INKCDR52qEP0PZyjNtHDcB1PnBA5hW0OL9Iv0K+L9Wuw5HNycJX6Qk/CLtc1
 G2bd0wtXPNdEsGft/+J/8iyaqci7Jp4szPGNGF2GIbLsTXR3sF0uwOfIcjWo
 v8j2oPsoePbxYLvWnY9ods/bhke+W92xntc5uqdp3+dgsDMt//9Vz3UM+4L9
 1wSspCyL7qPH719n5pB71Fv2LLNJO6P9BzyPnl33F/s/0kz/UChV0A==
-         "]], 
-        PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[CompressedData["
 1:eJwtkTsvRFEUhTf3jKEaCQWl8YheglGJVkhMotDKSJC4N6aQCKWCREslEqbS
 Uow/QOInjFyF52iFVvhW9im+m3X285x1h1azatppZmUIcMGn1GE2B9foVmL2
 SvwFSpzPOV+hd2AefUtzE07gFB6IPZHL4Q/902X2Dd1Fsx5YDp7Tji30PdxB
@@ -779,14 +774,15 @@ l9Ao+E7t1gzNqsde3Vl3f+QNb+Ye9FJX47yCPoZ99G/0Q28a0H2jf/JgHD1G
 fjRxj+TVWeLeqedGXsEH+h36qZ8Mvks719ATwb1XrIbeTHy37hDQleC9mrER
 3PM8zm+in6Ed84Pkp4LPVs86eiZ4TjUpuhH83+sNekueeK16+jj/A7ahTi8=
 
-         "]], 
-        PolygonBox[{{1524, 474, 1436, 1416, 1417}, {1179, 292, 1159, 1221, 
-         1222}, {996, 995, 1063, 241, 1014}, {731, 118, 838, 805, 806}, {621, 
-         620, 742, 89, 650}, {1733, 1732, 1698, 474, 1594}, {1315, 1314, 1281,
-          322, 1217}, {1516, 446, 1489, 1613, 1614}, {1443, 1442, 1385, 446, 
-         1483}, {968, 140, 917, 995, 996}, {662, 661, 586, 15, 576}}]}]}, 
-     {RGBColor[0.7336833135456688, 0.2522405472797133, 0.2342943446523735], 
-      EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{1524, 474, 1436, 1416, 1417}, {1179, 292, 1159, 1221, 
+          1222}, {996, 995, 1063, 241, 1014}, {731, 118, 838, 805, 806}, {621,
+           620, 742, 89, 650}, {1733, 1732, 1698, 474, 1594}, {1315, 1314, 
+          1281, 322, 1217}, {1516, 446, 1489, 1613, 1614}, {1443, 1442, 1385, 
+          446, 1483}, {968, 140, 917, 995, 996}, {662, 661, 586, 15, 
+          576}}]}]}, 
+      {RGBColor[0.7336833135456688, 0.2522405472797133, 0.2342943446523735], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtk0srhVEUhvex9yeZUK7nuJSIMqCcEH/A7ZiYKDIRxYTcy8iYoaE/IMpx
 HxgoBlJSUnIJBymHH2Bk4FmtNVi9e79r7XV51/fVjE4PTOU457owj/XGnCvD
 yrEf7t9YdXAuC1bAJbAi7vvcn3lQGTnXB/cCt819F34OjHM/5PzOOYU/bm8H
@@ -798,7 +794,7 @@ oPGz4JbtSHaV5T4IfwGuWYzEJiOdpQE8Nl78C9bDZlBNRR/R4Nr2KPtssLce
 nLK4zqA1pNYGOBFU63Yw176fK6/aydtpMB/+Df5W9hKpzk9ww8Y323yik+hR
 HWk/GfjWSGv9cZ4Mup8O+wYTpu+H9dNq+yq1/2TW5v2xfcheLr2+ydr/8w9Y
 ZmSz
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwtk01IlUEUhuc6x5u1KShTU4MgKhUKWhQa2e/CvGagu6QEUahFGhmJUbsK
 vO5zZ4vbIgqy1OxnaRSULSIoy/ypVQa1q2XZ83Zm8fCd+ebMmXfeObOlq6+t
 tyiEcBQMfhaH8ANasyGcgFp+LvJ/CU4SPyX5CdyEEfgWQ/jO3DJUM/+a8StY
@@ -812,15 +808,15 @@ F9Is7UXMZ8x7UL2YN69dDVPEe6Es43fSQ7xgrl2aNxe75/I+By3QyPz+1KPq
 1TrzXpdn8u49NGX8DkpZP8uaMeYfwFrzGrl0x7rr4dQ78kTeTKd89ZB6vx9v
 LySP5fWMuZfySF7JQ3l5Ba5Gf6OtaY3W9kffWzXvEt8x7z1pfGbeQ+olvWG9
 5Xpzb+XJGeKBdN/qn7HoPaBe0JvS2/qU6qvH1pF/MfWb/t0j/gdyG437
-         "]], 
-        PolygonBox[{{1062, 190, 1014, 1085, 1086}, {1276, 343, 1256, 1337, 
-         1338}, {1119, 1118, 1075, 277, 1141}, {1219, 1218, 1179, 343, 
-         1250}, {893, 892, 968, 190, 915}, {994, 232, 1067, 1050, 1051}, {971,
-          222, 1052, 1025, 1026}, {1065, 1064, 1052, 222, 1111}, {1418, 1417, 
-         1391, 373, 1331}, {1051, 1050, 993, 180, 973}, {1283, 373, 1217, 
-         1203, 1204}}]}]}, 
-     {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
-      GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{1062, 190, 1014, 1085, 1086}, {1276, 343, 1256, 1337, 
+          1338}, {1119, 1118, 1075, 277, 1141}, {1219, 1218, 1179, 343, 
+          1250}, {893, 892, 968, 190, 915}, {994, 232, 1067, 1050, 1051}, {
+          971, 222, 1052, 1025, 1026}, {1065, 1064, 1052, 222, 1111}, {1418, 
+          1417, 1391, 373, 1331}, {1051, 1050, 993, 180, 973}, {1283, 373, 
+          1217, 1203, 1204}}]}]}, 
+      {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
+       GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtk79LVnEUxr/ve88FEYLSNil7jYQMCgInySF7E4PSWqJChJYaoiI1w98J
 NrQ01FBjUBBKtaiUPwraVIyo6A9oKNHEQClo6nN4zvDwnHvuc8/vW7p849z1
 YkrpNMjAeUtpZyGlg/BTHBP4rsDr8C+wl3et4CTYDZp5N4R/iyDv+KYO32P4
@@ -833,7 +829,7 @@ D/rjsZftovJXx81MxM10w7NgGnsArsg1v4+mWfhMxuA3cYfJ1I/HOApPRw1e
 y3bU3YTdGHvx/Vwy7f0wvBK5arCn4oayXHfg9/ABbjbFqYfH44b74YtxQw2m
 OryeJfRzcZ8P4Ttxt6fidspxcxWmvX9GX2fxL2W6J7+rZ6aavLbv+PeYev+J
 /TZ693/xP9DVa6I=
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwtlF1ojmEYx5+9z713mmQ+hoNtbGhrKwpzYLOyjUWYUEJOFIe+NiMZ43Cv
 cmBlZxxsJcLJttqIQpaMRhFjtuYjmUnhVfL1+3ddB7+e677v676+n7tw9/7N
 +xJRFO2EAD9ZtPA9CTVxFDWxOTcjij6zLkfeCEWsC+Eo8isYgrzMKMqHdj+f
@@ -851,15 +847,15 @@ uP8rYbOrGa7DVgkUQy/7fV4D1aLYz9r8fVA/biE/YW8wthgVa9p7m50VRZOz
 zEavvyF6S/qDxaYcAv6XQ3mm9UC9SPlboZ6pd/3Yuq85gMqk1VC1LPe7j4PV
 Qjllsz4X7K1QjDeD9US9GYFReITOQKa9YXrL1rq+3hi9nXrT9LZpBjWLnf4W
 6Y7uPo1t9tTDbPQnYntr1YOiYDOV8n9E/0qlx65/Tv/ef/bVs6w=
-         "]], 
-        PolygonBox[{{891, 181, 973, 949, 950}, {957, 173, 1032, 976, 977}, {
-         871, 170, 952, 927, 928}, {1027, 1026, 970, 170, 953}, {1177, 291, 
-         1157, 1219, 1220}, {1320, 1319, 1283, 323, 1223}, {950, 949, 890, 
-         129, 872}, {1253, 1252, 1227, 334, 1318}, {1055, 1054, 999, 182, 
-         979}, {1236, 327, 1210, 1295, 1296}, {992, 991, 1062, 240, 
-         1012}}]}]}, 
-     {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
-      GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{891, 181, 973, 949, 950}, {957, 173, 1032, 976, 977}, {
+          871, 170, 952, 927, 928}, {1027, 1026, 970, 170, 953}, {1177, 291, 
+          1157, 1219, 1220}, {1320, 1319, 1283, 323, 1223}, {950, 949, 890, 
+          129, 872}, {1253, 1252, 1227, 334, 1318}, {1055, 1054, 999, 182, 
+          979}, {1236, 327, 1210, 1295, 1296}, {992, 991, 1062, 240, 
+          1012}}]}]}, 
+      {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
+       GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtlE1IVFEUx19z39NV0CralBgUUYtKkgKrRRalo9OopUjSokW5KQsix5lS
 m2YKGivDWRgUCBEE2aJFHzpOLrKPRZs+CCIqQ/qA0YlosIKCfodzFuf9/+/c
 /z33nHPPe5UHupqPhDzPO4o5bJLHA/AsWBF4Xu8Cz/vge94AvB++G+xkLYnm
@@ -877,7 +873,7 @@ m+xcmd1+u6868ILNWBSM2fzLd5C2+2oItHcSZxiccnp2Rmq3OfzIeSWntU87
 /bZl/l+G9Bsatfonff0PDEv+NntJsCrQe/zjax+ln9vBDdhNeAYct57IbJb7
 GlNmP2Oa+UD/U9LfneBF8x8Dx5z2Xu7toa//hywYsW9N/h+L7NzX+K/ZXonx
 HwjXtzk=
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwtlEtI1UEUh8c7M2lZ0SraRBgYPRaVEC2CFj7wWV20jChatGkT2c7UStNr
 LVRQdKHLFrapFi3C8vpY9I6eBEEEEUQP8NFCqahFfT/OLD7u7845Z+bMOec/
 JadaGs9mnHNZCDDknZvmdwoeoSP0oLvhILoyOtde4FwHtKPPEdwC/TAAf+EP
@@ -894,16 +890,16 @@ ZtFX0jxNwAz6uzettZJgPVf+NzRz6G8Zq43WyrzFTKT7tKAX0v46r5T44WDf
 ViPk9f2m96IPRtB1rC2if2hP9HNvZ+kNKAz2TTaled4VbU/tvaD+oPcFi9We
 y95qmkv3eevtDVE/NaPj+taCxerMVvRImi+dMRXsTdLb9E+PHP5t3nKdTm/d
 oLe3TjV9iP4P7nKrFQ==
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwtkD8LgVEUxg+v10b5AJSNKIswMCH/YpCU1SALUkqxGfkCDCaRz6B8CVkl
 2f1ZSBG/2zX83ufcc577dO7rrXfKbauIuMCEJp+xRaSCLmEFU7vInV4PfcAT
 ClxK4t+gU5iBE68D9jaRAf4Q9QKvg1kcdYMHXsyrzM9oBE8UsoZIBp54i+Se
 0CP0qYv0AxCELt41d8OoD/ym7qv54b/TFn3DSL2Hfg7ycKN3hRr1kFnM0Puo
 vR7/3Dma5pyCi6nf3bLrHdWuH5v+PyXqHVl5chKGzlX5Qv1FG+iEowf9Aa6Q
 K+s=
-         "]]}]}, 
-     {RGBColor[0.72987, 0.23939900000000003`, 0.23096099999999997`], EdgeForm[
-      None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]]}]}, 
+      {RGBColor[0.72987, 0.23939900000000003`, 0.23096099999999997`], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkk1IlVEQhk/3cy5EmhASSCsJFBeRCqIbUUHxWqGmaKBCeUNx5U9gpRtb
 5L1aCkqBP60TQSor/4hUxJ+shaK4cam7CiTQhWGLnsPM4vC85z1zzjffzKRF
 26vbQs65ClbAei7OzVxwrhzeCDu3gD5AJ6E/oL+iU9Af0avoRi7FuXcFpuF/
@@ -916,8 +912,8 @@ y+RsHn8fv1f0zVKYw+pHn/kcLE9fsyGrQwe8iP8E/wcxtVaHRJgc1n4tc34V
 +m+Czp+v+RfRWfG93oMjorNUBx9ZfQrgG7vbAh9aT6/BW4F+6x93h0RntRIO
 i/5vlehM+Nnws/PTcvM5TlpfWmGf6PzfhivW3wdww2Z+ONAZ8t/thhWWj/+n
 qZDOVQ18JToP9+B9q2cKfGv19HUdFO3pHdEZ8t86x/8P8ot5Ew==
-         "]], 
-        PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[CompressedData["
 1:eJwtlEtIlFEYhv+5nJmihiAkiECRFhEkmS1qURCUpSmOXcwyUxxomUGQXTa1
 yBktK6ONY02bCtpoaWlBNhJ2s00U7QsKCoxWQUWbnpfvWzzDey7fOe855/2n
 Ond8b288iqIsJCGW4AcqoQrmQxQ9ikXRFKxJRdEf+A1L01GUgTnGJxl7CNX0
@@ -933,16 +929,16 @@ mGda2e4JdhfyU0QvxC0bysgm6j/6++jOa1KW4bRnXFlv9u9Rd9AvL9SPQTsc
 hJ3U1Pue2ruDvkM+Z9wzo+xshx0wz5w3ngFloZu+LpiC6bhlWtlWRpXVI9AJ
 EzAJrf7/oTe6rLul76ZnVFnNBTur3mAU3ej/H7q/8+gyc555TcnXnHDP8j4D
 T92TvOkb0beimrJ7nHJP8rYlWLb0ZifQ/wHzBKGb
-         "]], 
-        PolygonBox[{{1373, 1372, 1351, 390, 1432}, {710, 71, 821, 743, 744}, {
-         738, 38, 653, 768, 769}, {1401, 1400, 1348, 429, 1431}, {1441, 1440, 
-         1384, 445, 1478}, {1423, 1422, 1393, 374, 1340}, {1345, 377, 1327, 
-         1400, 1401}, {1382, 393, 1358, 1440, 1441}, {1514, 445, 1486, 1605, 
-         1606}, {847, 846, 764, 79, 745}, {799, 798, 889, 138, 867}, {1466, 
-         439, 1428, 1372, 1373}, {780, 133, 879, 851, 852}, {600, 599, 722, 
-         73, 683}, {608, 78, 737, 699, 700}}]}]}, 
-     {RGBColor[0.72987, 0.23939900000000003`, 0.23096099999999997`], EdgeForm[
-      None], GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{1373, 1372, 1351, 390, 1432}, {710, 71, 821, 743, 
+          744}, {738, 38, 653, 768, 769}, {1401, 1400, 1348, 429, 1431}, {
+          1441, 1440, 1384, 445, 1478}, {1423, 1422, 1393, 374, 1340}, {1345, 
+          377, 1327, 1400, 1401}, {1382, 393, 1358, 1440, 1441}, {1514, 445, 
+          1486, 1605, 1606}, {847, 846, 764, 79, 745}, {799, 798, 889, 138, 
+          867}, {1466, 439, 1428, 1372, 1373}, {780, 133, 879, 851, 852}, {
+          600, 599, 722, 73, 683}, {608, 78, 737, 699, 700}}]}]}, 
+      {RGBColor[0.72987, 0.23939900000000003`, 0.23096099999999997`], 
+       EdgeForm[None], GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkk8rhFEUxu/ct/tmYWHj/0I+gKhXsqCoYYVhUJOaMBplQxTlG9hZGmNj
 ihhELMSQlcbGN7Dwp0ks7cxC+Z3OXdx+z3nuM/c9595pz6wkl60xJmIFrB+K
 JHyGVWfMScyYIjShMWfoS/Qxew1Y03DTqT8IN1in6AH4wF6cTAeHPqLH0VkY
@@ -952,7 +948,7 @@ n4f7fsZRuEd9h5+VO6BuxE/BNeoifh/sCnTGiswU6Fw1MGINo7+s3oXMJbPm
 qevQIzDvtJ+M07eRN1q1eq6cvw1/vT6CO/5d5H2mAs3Xwp5Q+6w4nVPmDWHa
 6f2UnL9H9CL88296AXtD9T/Rcd+b9Jjzv5UzDqzOkrA6j+iy1f+B3NUb+h/t
 E00J
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJw1k8tLVVEUxrf7uI9NroV5tatBWUEPMAIjmkQGdZv1sIywxLxi4EQp0L8l
 DXpAUWYUBEm3bpklmA57DKpBBY7K5jkI+n2s1eAH31lr77PX/vZaHZWxntEY
 QihDPTxOIczUhfAQQh7CCt8v0DU4yPcUTMIfWINlWII7cBfO8LMiW1vgPnqW
@@ -967,15 +963,15 @@ DZ0xgb6cbDb0/+voYZ8XnTmVzFN5Kw/l5bdkZym/n3jF61NsEr0us7vpjmfd
 g5J7IC8Gfb9qvpZsBjWLhQbuBiPR9mvGFqLNpGZzC2zNrefV+3PwOlpMuRv8
 62ayO+quemO99clos6B+vR1t5jR7r8jNwQmfF/X0rWgzqlnVzGn2tEZrNUOa
 pX8wNINQ
-         "]], 
-        PolygonBox[{{585, 21, 677, 593, 594}, {594, 593, 710, 70, 676}, {613, 
-         80, 745, 705, 706}, {704, 703, 608, 27, 592}, {854, 853, 780, 82, 
-         753}, {761, 88, 867, 795, 796}, {615, 614, 738, 88, 648}, {589, 68, 
-         702, 669, 670}, {1510, 444, 1478, 1599, 1600}, {1457, 428, 1431, 
-         1539, 1540}, {670, 669, 588, 16, 581}, {1498, 1497, 1466, 440, 
-         1583}, {1439, 1438, 1423, 425, 1528}}]}]}, 
-     {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
-      GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{585, 21, 677, 593, 594}, {594, 593, 710, 70, 676}, {613,
+           80, 745, 705, 706}, {704, 703, 608, 27, 592}, {854, 853, 780, 82, 
+          753}, {761, 88, 867, 795, 796}, {615, 614, 738, 88, 648}, {589, 68, 
+          702, 669, 670}, {1510, 444, 1478, 1599, 1600}, {1457, 428, 1431, 
+          1539, 1540}, {670, 669, 588, 16, 581}, {1498, 1497, 1466, 440, 
+          1583}, {1439, 1438, 1423, 425, 1528}}]}]}, 
+      {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
+       GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtkssrhGEUxl/z9n3LCWNSGoUoWVBkaSlZuDQYRaNppilSZjVJkSz8B9Yu
 xT9ghdIwWUhpyrg0ppT7ZTbs2Pmd3rN4+j1z5nnPe873fc3JTHQhYIzpRRZd
 +cZ8VBmThQX+GKOWhQ9oEr8OC/z3TmYedqNH/D48Ra/4NLxEb/g5WOJMjLNr
@@ -985,7 +981,7 @@ xvFL8BZN4FfgDgrhR+A2qsUPw01Ugx8KuPPSZxBe0/eT/ouwWuc/9twcMk8c
 9um+bbBen0PeczvL7kEY1meYox6x7n390b9f75X749bNGYYDuleF/LR1u4Rg
 Us9KjxZ9p2dkenSeMr5TZ77BJ6x7vw2wQ7+fIvV2/U4u8Bm9S+6cVS/PtVW/
 k3My/8voWmU=
-         "]], PolygonBox[CompressedData["
+          "]], PolygonBox[CompressedData["
 1:eJwtkktLVlEUhtd3PvfW0WelIkgNkgbRICemNqsfoEFZgaGIEaWCYSAi1MBB
 oH+hJgWC1qTLQEUQSZREFCG7YA3UvGbU3EDpeVl78HDevdba63LWPtvx8HpP
 ZmYNUARlebNmvjehFX0vmu3kzHZhGX2X4NP4zsAsehBupfiv6LfB7A0YsTnF
@@ -997,21 +993,21 @@ oQF9OXqPR2mH2uWP4LVUswb/avDeNcN5ztPB/+cmFDi3RNeyTaJng+9G/7uC
 80Lw/6OdVaeZNJt6Vu/fg9fSP7gYvWf1XowuST2qV82s2Z9k/h70XlbR7dFr
 qeYMehnbEvTCI2iCU+Zv8CW6EU6a215kvgPtolBsVgoL2D5CJ3QlpOdgHp5m
 /nb1HtfQA5n3oje8gn4A92EIhlMPvSmncmtH2pV2oF38B4Qbhso=
-         "]], 
-        PolygonBox[{{1739, 1738, 1701, 475, 1597}, {1601, 1600, 1515, 496, 
-         1640}, {649, 648, 761, 87, 734}, {1629, 491, 1587, 1503, 1504}, {709,
-          708, 613, 29, 596}, {1573, 475, 1528, 1447, 1448}, {629, 83, 753, 
-         716, 717}, {1684, 496, 1647, 1773, 1774}, {1544, 1543, 1465, 481, 
-         1586}}]}]}, 
-     {RGBColor[0.72987, 0.239399, 0.23096100000000003`], EdgeForm[None], 
-      GraphicsGroupBox[{PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{1739, 1738, 1701, 475, 1597}, {1601, 1600, 1515, 496, 
+          1640}, {649, 648, 761, 87, 734}, {1629, 491, 1587, 1503, 1504}, {
+          709, 708, 613, 29, 596}, {1573, 475, 1528, 1447, 1448}, {629, 83, 
+          753, 716, 717}, {1684, 496, 1647, 1773, 1774}, {1544, 1543, 1465, 
+          481, 1586}}]}]}, 
+      {RGBColor[0.72987, 0.239399, 0.23096100000000003`], EdgeForm[None], 
+       GraphicsGroupBox[{PolygonBox[CompressedData["
 1:eJwtjzsKAlEMRaMyTzs3IILgWFkJIpZ21oOFjY3VYKGrEBEEF+ACFEEYbFyB
 u/CPYuOnt/KEl+JyzwvJfUmpP4qGaREpoAz6OZEyhQVeRaeUyBpvoS/8DEQa
 8Bu+wVN6Q+Zi/Mf7QH2FB/Sc4S2cgy/wDk5ZZgKfbFYz2s7PVpyfVw7hms1q
 Rj7rd9Md6+hF/ULvxv7qOL+r5kf40XrG+BV94Bl+t1vmeGys9+3JLrLPAE/s
 365m270TvGM92tu0zEfg99C/etSWdove9AegwjTZ
-         "]], 
-        PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[CompressedData["
 1:eJwt0s8uA1EUx/Fb0fseXsBOxIKHaKxIVCmJVkg0LZqOP03KxpKXIBKpBWpR
 rAhjGi3VLhQhtaB9A3xP7ll8kjt37p85vzl9U4uRhR5jTD96UQwb0woZ84KQ
 NSbPy008oY4M0vBxj4h1a2XPIeNn1JGDhytcYgazaKKBdWzgnft+2PuNAevO
@@ -1021,21 +1017,21 @@ hwAVJeMk5jUjycqXLBDDJMq4wDGKmoFkEce0ZixZb1tXm3zDm+4p65q4ZibZ
 TSCKgnXZy56WZpjWGqXWlP6La9zgi7k2drFnXc0N7ZG8ZuZp5pJ9VO8q4Vz3
 yN4OurjDLYYxomtKWnNMeyinPSO90w67bKW+Ic3I10wTmmFSe0J6I6v/PtBe
 +gfoy3zD
-         "]], 
-        PolygonBox[{{1664, 1663, 1629, 492, 1757}, {1775, 1774, 1691, 548, 
-         1796}, {612, 37, 734, 645, 646}, {1598, 1597, 1573, 476, 1703}, {
-         1679, 495, 1640, 1767, 1768}, {1574, 476, 1530, 1450, 1451}, {713, 
-         712, 618, 30, 598}, {1624, 480, 1586, 1714, 1715}, {1535, 1534, 1456,
-          478, 1580}}]}]}, 
-     {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
-      GraphicsGroupBox[{
-        PolygonBox[{{1598, 526, 1740}, {1728, 534, 1633}, {1744, 537, 1642}, {
-         1704, 477, 1610}, {1742, 536, 1638}, {1580, 477, 1535}, {598, 31, 
-         713}, {1730, 535, 1636}, {1752, 540, 1656}, {1723, 533, 1631}, {646, 
-         36, 612}, {713, 31, 627}, {1535, 477, 1451}, {1721, 532, 1627}, {
-         1451, 477, 1574}, {1749, 539, 1654}, {730, 36, 646}, {1747, 538, 
-         1644}, {718, 32, 630}, {1703, 526, 1598}}], 
-        PolygonBox[CompressedData["
+          "]], 
+         PolygonBox[{{1664, 1663, 1629, 492, 1757}, {1775, 1774, 1691, 548, 
+          1796}, {612, 37, 734, 645, 646}, {1598, 1597, 1573, 476, 1703}, {
+          1679, 495, 1640, 1767, 1768}, {1574, 476, 1530, 1450, 1451}, {713, 
+          712, 618, 30, 598}, {1624, 480, 1586, 1714, 1715}, {1535, 1534, 
+          1456, 478, 1580}}]}]}, 
+      {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
+       GraphicsGroupBox[{
+         PolygonBox[{{1598, 526, 1740}, {1728, 534, 1633}, {1744, 537, 
+          1642}, {1704, 477, 1610}, {1742, 536, 1638}, {1580, 477, 1535}, {
+          598, 31, 713}, {1730, 535, 1636}, {1752, 540, 1656}, {1723, 533, 
+          1631}, {646, 36, 612}, {713, 31, 627}, {1535, 477, 1451}, {1721, 
+          532, 1627}, {1451, 477, 1574}, {1749, 539, 1654}, {730, 36, 646}, {
+          1747, 538, 1644}, {718, 32, 630}, {1703, 526, 1598}}], 
+         PolygonBox[CompressedData["
 1:eJwt0ctKAkAUxvFBbHyBrhpkPZIV1CqUaBFSiyCiSLPoskhykw9hKEZuok30
 AFKUJIaZYWAre4T+h/kWPzjMHOZcZj6zndqKOOcWEMWidy6FKmq4wDn6+EaL
 5Dfs4wA5zg7RwQdOODvGO9rKsdxnvGCZnCXUcYsSrjDEL4q4xAA/KOAIXXzi
@@ -1043,300 +1039,303 @@ DKfo4Qs7vDlH30k0iVc5W8EdGqpR15ndtdVbDvlIqGm1r1FWzYF6Kmmmjnoo
 qGZPO7HdrGOKdybxSPyHEaIx58awRjzB3TjuNUNXM9gse5jlLoGWdtzXDor6
 g6p2ZrvLIk7ujO2UeNOHeBpN4g0fYuvpiTjtQ2/WwwPxDSr6Y/vrvHZhf2p/
 W9YuRppl14ferOYr8T8dRVE1
-         "]], 
-        PolygonBox[{{1791, 540, 1752, 1661, 1662}, {1610, 477, 1580, 1706, 
-         1707}, {721, 720, 630, 32, 603}, {1716, 1715, 1627, 532, 1756}, {609,
-          36, 730, 642, 643}, {1745, 526, 1703, 1608, 1609}, {1609, 1608, 
-         1574, 477, 1704}}]}]}, 
-     {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
-      GraphicsGroupBox[{
-        PolygonBox[{{1756, 531, 1716}, {1755, 541, 1662}, {1662, 541, 1791}, {
-         643, 35, 609}, {1758, 542, 1665}, {1609, 527, 1745}, {1704, 527, 
-         1609}, {721, 33, 635}, {1760, 543, 1670}, {1713, 530, 1621}, {725, 
-         34, 639}, {1710, 529, 1619}, {1716, 531, 1625}, {603, 33, 721}, {728,
-          35, 643}}], 
-        PolygonBox[{{1687, 1686, 1776, 1777}, {1670, 543, 542, 1758}, {635, 
-         33, 34, 725}, {1673, 1672, 1762, 1763}, {1681, 1680, 1769, 1770}, {
-         639, 34, 35, 728}, {527, 1704, 1610, 1611}, {1763, 1762, 1677, 
-         1678}, {1621, 530, 529, 1710}, {1777, 1776, 1797, 1798}, {1611, 1610,
-          1707, 1708}, {1770, 1769, 1686, 1687}, {1766, 1765, 1680, 1681}, {
-         1665, 542, 541, 1755}, {1625, 531, 530, 1713}, {1678, 1677, 1765, 
-         1766}}], 
-        PolygonBox[{{1793, 543, 1760, 1672, 1673}, {1708, 1707, 1619, 529, 
-         1750}}]}]}, 
-     {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
-      GraphicsGroupBox[{
-        PolygonBox[{{1766, 545, 1678}, {1777, 547, 1687}, {1750, 528, 1708}, {
-         1673, 544, 1793}, {1763, 544, 1673}, {1798, 547, 1777}, {1611, 528, 
-         527}, {1708, 528, 1611}, {1770, 546, 1681}}], 
-        PolygonBox[{{1681, 546, 545, 1766}, {1678, 545, 544, 1763}, {1687, 
-         547, 546, 1770}}]}]}}, {{}, 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], LineBox[{527, 1611, 1708, 1750}], 
-        LineBox[{1793, 1673, 1763, 1678, 1766, 1681, 1770, 1687, 1777, 1798}]},
-       "8"],
-      Annotation[#, 8, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{603, 721, 635, 725, 639, 728, 643, 609}], 
-        LineBox[{1745, 1609, 1704, 1610, 1707, 1619, 1710, 1621, 1713, 1625, 
-         1716, 1756}], 
-        LineBox[{1791, 1662, 1755, 1665, 1758, 1670, 1760, 1672, 1762, 1677, 
-         1765, 1680, 1769, 1686, 1776, 1797}]},
-       "7.9`"],
-      Annotation[#, 7.9, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{598, 713, 627, 718, 630, 720, 634, 724, 638, 727, 642, 730, 
-         646, 612}], 
-        LineBox[{1740, 1598, 1703, 1608, 1574, 1451, 1535, 1580, 1706, 1618, 
-         1709, 1620, 1712, 1624, 1715, 1627, 1721, 1631, 1723, 1633, 1728, 
-         1636, 1730, 1638, 1742, 1642, 1744, 1644, 1747, 1654, 1749, 1656, 
-         1752, 1661, 1754, 1664, 1757, 1669, 1759, 1671, 1761, 1676, 1764, 
-         1679, 1768, 1685, 1775, 1796}]},
-       "7.8`"],
-      Annotation[#, 7.8, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{596, 709, 618, 712, 626, 717, 629, 719, 633, 723, 637, 726, 
-         641, 729, 645, 734, 649, 616}], 
-        LineBox[{1739, 1597, 1573, 1448, 1530, 1450, 1534, 1456, 1537, 1458, 
-         1541, 1463, 1544, 1586, 1714, 1626, 1720, 1630, 1722, 1632, 1727, 
-         1635, 1729, 1637, 1741, 1641, 1743, 1643, 1746, 1653, 1748, 1655, 
-         1751, 1660, 1753, 1663, 1629, 1504, 1589, 1506, 1591, 1509, 1593, 
-         1511, 1601, 1640, 1767, 1684, 1774, 1691, 1786, 1807}]},
-       "7.7`"],
-      Annotation[#, 7.7, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{581, 670, 589, 672, 590, 673, 591, 676, 594, 585}], 
-        LineBox[{592, 704, 611, 706, 613, 708, 617, 711, 625, 716, 753, 854, 
-         782, 859, 787, 861, 789, 864, 794, 866, 796, 761, 648, 615}], 
-        LineBox[{1738, 1701, 1568, 1439, 1528, 1447, 1529, 1449, 1533, 1455, 
-         1536, 1457, 1540, 1462, 1543, 1465, 1550, 1469, 1552, 1471, 1557, 
-         1474, 1559, 1476, 1570, 1480, 1572, 1482, 1576, 1491, 1578, 1493, 
-         1582, 1498, 1583, 1499, 1587, 1503, 1588, 1505, 1590, 1508, 1592, 
-         1510, 1600, 1515, 1607, 1647, 1773, 1690, 1785, 1806}]},
-       "7.6`"],
-      Annotation[#, 7.6, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{580, 666, 588, 669, 702, 813, 736, 816, 740, 819, 744, 710, 
-         593, 677, 595, 680, 597, 683, 600, 686, 602, 690, 605, 694, 607, 700,
-          608, 703, 610, 705, 745, 847, 774, 849, 776, 852, 780, 853, 781, 
-         858, 786, 860, 788, 863, 793, 865, 795, 867, 799, 769, 738, 614}], 
-        LineBox[{1737, 1700, 1567, 1438, 1423, 1340, 1394, 1341, 1397, 1344, 
-         1398, 1345, 1401, 1431, 1539, 1461, 1542, 1464, 1549, 1468, 1551, 
-         1470, 1556, 1473, 1558, 1475, 1569, 1479, 1571, 1481, 1575, 1490, 
-         1577, 1492, 1581, 1497, 1466, 1373, 1432, 1377, 1433, 1378, 1434, 
-         1381, 1435, 1382, 1441, 1478, 1599, 1514, 1606, 1646, 1772, 1689, 
-         1784, 1805}]},
-       "7.5`"],
-      Annotation[#, 7.5, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{624, 653, 768, 798, 889, 913, 966, 912, 965, 908, 964, 907, 
-         963, 903, 959, 902, 958, 879, 851, 775, 848, 773, 846, 764, 842, 763,
-          840, 737, 699, 606, 693, 604, 689, 601, 685, 599, 722, 752, 824, 
-         750, 823, 747, 821, 743, 818, 739, 815, 735, 812, 701, 668, 587, 665,
-          579}], LineBox[{1736, 1699, 1566, 1437, 1422, 1393, 1321, 1224, 
-         1285, 1226, 1289, 1231, 1291, 1233, 1294, 1327, 1400, 1348, 1402, 
-         1349, 1407, 1352, 1408, 1353, 1412, 1355, 1413, 1356, 1420, 1359, 
-         1421, 1360, 1424, 1366, 1425, 1367, 1427, 1371, 1428, 1372, 1351, 
-         1267, 1328, 1268, 1329, 1272, 1330, 1273, 1335, 1358, 1440, 1384, 
-         1446, 1486, 1605, 1645, 1771, 1688, 1783, 1804}]},
-       "7.4`"],
-      Annotation[#, 7.4, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{1735, 1596, 1565, 1526, 1419, 1332, 1320, 1223, 1284, 1225, 
-         1288, 1230, 1290, 1232, 1293, 1236, 1296, 1238, 1302, 1241, 1304, 
-         1243, 1309, 1246, 1311, 1248, 1317, 1253, 1318, 1254, 1322, 1259, 
-         1323, 1260, 337, 1167, 1211, 1171, 1212, 1172, 1214, 1176, 1215, 
-         1177, 1220, 1251, 1334, 1277, 1339, 1364, 1445, 1485, 1604, 1518, 
-         1616, 1652, 1782, 1803}], 
-        LineBox[{578, 664, 698, 808, 733, 811, 845, 928, 871, 929, 953, 1027, 
-         972, 1031, 977, 957, 876, 933, 880, 857, 751, 829, 755, 830, 756, 
-         834, 758, 835, 759, 839, 762, 841, 872, 950, 891, 954, 898, 955, 979,
-          1055, 1000, 1057, 1004, 1058, 1005, 1061, 1077, 1142, 1097, 1143, 
-         1098, 1144, 1102, 1083, 1012, 992, 916, 894, 870, 767, 652, 623}]},
-       "7.3`"],
-      Annotation[#, 7.3, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], LineBox[CompressedData["
+          "]], 
+         PolygonBox[{{1791, 540, 1752, 1661, 1662}, {1610, 477, 1580, 1706, 
+          1707}, {721, 720, 630, 32, 603}, {1716, 1715, 1627, 532, 1756}, {
+          609, 36, 730, 642, 643}, {1745, 526, 1703, 1608, 1609}, {1609, 1608,
+           1574, 477, 1704}}]}]}, 
+      {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
+       GraphicsGroupBox[{
+         PolygonBox[{{1756, 531, 1716}, {1755, 541, 1662}, {1662, 541, 
+          1791}, {643, 35, 609}, {1758, 542, 1665}, {1609, 527, 1745}, {1704, 
+          527, 1609}, {721, 33, 635}, {1760, 543, 1670}, {1713, 530, 1621}, {
+          725, 34, 639}, {1710, 529, 1619}, {1716, 531, 1625}, {603, 33, 
+          721}, {728, 35, 643}}], 
+         PolygonBox[{{1687, 1686, 1776, 1777}, {1670, 543, 542, 1758}, {635, 
+          33, 34, 725}, {1673, 1672, 1762, 1763}, {1681, 1680, 1769, 1770}, {
+          639, 34, 35, 728}, {527, 1704, 1610, 1611}, {1763, 1762, 1677, 
+          1678}, {1621, 530, 529, 1710}, {1777, 1776, 1797, 1798}, {1611, 
+          1610, 1707, 1708}, {1770, 1769, 1686, 1687}, {1766, 1765, 1680, 
+          1681}, {1665, 542, 541, 1755}, {1625, 531, 530, 1713}, {1678, 1677, 
+          1765, 1766}}], 
+         PolygonBox[{{1793, 543, 1760, 1672, 1673}, {1708, 1707, 1619, 529, 
+          1750}}]}]}, 
+      {RGBColor[0.72987, 0.239399, 0.230961], EdgeForm[None], 
+       GraphicsGroupBox[{
+         PolygonBox[{{1766, 545, 1678}, {1777, 547, 1687}, {1750, 528, 1708}, 
+          {1673, 544, 1793}, {1763, 544, 1673}, {1798, 547, 1777}, {1611, 528,
+           527}, {1708, 528, 1611}, {1770, 546, 1681}}], 
+         PolygonBox[{{1681, 546, 545, 1766}, {1678, 545, 544, 1763}, {1687, 
+          547, 546, 1770}}]}]}}, {{}, 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], LineBox[{527, 1611, 1708, 1750}], 
+         LineBox[{1793, 1673, 1763, 1678, 1766, 1681, 1770, 1687, 1777, 
+          1798}]},
+        "8"],
+       Annotation[#, 8, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{603, 721, 635, 725, 639, 728, 643, 609}], 
+         LineBox[{1745, 1609, 1704, 1610, 1707, 1619, 1710, 1621, 1713, 1625, 
+          1716, 1756}], 
+         LineBox[{1791, 1662, 1755, 1665, 1758, 1670, 1760, 1672, 1762, 1677, 
+          1765, 1680, 1769, 1686, 1776, 1797}]},
+        "7.9`"],
+       Annotation[#, 7.9, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{598, 713, 627, 718, 630, 720, 634, 724, 638, 727, 642, 730, 
+          646, 612}], 
+         LineBox[{1740, 1598, 1703, 1608, 1574, 1451, 1535, 1580, 1706, 1618, 
+          1709, 1620, 1712, 1624, 1715, 1627, 1721, 1631, 1723, 1633, 1728, 
+          1636, 1730, 1638, 1742, 1642, 1744, 1644, 1747, 1654, 1749, 1656, 
+          1752, 1661, 1754, 1664, 1757, 1669, 1759, 1671, 1761, 1676, 1764, 
+          1679, 1768, 1685, 1775, 1796}]},
+        "7.8`"],
+       Annotation[#, 7.8, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{596, 709, 618, 712, 626, 717, 629, 719, 633, 723, 637, 726, 
+          641, 729, 645, 734, 649, 616}], 
+         LineBox[{1739, 1597, 1573, 1448, 1530, 1450, 1534, 1456, 1537, 1458, 
+          1541, 1463, 1544, 1586, 1714, 1626, 1720, 1630, 1722, 1632, 1727, 
+          1635, 1729, 1637, 1741, 1641, 1743, 1643, 1746, 1653, 1748, 1655, 
+          1751, 1660, 1753, 1663, 1629, 1504, 1589, 1506, 1591, 1509, 1593, 
+          1511, 1601, 1640, 1767, 1684, 1774, 1691, 1786, 1807}]},
+        "7.7`"],
+       Annotation[#, 7.7, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{581, 670, 589, 672, 590, 673, 591, 676, 594, 585}], 
+         LineBox[{592, 704, 611, 706, 613, 708, 617, 711, 625, 716, 753, 854, 
+          782, 859, 787, 861, 789, 864, 794, 866, 796, 761, 648, 615}], 
+         LineBox[{1738, 1701, 1568, 1439, 1528, 1447, 1529, 1449, 1533, 1455, 
+          1536, 1457, 1540, 1462, 1543, 1465, 1550, 1469, 1552, 1471, 1557, 
+          1474, 1559, 1476, 1570, 1480, 1572, 1482, 1576, 1491, 1578, 1493, 
+          1582, 1498, 1583, 1499, 1587, 1503, 1588, 1505, 1590, 1508, 1592, 
+          1510, 1600, 1515, 1607, 1647, 1773, 1690, 1785, 1806}]},
+        "7.6`"],
+       Annotation[#, 7.6, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{580, 666, 588, 669, 702, 813, 736, 816, 740, 819, 744, 710, 
+          593, 677, 595, 680, 597, 683, 600, 686, 602, 690, 605, 694, 607, 
+          700, 608, 703, 610, 705, 745, 847, 774, 849, 776, 852, 780, 853, 
+          781, 858, 786, 860, 788, 863, 793, 865, 795, 867, 799, 769, 738, 
+          614}], LineBox[{1737, 1700, 1567, 1438, 1423, 1340, 1394, 1341, 
+          1397, 1344, 1398, 1345, 1401, 1431, 1539, 1461, 1542, 1464, 1549, 
+          1468, 1551, 1470, 1556, 1473, 1558, 1475, 1569, 1479, 1571, 1481, 
+          1575, 1490, 1577, 1492, 1581, 1497, 1466, 1373, 1432, 1377, 1433, 
+          1378, 1434, 1381, 1435, 1382, 1441, 1478, 1599, 1514, 1606, 1646, 
+          1772, 1689, 1784, 1805}]},
+        "7.5`"],
+       Annotation[#, 7.5, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{624, 653, 768, 798, 889, 913, 966, 912, 965, 908, 964, 907, 
+          963, 903, 959, 902, 958, 879, 851, 775, 848, 773, 846, 764, 842, 
+          763, 840, 737, 699, 606, 693, 604, 689, 601, 685, 599, 722, 752, 
+          824, 750, 823, 747, 821, 743, 818, 739, 815, 735, 812, 701, 668, 
+          587, 665, 579}], 
+         LineBox[{1736, 1699, 1566, 1437, 1422, 1393, 1321, 1224, 1285, 1226, 
+          1289, 1231, 1291, 1233, 1294, 1327, 1400, 1348, 1402, 1349, 1407, 
+          1352, 1408, 1353, 1412, 1355, 1413, 1356, 1420, 1359, 1421, 1360, 
+          1424, 1366, 1425, 1367, 1427, 1371, 1428, 1372, 1351, 1267, 1328, 
+          1268, 1329, 1272, 1330, 1273, 1335, 1358, 1440, 1384, 1446, 1486, 
+          1605, 1645, 1771, 1688, 1783, 1804}]},
+        "7.4`"],
+       Annotation[#, 7.4, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{1735, 1596, 1565, 1526, 1419, 1332, 1320, 1223, 1284, 1225, 
+          1288, 1230, 1290, 1232, 1293, 1236, 1296, 1238, 1302, 1241, 1304, 
+          1243, 1309, 1246, 1311, 1248, 1317, 1253, 1318, 1254, 1322, 1259, 
+          1323, 1260, 337, 1167, 1211, 1171, 1212, 1172, 1214, 1176, 1215, 
+          1177, 1220, 1251, 1334, 1277, 1339, 1364, 1445, 1485, 1604, 1518, 
+          1616, 1652, 1782, 1803}], 
+         LineBox[{578, 664, 698, 808, 733, 811, 845, 928, 871, 929, 953, 1027,
+           972, 1031, 977, 957, 876, 933, 880, 857, 751, 829, 755, 830, 756, 
+          834, 758, 835, 759, 839, 762, 841, 872, 950, 891, 954, 898, 955, 
+          979, 1055, 1000, 1057, 1004, 1058, 1005, 1061, 1077, 1142, 1097, 
+          1143, 1098, 1144, 1102, 1083, 1012, 992, 916, 894, 870, 767, 652, 
+          623}]},
+        "7.3`"],
+       Annotation[#, 7.3, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], LineBox[CompressedData["
 1:eJwVzr1KAgAUgNGblkRLUzRkQhBIDgY2NrU31RAoEfQAlVYKTk0O9gCNLQ1S
 YItGNTY4KEEERYQRRCC0t3caDt90fxZ29zf2xiJik7VExBl3ZJMRQ83pOufc
 EuMRfU3oQFP6pJP6rFP6qg+UueSQK45oU+WaGh3qdHlkzvyXzutIM/rjbEVP
 OOWGJl0a/3/wzeJExKdm9EPT+q6z+qYz+qLTeq8tjtmhwDbLlMhTJMcWSxxw
 QYekHVlWaPJLOhWxSo8/oQQq/Q==
-         "]], 
-        LineBox[{622, 651, 766, 869, 893, 915, 991, 1062, 1086, 1146, 1157, 
-         1219, 1250, 1333, 1276, 1338, 1363, 1444, 1484, 1603, 1517, 1615, 
-         1651, 1781, 1802}]},
-       "7.25`"],
-      Annotation[#, 7.25, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{576, 662, 696, 806, 731, 809, 843, 926, 951, 1023, 969, 1025,
-          1052, 1064, 1135, 1187, 1203, 1217, 1315, 1391, 1417, 1524, 1563, 
-         1594, 1733}], 
-        LineBox[{621, 650, 765, 868, 892, 968, 996, 1014, 1085, 1145, 1156, 
-         1218, 1179, 1222, 1256, 1337, 1362, 1443, 1483, 1602, 1516, 1614, 
-         1650, 1780, 1801}], 
-        LineBox[{1039, 983, 225, 1118, 1075, 1124, 1078, 1125, 1079, 1128, 
-         1081, 1129, 1082, 1134, 1087, 1067, 1050, 993, 1049, 989, 1044, 988, 
-         1043, 986, 1040, 985, 1039}]},
-       "7.2`"],
-      Annotation[#, 7.2, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{1800, 1779, 1649, 1613, 1489, 1453, 1385, 1442, 1361, 1336, 
-         1255, 1221, 1159, 1147, 1088, 1063, 995, 917, 897, 874, 772, 742, 
-         620}], LineBox[{575, 660, 586, 661, 695, 805, 838, 924, 947, 1021, 
-         1048, 1109, 1133, 1185, 1202, 1281, 1314, 1390, 1416, 1436, 1562, 
-         1698, 1732}]},
-       "7"],
-      Annotation[#, 7, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{574, 659, 692, 804, 837, 923, 946, 1019, 967, 1020, 1047, 
-         1108, 1132, 1184, 1201, 1216, 1313, 1389, 1415, 1523, 1561, 1697, 
-         1731}], LineBox[{619, 741, 771, 873, 896, 974, 998, 1068, 1090, 1148,
-          1161, 1228, 1258, 1342, 1365, 1452, 1488, 1612, 1648, 1778, 1693, 
-         1788, 1809}]},
-       "6.5`"],
-      Annotation[#, 6.5, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{628, 746, 777, 875, 899, 975, 1001, 1069, 1091, 1149, 1164, 
-         1229, 1261, 1343, 1368, 1454, 1494, 1617, 1657, 1787, 1808}], 
-        LineBox[{1726, 1696, 1555, 1522, 1411, 1388, 1307, 1213, 1200, 1183, 
-         1131, 1107, 1046, 1018, 945, 922, 862, 921, 833, 803, 688, 658, 
-         573}]},
-       "5.25`"],
-      Annotation[#, 5.25, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{572, 657, 687, 802, 832, 920, 941, 1017, 1042, 1106, 1127, 
-         1182, 1198, 1280, 1306, 1387, 1410, 1521, 1554, 1695, 1725}], 
-        LineBox[{632, 749, 779, 878, 901, 981, 1003, 1073, 1093, 1151, 1166, 
-         1235, 1263, 1347, 1370, 1460, 1496, 1623, 1659, 1790, 1811}]},
-       "4"],
-      Annotation[#, 4, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{570, 656, 684, 801, 831, 919, 940, 1016, 1041, 1105, 1126, 
-         1181, 1197, 1279, 1305, 1386, 1409, 1520, 1553, 1694, 1724}], 
-        LineBox[{1810, 1789, 1658, 1622, 1495, 1459, 1369, 1346, 1262, 1234, 
-         1165, 1150, 1092, 1072, 1002, 980, 900, 877, 778, 748, 631}]},
-       "3"],
-      Annotation[#, 3, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{636, 754, 783, 882, 904, 984, 1006, 1076, 1094, 1153, 1168, 
-         1239, 1264, 1350, 1374, 1467, 1500, 1628, 1666, 1792, 1812}], 
-        LineBox[{1719, 1585, 1548, 1430, 1406, 1326, 1300, 1209, 1196, 1140, 
-         1123, 1060, 1038, 961, 937, 856, 828, 715, 682, 584, 569}]},
-       "2"],
-      Annotation[#, 2, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{568, 583, 681, 714, 827, 855, 936, 960, 1037, 1059, 1122, 
-         1139, 1195, 1208, 1299, 1325, 1405, 1429, 1547, 1584, 1718}], 
-        LineBox[{640, 757, 785, 885, 906, 987, 1008, 1080, 1096, 1154, 1170, 
-         1244, 1266, 1354, 1376, 1472, 1502, 1634, 1668, 1794, 1814}]},
-       "1.5`"],
-      Annotation[#, 1.5, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{567, 582, 679, 707, 826, 850, 935, 956, 1036, 1056, 1121, 
-         1137, 1194, 1207, 1298, 1324, 1404, 1426, 1546, 1579, 1717}], 
-        LineBox[{644, 760, 790, 888, 909, 990, 1009, 1084, 1099, 1155, 1173, 
-         1249, 1269, 1357, 1379, 1477, 1507, 1639, 1674, 1795, 1815}]},
-       "1"],
-      Annotation[#, 1, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{565, 571, 675, 691, 822, 836, 932, 944, 1033, 1045, 1116, 
-         1130, 1191, 1199, 1292, 1312, 1399, 1414, 1538, 1560, 1711}], 
-        LineBox[{647, 770, 792, 895, 911, 997, 1011, 1089, 1101, 1160, 1175, 
-         1257, 351, 1380, 1487, 453, 1675, 1799, 1816}]},
-       "0.5`"],
-      Annotation[#, 0.5, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{563, 566, 671, 678, 817, 825, 931, 934, 1029, 1035, 1113, 
-         1120, 1190, 1193, 1287, 1297, 1396, 1403, 1532, 1545, 1705}], 
-        LineBox[{654, 784, 797, 905, 914, 1007, 1013, 1095, 1103, 1169, 1178, 
-         1265, 1275, 1375, 1383, 1501, 1513, 1667, 1683, 1813, 1818}]},
-       "0.3`"],
-      Annotation[#, 0.3, "Tooltip"]& ], 
-     TagBox[
-      TooltipBox[
-       {GrayLevel[0], Opacity[0.4], 
-        LineBox[{562, 564, 667, 674, 814, 820, 925, 930, 1022, 1028, 1110, 
-         1112, 1186, 1189, 1282, 1286, 1392, 1395, 1527, 1531, 1702}], 
-        LineBox[{655, 791, 800, 910, 918, 1010, 1015, 1100, 1104, 1174, 1180, 
-         1270, 1271, 1274, 1278, 405, 1512, 1519, 1682, 1692, 1817, 1819}]},
-       "0.2`"],
-      Annotation[#, 0.2, "Tooltip"]& ], {}, {}}, {InsetBox["0.2`", 1820], 
-     InsetBox["0.2`", 1821], InsetBox["0.3`", 1822], InsetBox["0.3`", 1823], 
-     InsetBox["0.5`", 1824], InsetBox["0.5`", 1825], InsetBox["1", 1826], 
-     InsetBox["1", 1827], InsetBox["1.5`", 1828], InsetBox["1.5`", 1829], 
-     InsetBox["2", 1830], InsetBox["2", 1831], InsetBox["3", 1832], 
-     InsetBox["3", 1833], InsetBox["4", 1834], InsetBox["4", 1835], 
-     InsetBox["5.25`", 1836], InsetBox["5.25`", 1837], InsetBox["6.5`", 1838],
-      InsetBox["6.5`", 1839], InsetBox["7", 1840], InsetBox["7", 1841], 
-     InsetBox["7.2`", 1842], InsetBox["7.2`", 1843], InsetBox["7.2`", 1844], 
-     InsetBox["7.25`", 1845], InsetBox["7.25`", 1846], InsetBox["7.3`", 1847],
-      InsetBox["7.3`", 1848], InsetBox["7.4`", 1849], InsetBox["7.4`", 1850], 
-     InsetBox["7.5`", 1851], InsetBox["7.5`", 1852], InsetBox["7.6`", 1853], 
-     InsetBox["7.6`", 1854], InsetBox["7.6`", 1855], InsetBox["7.7`", 1856], 
-     InsetBox["7.7`", 1857], InsetBox["7.8`", 1858], InsetBox["7.8`", 1859], 
-     InsetBox["7.9`", 1860], InsetBox["7.9`", 1861], InsetBox["7.9`", 1862], 
-     InsetBox["8", 1863]}}],
+          "]], 
+         LineBox[{622, 651, 766, 869, 893, 915, 991, 1062, 1086, 1146, 1157, 
+          1219, 1250, 1333, 1276, 1338, 1363, 1444, 1484, 1603, 1517, 1615, 
+          1651, 1781, 1802}]},
+        "7.25`"],
+       Annotation[#, 7.25, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{576, 662, 696, 806, 731, 809, 843, 926, 951, 1023, 969, 
+          1025, 1052, 1064, 1135, 1187, 1203, 1217, 1315, 1391, 1417, 1524, 
+          1563, 1594, 1733}], 
+         LineBox[{621, 650, 765, 868, 892, 968, 996, 1014, 1085, 1145, 1156, 
+          1218, 1179, 1222, 1256, 1337, 1362, 1443, 1483, 1602, 1516, 1614, 
+          1650, 1780, 1801}], 
+         LineBox[{1039, 983, 225, 1118, 1075, 1124, 1078, 1125, 1079, 1128, 
+          1081, 1129, 1082, 1134, 1087, 1067, 1050, 993, 1049, 989, 1044, 988,
+           1043, 986, 1040, 985, 1039}]},
+        "7.2`"],
+       Annotation[#, 7.2, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{1800, 1779, 1649, 1613, 1489, 1453, 1385, 1442, 1361, 1336, 
+          1255, 1221, 1159, 1147, 1088, 1063, 995, 917, 897, 874, 772, 742, 
+          620}], LineBox[{575, 660, 586, 661, 695, 805, 838, 924, 947, 1021, 
+          1048, 1109, 1133, 1185, 1202, 1281, 1314, 1390, 1416, 1436, 1562, 
+          1698, 1732}]},
+        "7"],
+       Annotation[#, 7, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{574, 659, 692, 804, 837, 923, 946, 1019, 967, 1020, 1047, 
+          1108, 1132, 1184, 1201, 1216, 1313, 1389, 1415, 1523, 1561, 1697, 
+          1731}], LineBox[{619, 741, 771, 873, 896, 974, 998, 1068, 1090, 
+          1148, 1161, 1228, 1258, 1342, 1365, 1452, 1488, 1612, 1648, 1778, 
+          1693, 1788, 1809}]},
+        "6.5`"],
+       Annotation[#, 6.5, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{628, 746, 777, 875, 899, 975, 1001, 1069, 1091, 1149, 1164, 
+          1229, 1261, 1343, 1368, 1454, 1494, 1617, 1657, 1787, 1808}], 
+         LineBox[{1726, 1696, 1555, 1522, 1411, 1388, 1307, 1213, 1200, 1183, 
+          1131, 1107, 1046, 1018, 945, 922, 862, 921, 833, 803, 688, 658, 
+          573}]},
+        "5.25`"],
+       Annotation[#, 5.25, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{572, 657, 687, 802, 832, 920, 941, 1017, 1042, 1106, 1127, 
+          1182, 1198, 1280, 1306, 1387, 1410, 1521, 1554, 1695, 1725}], 
+         LineBox[{632, 749, 779, 878, 901, 981, 1003, 1073, 1093, 1151, 1166, 
+          1235, 1263, 1347, 1370, 1460, 1496, 1623, 1659, 1790, 1811}]},
+        "4"],
+       Annotation[#, 4, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{570, 656, 684, 801, 831, 919, 940, 1016, 1041, 1105, 1126, 
+          1181, 1197, 1279, 1305, 1386, 1409, 1520, 1553, 1694, 1724}], 
+         LineBox[{1810, 1789, 1658, 1622, 1495, 1459, 1369, 1346, 1262, 1234, 
+          1165, 1150, 1092, 1072, 1002, 980, 900, 877, 778, 748, 631}]},
+        "3"],
+       Annotation[#, 3, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{636, 754, 783, 882, 904, 984, 1006, 1076, 1094, 1153, 1168, 
+          1239, 1264, 1350, 1374, 1467, 1500, 1628, 1666, 1792, 1812}], 
+         LineBox[{1719, 1585, 1548, 1430, 1406, 1326, 1300, 1209, 1196, 1140, 
+          1123, 1060, 1038, 961, 937, 856, 828, 715, 682, 584, 569}]},
+        "2"],
+       Annotation[#, 2, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{568, 583, 681, 714, 827, 855, 936, 960, 1037, 1059, 1122, 
+          1139, 1195, 1208, 1299, 1325, 1405, 1429, 1547, 1584, 1718}], 
+         LineBox[{640, 757, 785, 885, 906, 987, 1008, 1080, 1096, 1154, 1170, 
+          1244, 1266, 1354, 1376, 1472, 1502, 1634, 1668, 1794, 1814}]},
+        "1.5`"],
+       Annotation[#, 1.5, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{567, 582, 679, 707, 826, 850, 935, 956, 1036, 1056, 1121, 
+          1137, 1194, 1207, 1298, 1324, 1404, 1426, 1546, 1579, 1717}], 
+         LineBox[{644, 760, 790, 888, 909, 990, 1009, 1084, 1099, 1155, 1173, 
+          1249, 1269, 1357, 1379, 1477, 1507, 1639, 1674, 1795, 1815}]},
+        "1"],
+       Annotation[#, 1, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{565, 571, 675, 691, 822, 836, 932, 944, 1033, 1045, 1116, 
+          1130, 1191, 1199, 1292, 1312, 1399, 1414, 1538, 1560, 1711}], 
+         LineBox[{647, 770, 792, 895, 911, 997, 1011, 1089, 1101, 1160, 1175, 
+          1257, 351, 1380, 1487, 453, 1675, 1799, 1816}]},
+        "0.5`"],
+       Annotation[#, 0.5, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{563, 566, 671, 678, 817, 825, 931, 934, 1029, 1035, 1113, 
+          1120, 1190, 1193, 1287, 1297, 1396, 1403, 1532, 1545, 1705}], 
+         LineBox[{654, 784, 797, 905, 914, 1007, 1013, 1095, 1103, 1169, 1178,
+           1265, 1275, 1375, 1383, 1501, 1513, 1667, 1683, 1813, 1818}]},
+        "0.3`"],
+       Annotation[#, 0.3, "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[
+        {GrayLevel[0], Opacity[0.4], 
+         LineBox[{562, 564, 667, 674, 814, 820, 925, 930, 1022, 1028, 1110, 
+          1112, 1186, 1189, 1282, 1286, 1392, 1395, 1527, 1531, 1702}], 
+         LineBox[{655, 791, 800, 910, 918, 1010, 1015, 1100, 1104, 1174, 1180,
+           1270, 1271, 1274, 1278, 405, 1512, 1519, 1682, 1692, 1817, 1819}]},
+        
+        "0.2`"],
+       Annotation[#, 0.2, "Tooltip"]& ], {}, {}}, {InsetBox["0.2`", 1820], 
+      InsetBox["0.2`", 1821], InsetBox["0.3`", 1822], InsetBox["0.3`", 1823], 
+      InsetBox["0.5`", 1824], InsetBox["0.5`", 1825], InsetBox["1", 1826], 
+      InsetBox["1", 1827], InsetBox["1.5`", 1828], InsetBox["1.5`", 1829], 
+      InsetBox["2", 1830], InsetBox["2", 1831], InsetBox["3", 1832], 
+      InsetBox["3", 1833], InsetBox["4", 1834], InsetBox["4", 1835], 
+      InsetBox["5.25`", 1836], InsetBox["5.25`", 1837], 
+      InsetBox["6.5`", 1838], InsetBox["6.5`", 1839], InsetBox["7", 1840], 
+      InsetBox["7", 1841], InsetBox["7.2`", 1842], InsetBox["7.2`", 1843], 
+      InsetBox["7.2`", 1844], InsetBox["7.25`", 1845], 
+      InsetBox["7.25`", 1846], InsetBox["7.3`", 1847], InsetBox["7.3`", 1848],
+       InsetBox["7.4`", 1849], InsetBox["7.4`", 1850], InsetBox["7.5`", 1851],
+       InsetBox["7.5`", 1852], InsetBox["7.6`", 1853], InsetBox["7.6`", 1854],
+       InsetBox["7.6`", 1855], InsetBox["7.7`", 1856], InsetBox["7.7`", 1857],
+       InsetBox["7.8`", 1858], InsetBox["7.8`", 1859], InsetBox["7.9`", 1860],
+       InsetBox["7.9`", 1861], InsetBox["7.9`", 1862], InsetBox["8", 1863]}}], 
+   {EdgeForm[Thickness[0.0007943282347242806]], FaceForm[None], 
+    GeometricTransformationBox[
+     RectangleBox[{344.0173616813524, 13.355916283185248`}, \
+{168.46088419699055`, 5.137241589942452}], {{{{
+       1.0545399048337583`, -0.0074405595615102335`}, {0.00008187666651005879,
+        0.958315391472483}}, {-13.717989589404835`, 0.5357696342749931}}}]}},
   AspectRatio->0.4,
   Frame->True,
   FrameLabel->{{
      FormBox["\"y in mm\"", TraditionalForm], None}, {
      FormBox["\"x in mm\"", TraditionalForm], None}},
+  ImagePadding->{{31., 1.1}, {30., 0.1}},
   ImageSize->{964.484375, Automatic},
   Method->{},
-  PlotRange->{{0., 500.}, {0., 20.}},
+  PlotRange->{{-10.416666666666668`, 
+   510.4166666666667}, {-0.41666666666666674`, 20.416666666666668`}},
   PlotRangeClipping->True,
-  PlotRangePadding->{
-    Scaled[0.02], 
-    Scaled[0.02]}]], "Output",
- CellChangeTimes->{
-  3.633678898401969*^9, {3.6336789378769083`*^9, 3.6336789797563133`*^9}, {
-   3.6336790676424932`*^9, 3.633679089071457*^9}, {3.633679236707797*^9, 
-   3.633679288799567*^9}, {3.6336793237137623`*^9, 3.633679337726015*^9}, 
-   3.633679373855536*^9, {3.633679424814604*^9, 3.633679432906863*^9}, 
-   3.63367961465142*^9, {3.6336796935145407`*^9, 3.633679699859071*^9}, {
-   3.6336798083622007`*^9, 3.633679920018663*^9}, 3.633679991626005*^9, {
-   3.633680119569416*^9, 3.63368012922018*^9}, {3.633680192558003*^9, 
-   3.6336802077818403`*^9}, {3.6336809027713118`*^9, 3.633680908846107*^9}}]
-}, Open  ]],
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{{3.633779411253689*^9, 3.633779433078569*^9}, {
+  3.633779480615776*^9, 3.633779496227497*^9}, {3.6337796146003237`*^9, 
+  3.6337796211117163`*^9}, {3.633779753372684*^9, 3.633779756910551*^9}}],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.633678889934724*^9, 3.633678892941469*^9}}],
@@ -1976,49 +1975,47 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[557, 20, 6113, 152, 352, "Input"],
+Cell[6673, 174, 65904, 1163, 418, InheritFromParent],
+Cell[72580, 1339, 92, 1, 28, InheritFromParent],
 Cell[CellGroupData[{
-Cell[579, 22, 6113, 152, 352, "Input"],
-Cell[6695, 176, 65380, 1161, 418, "Output"]
-}, Open  ]],
-Cell[72090, 1340, 92, 1, 28, InheritFromParent],
-Cell[CellGroupData[{
-Cell[72207, 1345, 92, 1, 28, InheritFromParent],
-Cell[72302, 1348, 730, 16, 24, "Message"],
-Cell[73035, 1366, 745, 16, 24, "Message"],
-Cell[73783, 1384, 743, 16, 24, "Message"],
-Cell[74529, 1402, 741, 16, 24, "Message"],
-Cell[75273, 1420, 704, 15, 24, "Message"],
-Cell[75980, 1437, 1398, 24, 58, "Message"],
-Cell[77381, 1463, 1398, 24, 58, "Message"],
-Cell[78782, 1489, 1398, 24, 58, "Message"],
-Cell[80183, 1515, 676, 15, 24, "Message"],
-Cell[80862, 1532, 666, 15, 24, "Message"],
-Cell[81531, 1549, 676, 15, 24, "Message"],
-Cell[82210, 1566, 655, 14, 24, "Message"],
-Cell[82868, 1582, 659, 15, 24, "Message"],
-Cell[83530, 1599, 663, 15, 24, "Message"],
-Cell[84196, 1616, 664, 15, 24, "Message"],
-Cell[84863, 1633, 588, 13, 24, "Message"],
-Cell[85454, 1648, 652, 15, 24, "Message"],
-Cell[86109, 1665, 643, 15, 24, "Message"],
-Cell[86755, 1682, 655, 15, 24, "Message"],
-Cell[87413, 1699, 632, 14, 24, "Message"],
-Cell[88048, 1715, 638, 15, 24, "Message"],
-Cell[88689, 1732, 640, 15, 24, "Message"],
-Cell[89332, 1749, 643, 15, 24, "Message"],
-Cell[89978, 1766, 565, 13, 24, "Message"],
-Cell[90546, 1781, 781, 16, 34, "Message"],
-Cell[91330, 1799, 568, 12, 24, "Message"],
-Cell[91901, 1813, 587, 12, 24, "Message"],
-Cell[92491, 1827, 587, 12, 24, "Message"],
-Cell[93081, 1841, 598, 13, 24, "Message"],
-Cell[93682, 1856, 590, 13, 24, "Message"],
-Cell[94275, 1871, 585, 13, 24, "Message"],
-Cell[94863, 1886, 585, 13, 24, "Message"],
-Cell[95451, 1901, 577, 12, 24, "Message"],
-Cell[96031, 1915, 599, 13, 24, "Message"],
-Cell[96633, 1930, 592, 13, 24, "Message"],
-Cell[97228, 1945, 602, 13, 24, "Message"]
+Cell[72697, 1344, 92, 1, 28, InheritFromParent],
+Cell[72792, 1347, 730, 16, 24, "Message"],
+Cell[73525, 1365, 745, 16, 24, "Message"],
+Cell[74273, 1383, 743, 16, 24, "Message"],
+Cell[75019, 1401, 741, 16, 24, "Message"],
+Cell[75763, 1419, 704, 15, 24, "Message"],
+Cell[76470, 1436, 1398, 24, 58, "Message"],
+Cell[77871, 1462, 1398, 24, 58, "Message"],
+Cell[79272, 1488, 1398, 24, 58, "Message"],
+Cell[80673, 1514, 676, 15, 24, "Message"],
+Cell[81352, 1531, 666, 15, 24, "Message"],
+Cell[82021, 1548, 676, 15, 24, "Message"],
+Cell[82700, 1565, 655, 14, 24, "Message"],
+Cell[83358, 1581, 659, 15, 24, "Message"],
+Cell[84020, 1598, 663, 15, 24, "Message"],
+Cell[84686, 1615, 664, 15, 24, "Message"],
+Cell[85353, 1632, 588, 13, 24, "Message"],
+Cell[85944, 1647, 652, 15, 24, "Message"],
+Cell[86599, 1664, 643, 15, 24, "Message"],
+Cell[87245, 1681, 655, 15, 24, "Message"],
+Cell[87903, 1698, 632, 14, 24, "Message"],
+Cell[88538, 1714, 638, 15, 24, "Message"],
+Cell[89179, 1731, 640, 15, 24, "Message"],
+Cell[89822, 1748, 643, 15, 24, "Message"],
+Cell[90468, 1765, 565, 13, 24, "Message"],
+Cell[91036, 1780, 781, 16, 34, "Message"],
+Cell[91820, 1798, 568, 12, 24, "Message"],
+Cell[92391, 1812, 587, 12, 24, "Message"],
+Cell[92981, 1826, 587, 12, 24, "Message"],
+Cell[93571, 1840, 598, 13, 24, "Message"],
+Cell[94172, 1855, 590, 13, 24, "Message"],
+Cell[94765, 1870, 585, 13, 24, "Message"],
+Cell[95353, 1885, 585, 13, 24, "Message"],
+Cell[95941, 1900, 577, 12, 24, "Message"],
+Cell[96521, 1914, 599, 13, 24, "Message"],
+Cell[97123, 1929, 592, 13, 24, "Message"],
+Cell[97718, 1944, 602, 13, 24, "Message"]
 }, Open  ]]
 }
 ]
