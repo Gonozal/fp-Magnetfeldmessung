@@ -1,5 +1,5 @@
-X=45 x 5mm Y=6 x 8mm z=0mm
-X Y B
+#X=45 x 5mm Y=6 x 8mm z=0mm
+#X Y B
 1 1 +0.0526 
 2 1 +0.1143 
 3 1 +0.2528 

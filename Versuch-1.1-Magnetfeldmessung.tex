@@ -18,74 +18,12 @@
 % \usepackage[square]{natbib}
 % Paket zum Plotten von Datensätzen
 \usepackage{pgfplots}
-\pgfkeys{%
-  /pgfplots/Streudaten/.style={%
-    /pgf/number format/use comma,
-    legend pos=north east,
-    xlabel=Streuvektor s in 1/nm,
-    x tick label style={/pgf/number format/1000 sep=},
-    ylabel=$I\cdot s^{2}$,
-    y tick label style={/pgf/number format/1000 sep=},
-    width=0.38\linewidth,
-    height=0.40\linewidth,
-    scale only axis,
-    xmin=0,
-    xmax=0.44,
-    grid=both,
-    ymin=-10,
-    %ymax=0.0045,
-    tick align=outside,
-    tickpos=left,
-    minor x tick num=3,
-    minor y tick num=4,
-    minor grid style={dotted,thin}
-  }
-}
+\usepgfplotslibrary{patchplots}
+
 
 \pgfkeys{%
-  /pgfplots/Autokorrel/.style={%
-    /pgf/number format/use comma,
-    legend pos=north east,
-    xlabel=u  in  nm,
-    x tick label style={/pgf/number format/1000 sep=},
-    ylabel=$K(u)$ in $\frac{e}{nm^{6}}$,
-    y tick label style={/pgf/number format/1000 sep=},
-    width=0.38\linewidth,
-    height=0.30\linewidth,
-    scale only axis,
-    xmin=0,
-    xmax=25,
-    grid=both,
-    ymin=-105,
-    ymax=155,
-    tick align=outside,
-    tickpos=left,
-    minor x tick num=3,
-    minor y tick num=4,
-    minor grid style={dotted,thin}
-  }
-}
-
-\pgfkeys{%
-  /pgfplots/tabh/.style={%
-    /pgf/number format/use comma,
-    legend pos=north east,
-    x tick label style={/pgf/number format/1000 sep=},
-    xlabel=Unterkühlung in $K$,
-    y tick label style={/pgf/number format/1000 sep=},
-    width=0.38\linewidth,
-    height=0.30\linewidth,
-    scale only axis,
-    xmin=0,
-    xmax=100,
-    grid=both,
-    ymin=3,
-    ymax=6,
-    tick align=outside,
-    tickpos=left,
-    minor x tick num=3,
-    minor y tick num=4,
-    minor grid style={dotted,thin}
+  /pgfplots/seperators/.style={%
+    /pgf/number format/use comma
   }
 }
 
@@ -241,8 +179,7 @@ table[x expr=\thisrowno{0} * 5, y expr=\thisrowno{2} * (-1)] {data/Ausrichtung.t
 \end{figure}
 \end{center}
 
-
-Zur Vermessung des Quadrupols wird die Magnetfeldstärke im zuerst bei $0 A$ betriebenen Magneten mit einer Hall-Sonde an 45 Messpunkte in $5 mm$ Abständen entlang der X-Achse der CNC-Einheit aufgenommen, wobei soch sowohl die ersten als auch die letzten 6 Messpunkte außerhalb des Quadrupols befinden. Diese Messreihe wird anschließend für 5 weitere Positionen im Quadrupol in Abständen von $8mm$ entlang der Y-Achse der CNC-Einheit widerholt. Diese Messreihe aus insgesamt 270 Messpunkten wurde von einem Computerprogramm nach Eingabe der gewünschten Parameter automatisch durchgeführt.
+Zur Vermessung des Quadrupols wird die Magnetfeldstärke im zuerst bei $0 A$ betriebenen Magneten mit einer Hall-Sonde an 45 Messpunkte in $5 mm$ Abständen entlang der X-Achse der CNC-Einheit aufgenommen, wobei soch sowohl die ersten als auch die letzten 6 Messpunkte außerhalb des Quadrupols befinden. Um nicht nur die Magnetfeldstärke sondern auch ihren Gradienten bestimmen zu können, muss diese Messreihe anschließend für 5 weitere Positionen im Quadrupol in Abständen von $8mm$ entlang der Y-Achse der CNC-Einheit widerholt werden. Diese Messreihe aus insgesamt 270 Messpunkten wurde von einem Computerprogramm nach Eingabe der gewünschten Parameter automatisch durchgeführt.
 
 Im Anschluss wird die Messung für 5 weitere Stromstärken in Schritten von 2A von 10A bis 2A widerholt.
 
@@ -263,12 +200,139 @@ Die zentrale Positionierung der Rotationsachse der Spule erwieß sich dabei als 
 
 \chapter{Auswertung}
 
-\section{Vermessung des Gradientenprofils des Quadrupols}
+\section{Vermessung des Remanenzgradientenprofils des Quadrupols}
+Zuerst wird das Remanenzgradientenprofil, also das Gradientenprofil des Quadrupols ohne angelegten Strom bestimmt. Dazu werden bei festgehaltenem x-Wert in y-Richtung benachtbarte Messwerte des Magnetfeldes voneinaner subtrahiert.
+\begin{center}
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+    legend pos=south east,
+    title={Remanenzgradientenprofil des Quadrupols},
+    xlabel=$x$ in $mm$,
+    ylabel=$\nabla_y (B)$ in $\frac{mT}{mm}$,
+    width=0.9\textwidth,
+    height=9cm,
+    xmin=0,
+    xmax=220,
+    grid=both,
+    ymin=-0.01,
+    ymax=0.065,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin},
+    seperators
+]
+\addplot[red, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-0A-MeanGradients.txt};
+\addlegendentry{Magnetfeldgradient}
+\addplot[pink, mark=x, mark size=0pt, samples=20, domain=60:170] {0.0606932 + 0.0000131731*x};
+\addlegendentry{Fitgerade Plateaubereich}
+\addplot[teal, mark=x, mark size=0pt, samples=20, domain=20:85] {-0.0387665 + 0.00130992*x};
+\addlegendentry{Fitgerade des Randfeldes}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{}
+\end{figure}
+\end{center}
 
+
+\subsection{Fitwerte}
+
+Randbereich: $f(x) = a \cdot x + b$
+\begin{center}
+  \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.5cm}|}
+    \hline
+    Fitparameter & Wert                   &  Standardabweichung \\ \hline
+    a            & $1,31 \cdot 10^{-3}$   & $4 \cdot 10^{-5}$   \\ \hline
+    b            & $-3,88 \cdot 10^{-2}$  & $2,2 \cdot 10^{-3}$ \\ \hline
+	\end{tabular}
+\end{center}
+
+
+Plateaubereich: $f(x) = a \cdot x + b$
+\begin{center}
+  \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.5cm}|}
+    \hline
+    Fitparameter & Wert                  & Standardabweichung  \\ \hline
+    a            & $1,31 \cdot 10^{-5}$  & $1,7 \cdot 10^{-6}$ \\ \hline
+    b            & $6.07 \cdot 10^{-2}$  & $2 \cdot 10^{-4}$   \\ \hline
+	\end{tabular}
+\end{center}
+
+\section{Vermessung der Gradientenprofile des Quadrupols}
+\begin{center}
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+    legend pos=north west,
+    title={Gradientenprofile des Quadrupols},
+    xlabel=$x$ in $mm$,
+    ylabel=$\nabla_y (B)$ in $\frac{mT}{mm}$,
+    width=0.9\textwidth,
+    height=13cm,
+    xmin=0,
+    xmax=220,
+    grid=both,
+    ymin=-0.03,
+    ymax=6,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin},
+    seperators
+]
+\addplot[red, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-2A-MeanGradients.txt};
+\addlegendentry{I=2A}
+\addplot[blue, only marks, mark=+, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-4A-MeanGradients.txt};
+\addlegendentry{I=4A}
+\addplot[yellow, only marks, mark=*, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-6A-MeanGradients.txt};
+\addlegendentry{I=6A}
+\addplot[orange, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-8A-MeanGradients.txt};
+\addlegendentry{I=8A}
+\addplot[teal, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
+table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-10A-MeanGradients.txt};
+\addlegendentry{I=10A}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{}
+\end{figure}
+\end{center}
+
+\subsection{Bestimmung der magnetischen Länge des Quadrupols}
+
+
+\begin{center}
+  \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
+    \hline
+    Strom in $A$ & $L_m$ in $mm$ & $\Delta L_m$ in $mm$ \\ \hline
+    0            & 123.1         & 2.2                  \\ \hline
+    2            & 126.2         & 1.4                  \\ \hline
+    4            & 126.2         & 1.4                  \\ \hline
+    6            & 126.3         & 1.3                  \\ \hline
+    8            & 126.3         & 1.4                  \\ \hline
+    10           & 126.3         & 1.3                  \\ \hline
+	\end{tabular}
+\end{center}
+
+Aus den einzelnen Werten der magnetischen Länge lässt sich duch Bilden des Mittelwerts ein endgültiger Wert für $L_m$ berechnen. Wir erhalten $L_m=125,7mm\pm0,6mm$
 
 \section{Vermessung des Dipols in der xy-Ebene}
 
 Fester strom, alle positionen
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{img/steererxy.png}
+\caption{Magnetfeldstärke im Steerer in Abhängigkeit von der Position. Wie erwartet ergibt sich ein starker Gradient an den offenen enden des Steerers. Das Feld ist im inneren des Steerers allerdings nicht homogen sondern weist deutliche Schwankungen auf.}
+\end{figure}
 
 \section{Magnetfeld des Dipols in Abhängigkeit des Spulenstroms}
 
