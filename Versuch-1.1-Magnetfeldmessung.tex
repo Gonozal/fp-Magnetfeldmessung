@@ -187,11 +187,14 @@ Während Dipole in Beschleunigern zur Umleitung von Teilchenstrahlen verwendet w
 
 Im Idealfall sind die Polschuhe dabei von unendlich ausgedehnter, hyperbolischer Form, was sich in der Realität jedoch als unpraktikabel erweist. Aus diesem Grund werden heutzutage häufig durch numerische Näherungsverfahren für die Anwendung optimierte Polschuhe eingesetzt, um unerwünschte Dipol- oder Multipolanteile höhrer Ordnung zu unterdrücken. 
 
-\section{Bewegung geladener Teilchen im Magnetfeld}
-
 \section{Diskrete Fourier-Transformation}
+Bei der Messung der Multipolkomponenten im Quadrupol kommt eine rotierende Spule zum Einsatz, wobei mit einem Oszilloskop die vom Magneten induzierte Spannung aufgenommen wird. Die so aufgenommene Spanungskurve setzt sich aus verschiedenen Sinusschwingungen zusammen, welche den jeweiligen im Quadrupol vorhandenen Multipolkomponenten entsprechen. Um diese Daten weitterzuverarbeiten, müssen zuerst die aufgneommenen Frequenzen mit Hilfer der diskreten Fourier-Transformation (DFT) isoliert werden. Vorraussetzung hierfür ist, dass die Messpunkte $x(n)$ bekannt sind und sich in konstantem zeitlichen Abstand $T$ zueinander befinden. Abgeleitet aus der Fourier-Transformation ergibt sich für die DFT:
+$$X[k]= \sum_{n=0}^{N-1} x\left( n \right) \cdot \exp{-jkn \frac{2\pi}{N}}, k = 0, 1, 2, \dots, N-1$$
+Mit der Anzahl der Abtastwerte N. Eine hohe Zahl für N vergrößert dabei die Feinheit der Abtastung, da das durch die DFT erhaltenen Frequenzraster k direkt von N abhängen. Die bestimmten Frequenzen ergeben sich zu 
+$X[k]=k\frac{f_s}{N}$
+wobei $f_s$ die Abtastfrequenz bei der Datenaufnahme angibt.
 
-
+Um optimale Ergebnisse mit der DFT zu erhalten, sollte die Abtastfrequenz ein ganzzahliges Vielfache der auftretenden Schwingungsfrequenzen sein, da sie sonst durch benachtbarte Frequenzen angenähert werden müssen. Des weiteren ist darauf zu Achten, dass das aufgenommene Signal periodisch fortsetzbar ist, das Ende also möglichst sprungfrei an den Anfang anschließt. Gegebenenfalls empfiehlt es sich, Messdaten am Ende zu verwerfen, um eine möglichst gute fortsetzbarkeit zu erreichen.
 \chapter{Durchführung}
 \section{Vermessung des Gradientenprofils des Quadrupols}
 
