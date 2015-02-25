@@ -121,20 +121,73 @@
 In diesem Versuch geht es um die Vermessung von Elektromagneten, wie sie in Teilchenbeschleunigeranlagen eingesetzt werden. In diesem Gebiet ist oft eine hohe Genaugkeit für die Fokussierung und Richtung des Teilchenstrahls erforderlich, weshalb die Magnete präzise gefertigt und montiert werden müssen. Anhand  des Praktikumsversuchs wird aufgezeigt, wie man die charakteristischen Größen der jeweiligen Magnete, also die magnetische Flussdichte eines Dipolmagneten und den Feldgradienten eines Quadrupolmagneten quantitativ untersuchen kann und somit z.B. Rückschlüsse auf die Qualität des Magneten oder dessen Ausrichtung treffen kann.
 
 \chapter{Grundlagen}
+\section{Hall-Effekt}
+Der große Teil der Messungen in diesem Versuch wird mit einer Hall-Sonde durchgeführt, deren Funktionsweise auf dem nach Edwin Hall benannten Hall-Effekt beruht. Dieser beschreibt das Entstehen einer Spannung in einem stromdurchflossenen Leiter, der sich in äußeren Magnetfeld befindet.
+
+Diese Spannung lässt sich aus der Tatsache ableiten, dass Strom durch bewegte Elektronen hervorgerufen wird. Da Elektronen geladene Teilchen sind, wirkt bei der Bewegung im Magnetfeld die Lorenzkraft $$\vec{F_L} = q \cdot \vec{v} \times \vec{B}$$
+
+Beschränkt man sich auf die Messung der Magnetfeldkomponente senkrecht zur Ausrichtung des Leiters bzw.\ der Hall-Sonde, so lässt sich diese Gleichung o.b.d.A. schreiben als
+$$\vec{F_L} = q \cdot v \cdot \vec{e_x} \times B \cdot \vec{e_z}$$
+$$\vec{F_L} = q \cdot v  \cdot B \cdot \vec{e_y}$$
+
+Diese Kraft auf die bewegten Elektronen führt zu einer inhomogenen Ladungsverteilung der Elektronen , wodurch ein Elektrisches Feld aufgebaut wird. Dieses übt ebenfalls eine Kraft 
+$$\vec{F_E}=q \cdot \vec{E}$$
+auf die Elektronen aus, welche der Lorenzraft entgegengerichtet ist. Bereits nach sehr kurzer Zeit stellt sich somit ein Gleichgewichtszustand ein:
+$$q \cdot \vec{E} = q \cdot v  \cdot B \cdot \vec{e_y}$$
+Geht man von einem homogenen elektrischen Feld in einem Leiter der Breite b entlang der y-Richung aus, so lässt sich das Feld schreiben als 
+$$\vec{E} = \frac{U_H}{b}\cdot \vec{e_y}$$
+Einsetzen in die Gleichgewichtsgleichung und Auflösen nach $U_H$ ergibt
+$$U_H = b \cdot v \cdot B$$
+
+Leider ist die Geschwindigkeit $v$ der Elektronen in der Regel nicht direkt messbar, weswegen diese durch die angelegten Stromstärke 
+$$I= n\cdot q \cdot b \cdot d \cdot v$$
+mit den Leiterspezifischen Größen für die Dicke $d$ und der Ladungsträgerdichte $n$, ausgedrückt werden muss.
+
+Fasst man zusätzlich noch alle Sondenspezifischen größen in der Hall-Konstanten $R_H = \frac{1}{n\cdot q}$ zusammen, erhält man die Formel
+
+$$U_H = R_H \frac{I\cdot B}{d}$$
+
 \section{Elektromagnetismus}
+\subsection{Ferromagnetismus}
 
+Ferromagnetische Stoffe sind im inneren aus sogenannten Weißschen Bezirken aufgebaut, welche aus parlell angeordneten magnetischen Dipolen, sogenannten Elementarmagneten bestehen.
+Diese Bezirke kommen dadurch Zustande, dass die zuerst zufällig ausgerichteten Elementarmagnete mit benachtbarten Elementarmagneten wechselwirken und sich paralell zueinander ausrichten. Dadurch wird deren magnetische Kraft verstärkt und die Wechselwirkungsreichweite steigt an, es richten sich immer mehr benachtbarte Elementarmagnete gleich aus. Durch den statistischen Charakter der ursprünglichen Ausrichtung der Elementarmagnete, sind die Magnetisierungsrichtungen zweier so herangewachsener benachtbarter Bezirke allerdings in der Regel nicht gleich ausgerichtet.
 
-\subsection{Funktionsweise}
+Wird jedoch jetzt ein äußeres Magnetfeld angelegt, können zum Magnetfeld ähnlich ausgerichtete Bezirke "`umklappen"', wodurch die Anzahl der paralell zum äußeren Magnetfeld ausgerichteten Bezirke erhöht wird, was wiederrum das angelegte Magnetfeld verstärkt. Je stärke das von außen angelegte Magnetfeld ist, desto mehr Weißsche Bezirke werden zur änderung ihrer Magnetisierungsrichtung gezwungen, und desto stärker wird das äußere Magnetfeld verstärkt. Ab einer Gewissen äußeren Magnetfeldstärke sind allerdings nahezu alle Bezirke paralell ausgerichtet und es wird eine Sättigung der Verstärkung erreicht. Bei den meisten Ferromagneten geschieht dies ab einer Magnetfeldstärke von etwa $1T$.
 
-TODO: Ferromagnetismus, Hysterese
+Wird nach einmaliger Magnetisierung das äußere Magnetfeld wieder abgeschaltet, so wird die paralelle Ausrichtung der Weißschen Bezirke im Ferromagneten durch thermische Prozesse nur zum Teil weider aufgehoben, es bleibt einer gewisse Restmagnetisierung des Ferromagneten bestehen. Dieser Effekt wird Hysterese genannt.
 
-\subsection{Bauformen}
+\begin{figure}[H]
+\centering
+\includegraphics[width=80mm]{img/hysterese.png}
+\caption{Typische Hysteresekurve eines Ferromagneten. Der rote Pfeil beschreibt die erstmalige Magnetisierung des Materials. Als Remanz wird die verbleibende Magnetisierung bezeichnet, die nach Abschalten des äußeren Feldes übrig bleibt. Die Koerzitivfäldstärke beschreibt dagegen die Feldstärke die entgegen der ursprügnlichen Richtung angegelgt werden muss, um die Magnetisierung des Ferromagneten aufzuheben.\cite{hysterese}}
+\end{figure}
 
-TODO: Dipol- Quadrupolmagneten, Multipole
+\subsection{Dipolmagnete}
+
+Dipolmagnete werden häufig in der Beschleunigerphysik zur Umlenkung von hochenergetischen Teilchenstrahlen verwendet. Sie bestehen aus einem magnetischen Nord- und einem Südpol, zwischen welchem im Idealfall ein homogenes Magnetfeld besteht. Passiert ein Teilchenstrahl dieses Magnetfeld, so wird er auf Grund der Lorenzkraft $\vec{F_L} = q \cdot \vec{v} \times \vec{B}$ senkrecht zur Magnetfeld und seiner Bewegungsrechtung abgelenkt. Anstatt eines Dipolmagneten kann man zwar theoretisch auch ein elektrisches Feld, z.B. das Feld zwischen den Platten eines Plattenkondensators, benutzen, allerdings skaliert die auf einen Teilchenstrahl ausgeübte Kraft beim Magnetfeld im Gegensatz zum elektrischen Feld linear mit der Geschwindigkeit. Aus diesem Grund finden elektrische Felder in Teilchenbeschelunigern meist nur in Bereichen Anwendung, in denen der Teilchenstrahl relativ geringe Geschwindigkeiten aufweist.
+
+In Beschelunigern finden bei benötigten Magnetfeldern von bis zu 1T meist C-Förmige Dipolmagnete mit ferromagnetischem Joch Anwendung. Sollte die benötigte Magnetfeldstärke diesen Wert überschreiten, bietet es sich auf Grund der Sättigung der feldverstärkenden Eigenschaften von Ferromagneten oft an, statdessen Supraleiter für die Herstellung von Dipolamagneten zu verwenden.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=60mm]{img/dipol.png}
+\caption{C-Förmiger Dipolmagnet mit zur Bestimmung der Magnetfeldstärke verwendetem Integrationsweg \cite{anleitung}.}
+\end{figure}
+
+\subsection{Quadrupolmagnete}
+
+Während Dipole in Beschleunigern zur Umleitung von Teilchenstrahlen verwendet werden, benutzt man Quadrupole zur Fokusierung von Strahlen. Wird ein ausgedehnter Teilchenstrahl entlang der  magnetischen Achse des Quadrupols geleitet, so wird er in einer Achsenrichtung senkrecht zum Geschwindigkeitsvektor fokusiert und in die andere Richtung defokusiert. Aus diesem Grund werdenzur Fokusierung von Teilchenstrahlen immer mehrere in Reihe geschaltete Quadrupole benötigt: Der erste Quadrupol fokusiert o.b.d.A. in x-Richtung und defokusiert in y-Richtung, während der 2. in x-Richtung defokusiert und in y-Richtung fokusiert. Da die Magnetfeldstärke und somit die auf ein bewegtes Teilchen wirkende Lorenzkraft mit zunehmendem Abstand zur magnetischen Achse zunimmt, ist bei richtiger Kalibrierung die defokusierende Wirkung des 2. Quadrupols in der x-Achse geringer als dessen fokusierende Wirkung in Richtung der y-Achse.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=60mm]{img/quadrupol.png}
+\caption{Schematische Darstellung eines Quadrupols mit Magnetfeldlinien und Kräften, die auf ein in Zeichenebende durch den Quadrupol geleitetes negativ geladenes Teilche wirken \cite{anleitung}.}
+\end{figure}
+
+Im Idealfall sind die Polschuhe dabei von unendlich ausgedehnter, hyperbolischer Form, was sich in der Realität jedoch als unpraktikabel erweist. Aus diesem Grund werden heutzutage häufig durch numerische Näherungsverfahren für die Anwendung optimierte Polschuhe eingesetzt, um unerwünschte Dipol- oder Multipolanteile höhrer Ordnung zu unterdrücken. 
 
 \section{Bewegung geladener Teilchen im Magnetfeld}
-
-TODO: Hall-Effekt, Induktion
 
 \section{Diskrete Fourier-Transformation}
 
@@ -442,7 +495,7 @@ Ein noch größerer Anteil unerwünschter Komponenten kommt vermutlich von der v
 \begin{tikzpicture}
 \begin{axis}[
     legend pos=north east,
-    title={Multipolanteile im Quadrupol},
+    title={Normierte Multipolanteile im Quadrupol},
     xlabel=Multipolkomponente,
     ylabel=Anteil der Multipolkomponente,
     width=0.95\textwidth,
@@ -490,5 +543,6 @@ Weiterhin konnten wir eine genaue Vermessung des Magnetfeldes in einer Ebene im 
 \newpage
 \begin{thebibliography}{100}
   \bibitem{anleitung} \url{Versuchsanleitung}
+  \bibitem{hysterese} \url{http://www.chemgapedia.de/vsengine/media/vsc/de/ph/14/ep/einfuehrung/magnetfeld/bilder/hysterese.png}
 \end{thebibliography}
 \end{document}
