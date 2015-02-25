@@ -336,7 +336,9 @@ Aus den einzelnen Werten der magnetischen Länge lässt sich duch Bilden des Mit
 Dieser Wert liegt wie erwartet etwas oberhalb der geometrische Länge, welche wir auf $(120 \pm 10)mm$ abgeschätzt haben. Der relativ große Fehler von 1cm beim Messen der geometrischen länge liegt in der Tatsache begründet, dass sich eine Längenmessung mit Hilfe eines Zollstocks im inneren des abgeschirmten Quadrupols selbst zu zweit als äußerst schwer herausgestellt hat.
 
 \section{Strom-Gradienten-Kalibrierung}
+Wie schon bei Vermessung des des Remanenzgradientenprofils angemerkt, erzeugt der Quadrupol auf Grund von Remanenz selbst ohne Stromzufuhr ein magnetisches Feld in seinem inneren. Es genügt somit für den Betrieb in Beschleunigern nicht, einen unbenutzten Magneten im Teilchenstrahl einfach auszuschalten. Um im inneren des Magneten kein Feld und somit auch keinen Magnetfeldgradienten zu erzuegen, muss ein Strom mit einer Flussrichtung entgegen der Betriebsrichtung angelegt werden.
 
+Zur Bestimmung der größe dieses Stroms ist es notwendig, eine Strom-Gradienten Kalibrierung durchzuführen. Dazu werden die gemessenen Plateauwerte des Magnetfeldgradienten gegen die angelegte Stromstärke aufgetragen.
 \begin{center}
   \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
     \hline
@@ -350,6 +352,7 @@ Dieser Wert liegt wie erwartet etwas oberhalb der geometrische Länge, welche wi
 	\end{tabular}
 \end{center}
 
+Ein Anschlißender linearer Fit der Form $g(I) = m \cdot I + g_0$ erlaubt es anschließend, die Stromstärke zu bestimmen, bei der von Quadrupol kein Magnetfeld erzeugt wird.
 
 \begin{center}
 \begin{figure}[H]
@@ -383,6 +386,7 @@ table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-CurrentGradien
 \end{figure}
 \end{center}
 
+Wir erhalten aus dem Fit einen zum Ausschalten des Quadrupols benötigten Strom von $$I_k=(-0,127 \pm 0.018)A$$
 \subsection{Fitwerte}
 
 Zur Strom-Gradienten-Kalibrierung wurde ein linear Fit der Form $g(I) = m \cdot I + g_0$ verwendet.
@@ -395,7 +399,10 @@ Zur Strom-Gradienten-Kalibrierung wurde ein linear Fit der Form $g(I) = m \cdot 
 	\end{tabular}
 \end{center}
 
+\clearpage{}
 \section{Vermessung des Dipols in der xy-Ebene}
+
+Dipole werden in Beschleunigern zum umlenken des Teilchenstrahls verwendet. Dabei muss man jedoch darauf achten, dass das vom Teilchenstrahl passierte Feld möglichst homogen ist, da sonst der Strahl defokusiert wird. Aus diesem Grund erscheint es vernünftig, die Magnetfeldstärke im inneren des Dipols vor der Verwendung zu vermessen.
 
 \begin{figure}[H]
 \centering
@@ -426,7 +433,7 @@ Dies deckt sich mit dem von uns durch abzählen der Windungen geschätzten Wer v
 
 \section{Messung der Multipolanteile des Quadrupols}
 
-Im Idealfall besitzt ein Quadrupol nur eine Quadrupolkomponente, eine Dipolkomponente oder Komponenten höhrer Ordnung sind unerwünscht, treten jedoch in geringen Maßen bei den Meisten Quadrupolen auf. Da der von uns benutzte Quadrupol zu einer Zeit hergestellt wurde, in dem durch numerische Optimationsverfahren optimierte Quadrupole nur schwer herzustellen waren, erwarten wir einen signifikanten Anteil an unerwünschten Komponenten.
+Im Idealfall besitzt ein Quadrupol nur eine Quadrupolkomponente, eine Dipolkomponente oder Komponenten höhrer Ordnung sind unerwünscht, treten jedoch in geringen Maßen bei den Meisten Quadrupolen auf. Da der von uns benutzte Quadrupol zu einer Zeit hergestellt wurde, in dem durch numerische Optimationsverfahren optimierte Quadrupole, insbesondere die benötigten Polschuhe, nur schwer herzustellen waren, erwarten wir einen signifikanten Anteil an unerwünschten Komponenten.
 
 Ein noch größerer Anteil unerwünschter Komponenten kommt vermutlich von der verwendeten Messmethode, insbesondere war die einzige uns zur Verfügung stehende Methode zur genauen Positionierung der rotierenden Spule unser Augenmaß. Des weiteren war aus messtechnischen Gründen die Spule außermittig an die Rotationsachse angebracht, was ein genaues Abschätzen der Positionierung weiter erschwerte. Um dies auszugleichen haben wir 3 Messungen an unterschiedlichen Positionen entlang der y-Achse durchgeführt.
 
@@ -463,13 +470,19 @@ Ein noch größerer Anteil unerwünschter Komponenten kommt vermutlich von der v
 \addplot table[x index=0, y index=1] {data/fourier/F0019CH1-Furier.txt};
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{}
+\captionof{figure}{Gemessene Multipolkomponenten des Quadrupols, normiert auf die Quadrupolkomponente und gemessen an 3 unterschiedlichen Positionen senkrecht zur magnetischen Achse des Quadrupols.}
 \end{figure}
 \end{center}
 
+Während die Multipolkomponenten höherer Ordnung bei allen 3 Messungen annährend gleich ausfielen, ist eine deutliche geringere Dipolkomponente bei der ersten Messung zu sehen, was auf eine zentralere Positionierung der rotierenden Spule schließend lässt. Dennoch ist die Dipolkomponente mit 21\% des Quadrupolaneil sehr groß.
+
+Sogar die höheren Multipolkomponenten, welche im Vergleich zur Dipolkomponente klein ausfallen, liegen deutlich über für Teilchenbeschleuniger erwünschte Toleranzgrenzen, welche im Promille bis geringen Prozentbreich liegen.
+
 
 \chapter{Fazit}
+Im diesem Versuch ist es uns gelungen, einen Quadrupolmagneten sowohl im Bezug auf sein Gradientenprofil als auch auf seine Multipolkomponenten zu vermessen. Die Vermessung des Gradientenprofils war auf Grund der verwendeten Messaparatur sehr genau möglich, was es uns ermöglicht hat, die Magnetische Länge des Quadrupols mit geringer Messunsicherheit von weniger als 0.5\$ anzugeben. Die Vermessung der Multipolkomponenten hat sich als schwerer erwiesen, da für uns eine exakte Positionierung der rotierenden Spule im inneren des Quadrupols nicht möglich war. Dies haben wir durch widerholte Messungen an leicht unterschiedlichen Positionen versucht auszugleichen.
 
+Weiterhin konnten wir eine genaue Vermessung des Magnetfeldes in einer Ebene im inneren des Dipols durchführen. Dabei haben wir festgestellt, dass das vom Dipol erzeugte Feld keinesfalls homogen ist, sondern deutliche Unregelmäßigkeiten aufweist. Dies stammt möglicherweise von der nicht genauen Wicklung des Spulendrahtes.
 
 %ENDE INHALT
 \cleardoublepage{}
