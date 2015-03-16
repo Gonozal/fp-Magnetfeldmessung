@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     19329,        447]
-NotebookOptionsPosition[     18827,        426]
-NotebookOutlinePosition[     19182,        442]
-CellTagsIndexPosition[     19139,        439]
+NotebookDataLength[     19282,        449]
+NotebookOptionsPosition[     18790,        428]
+NotebookOutlinePosition[     19145,        444]
+CellTagsIndexPosition[     19102,        441]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,109 +22,107 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Specify", " ", "folder", " ", "structure", " ", "and", " ", "filenames"}],
+    "*)"}], "\[IndentingNewLine]", 
   RowBox[{
+   RowBox[{
+    RowBox[{"Clear", "[", " ", 
+     RowBox[{
+     "Filename", ",", " ", "Filepath", ",", " ", "rawData", ",", " ", 
+      "partitionedData", ",", " ", "partitionedData2", ",", " ", 
+      "ArrayUnitsToMM", ",", " ", "UnitsToMM"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Filename", " ", "=", " ", "\"\<F0017CH1\>\""}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Filepath", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+      "\"\<../data/fourier/\>\""}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
-    "Specify", " ", "folder", " ", "structure", " ", "and", " ", 
-     "filenames"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"Import", " ", "raw", " ", "Data"}], ",", " ", 
+     RowBox[{
+      RowBox[{
+      "still", " ", "needs", " ", "to", " ", "be", " ", "cleaned", " ", "and",
+        " ", "re"}], "-", "ordered"}]}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{
-     RowBox[{"Clear", "[", " ", 
+    RowBox[{"rawData", " ", "=", " ", 
+     RowBox[{"Import", "[", 
       RowBox[{
-      "Filename", ",", " ", "Filepath", ",", " ", "rawData", ",", " ", 
-       "partitionedData", ",", " ", "partitionedData2", ",", " ", 
-       "ArrayUnitsToMM", ",", " ", "UnitsToMM"}], "]"}], ";"}], 
-    "\[IndentingNewLine]", 
+      "Filepath", "<>", " ", "Filename", " ", "<>", " ", "\"\<.csv\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rawData", " ", "=", " ", 
+     RowBox[{"Flatten", "[", "rawData", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
     RowBox[{
-     RowBox[{"Filename", " ", "=", " ", "\"\<F0017CH1\>\""}], ";"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"Filepath", " ", "=", " ", 
-      RowBox[{
-       RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
-       "\"\<../data/fourier/\>\""}]}], ";"}], "\[IndentingNewLine]", 
-    RowBox[{"(*", 
-     RowBox[{
-      RowBox[{"Import", " ", "raw", " ", "Data"}], ",", " ", 
-      RowBox[{
-       RowBox[{
-       "still", " ", "needs", " ", "to", " ", "be", " ", "cleaned", " ", 
-        "and", " ", "re"}], "-", "ordered"}]}], "*)"}], "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"rawData", " ", "=", " ", 
-      RowBox[{"Import", "[", 
-       RowBox[{
-       "Filepath", "<>", " ", "Filename", " ", "<>", " ", "\"\<.csv\>\""}], 
-       "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"rawData", " ", "=", " ", 
-      RowBox[{"Flatten", "[", "rawData", "]"}]}], ";"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{"(*", 
-     RowBox[{
-      RowBox[{"Ignore", " ", "first", " ", "2", " ", "lines", " ", 
-       RowBox[{"(", "metadata", ")"}], " ", "and", " ", "re"}], "-", 
-      RowBox[{"order", " ", "it", " ", "by", " ", "x"}], "-", 
-      RowBox[{"value", " ", "first", " ", "and", " ", "y"}], "-", 
-      RowBox[{"value", " ", "scond"}]}], "*)"}], "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"fourier", " ", "=", " ", 
-      RowBox[{"Abs", "[", 
-       RowBox[{"Fourier", "[", "rawData", "]"}], "]"}]}], ";"}], 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"ListPlot", "[", 
-     RowBox[{
-      RowBox[{"Take", "[", 
-       RowBox[{"fourier", ",", "240"}], "]"}], ",", 
-      RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"fourier", " ", "=", " ", 
-      RowBox[{"Map", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"Total", "[", 
-          RowBox[{"Take", "[", 
-           RowBox[{"fourier", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"#", "*", "58"}], "-", "3"}], ",", " ", 
-              RowBox[{
-               RowBox[{"#", "*", "58"}], "+", "3"}]}], "}"}]}], "]"}], "]"}], 
-         "&"}], ",", " ", 
-        RowBox[{"Range", "[", "5", "]"}]}], "]"}]}], ";"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"fourier", " ", "=", " ", 
-      RowBox[{"fourier", " ", "/", " ", 
-       RowBox[{"Max", "[", "fourier", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
-    RowBox[{"BarChart", "[", 
-     RowBox[{"fourier", ",", 
-      RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], "\[IndentingNewLine]", 
+     RowBox[{"Ignore", " ", "first", " ", "2", " ", "lines", " ", 
+      RowBox[{"(", "metadata", ")"}], " ", "and", " ", "re"}], "-", 
+     RowBox[{"order", " ", "it", " ", "by", " ", "x"}], "-", 
+     RowBox[{"value", " ", "first", " ", "and", " ", "y"}], "-", 
+     RowBox[{"value", " ", "scond"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"fourier", " ", "=", " ", 
-     RowBox[{"MapIndexed", "[", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"#2", "[", 
-           RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
-          RowBox[{"Round", "[", 
-           RowBox[{"#1", ",", " ", "0.001"}], "]"}]}], "}"}], "&"}], ",", 
-       "fourier"}], "]"}]}], "\n", "\[IndentingNewLine]", 
+     RowBox[{"Abs", "[", 
+      RowBox[{"Fourier", "[", "rawData", "]"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"ListPlot", "[", 
     RowBox[{
-     RowBox[{"path", " ", "=", " ", 
+     RowBox[{"Take", "[", 
+      RowBox[{"fourier", ",", "240"}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], "\[IndentingNewLine]", 
+   
+   RowBox[{
+    RowBox[{"fourier", " ", "=", " ", 
+     RowBox[{"Map", "[", 
       RowBox[{
        RowBox[{
+        RowBox[{"Total", "[", 
+         RowBox[{"Take", "[", 
+          RowBox[{"fourier", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"#", "*", "58"}], "-", "3"}], ",", " ", 
+             RowBox[{
+              RowBox[{"#", "*", "58"}], "+", "3"}]}], "}"}]}], "]"}], "]"}], 
+        "&"}], ",", " ", 
+       RowBox[{"Range", "[", "5", "]"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"fourier", " ", "=", " ", 
+     RowBox[{"fourier", " ", "/", " ", 
+      RowBox[{"Max", "[", "fourier", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   
+   RowBox[{"BarChart", "[", 
+    RowBox[{"fourier", ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], "\[IndentingNewLine]", 
+   
+   RowBox[{"fourier", " ", "=", " ", 
+    RowBox[{"MapIndexed", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
         RowBox[{
-        "Filepath", "  ", "<>", " ", "Filename", " ", "<>", " ", "\""}], "-", 
-        
-        RowBox[{"Furier", "\"", "<>"}]}], "\"\<.txt\>\""}]}], ";"}], 
-    "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"Export", "[", 
-      RowBox[{"path", ",", "fourier", ","}], " "}], "\"\<Table\>\""}]}], 
-   "]"}], ";"}]], "Input",
+         RowBox[{"#2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
+         RowBox[{"Round", "[", 
+          RowBox[{"#1", ",", " ", "0.001"}], "]"}]}], "}"}], "&"}], ",", 
+      "fourier"}], "]"}]}], "\[IndentingNewLine]", "\n", 
+   RowBox[{
+    RowBox[{"path", " ", "=", " ", 
+     RowBox[{
+     "Filepath", "  ", "<>", " ", "Filename", " ", "<>", " ", 
+      "\"\<Furier\>\"", "<>", "\"\<.txt\>\""}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Export", "[", 
+     RowBox[{"path", ",", "fourier", ",", "\"\<Table\>\""}], "]"}], 
+    ";"}]}]}]], "Input",
  CellChangeTimes->{{3.633685707122654*^9, 3.633685712515729*^9}, {
    3.6336857444515657`*^9, 3.633685791845689*^9}, {3.6336859193316793`*^9, 
    3.6336859668041058`*^9}, {3.633686030510027*^9, 3.6336861123719482`*^9}, {
@@ -142,7 +140,8 @@ Cell[BoxData[
    3.633756334891781*^9}, {3.633756514815671*^9, 3.633756609220285*^9}, {
    3.633756761821208*^9, 3.633756824163843*^9}, {3.6337568687671747`*^9, 
    3.633756870734252*^9}, {3.633756925929294*^9, 3.633756926526443*^9}, {
-   3.633794452716674*^9, 3.633794493803728*^9}}],
+   3.633794452716674*^9, 3.633794493803728*^9}, {3.635498474754984*^9, 
+   3.635498502704562*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{{}, 
@@ -222,7 +221,8 @@ A1xrl0A=
    3.63375624201027*^9, 3.633756295879961*^9}, 3.6337563355471077`*^9, {
    3.633756518386767*^9, 3.6337566097409687`*^9}, {3.633756812556952*^9, 
    3.6337568248317623`*^9}, {3.6337568695370903`*^9, 3.633756871301675*^9}, 
-   3.633756927255807*^9, {3.633794459257059*^9, 3.633794465203866*^9}}],
+   3.633756927255807*^9, {3.633794459257059*^9, 3.633794465203866*^9}, {
+   3.6354984806775312`*^9, 3.6354985034882708`*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{
@@ -389,21 +389,22 @@ Cell[BoxData[
    3.63375624201027*^9, 3.633756295879961*^9}, 3.6337563355471077`*^9, {
    3.633756518386767*^9, 3.6337566097409687`*^9}, {3.633756812556952*^9, 
    3.6337568248317623`*^9}, {3.6337568695370903`*^9, 3.633756871301675*^9}, 
-   3.633756927255807*^9, {3.633794459257059*^9, 3.633794465301155*^9}}],
+   3.633756927255807*^9, {3.633794459257059*^9, 3.633794465203866*^9}, {
+   3.6354984806775312`*^9, 3.6354985035516644`*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
    RowBox[{"{", 
-    RowBox[{"1", ",", "0.21153123115424538`"}], "}"}], ",", 
+    RowBox[{"1", ",", "0.212`"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"2", ",", "0.9999999999999999`"}], "}"}], ",", 
+    RowBox[{"2", ",", "1.`"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"3", ",", "0.0986874257222769`"}], "}"}], ",", 
+    RowBox[{"3", ",", "0.099`"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"4", ",", "0.07616405209116121`"}], "}"}], ",", 
+    RowBox[{"4", ",", "0.076`"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"5", ",", "0.06732241872364013`"}], "}"}]}], "}"}]], "Output",
+    RowBox[{"5", ",", "0.067`"}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.6336865401875*^9, 3.6336865838462133`*^9}, 
    3.633686616033637*^9, {3.633686884964223*^9, 3.63368692068519*^9}, {
    3.633686966519124*^9, 3.633687009993422*^9}, {3.633687153026237*^9, 
@@ -415,7 +416,8 @@ Cell[BoxData[
    3.63375624201027*^9, 3.633756295879961*^9}, 3.6337563355471077`*^9, {
    3.633756518386767*^9, 3.6337566097409687`*^9}, {3.633756812556952*^9, 
    3.6337568248317623`*^9}, {3.6337568695370903`*^9, 3.633756871301675*^9}, 
-   3.633756927255807*^9, {3.633794459257059*^9, 3.633794465314313*^9}}]
+   3.633756927255807*^9, {3.633794459257059*^9, 3.633794465203866*^9}, {
+   3.6354984806775312`*^9, 3.635498503558156*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -442,13 +444,13 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 5245, 122, 335, "Input"],
-Cell[5827, 146, 4613, 78, 240, "Output"],
-Cell[10443, 226, 6862, 165, 235, "Output"],
-Cell[17308, 393, 1309, 24, 28, "Output"]
+Cell[579, 22, 5119, 121, 335, "Input"],
+Cell[5701, 145, 4667, 79, 240, "Output"],
+Cell[10371, 226, 6916, 166, 235, "Output"],
+Cell[17290, 394, 1290, 25, 86, "Output"]
 }, Open  ]],
-Cell[18632, 420, 94, 1, 28, "Input"],
-Cell[18729, 423, 94, 1, 28, InheritFromParent]
+Cell[18595, 422, 94, 1, 28, "Input"],
+Cell[18692, 425, 94, 1, 28, "Input"]
 }
 ]
 *)
