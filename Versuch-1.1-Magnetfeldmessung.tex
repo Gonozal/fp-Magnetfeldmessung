@@ -122,52 +122,52 @@ In diesem Versuch geht es um die Vermessung von Elektromagneten, wie sie in Teil
 
 \chapter{Grundlagen}
 \section{Hall-Effekt}
-Der große Teil der Messungen in diesem Versuch wird mit einer Hall-Sonde durchgeführt, deren Funktionsweise auf dem nach Edwin Hall benannten Hall-Effekt beruht. Dieser beschreibt das Entstehen einer Spannung in einem stromdurchflossenen Leiter, der sich in äußeren Magnetfeld befindet.
+Der große Teil der Messungen in diesem Versuch wird mit einer Hall-Sonde durchgeführt, deren Funktionsweise auf dem nach Edwin Hall benannten Hall-Effekt beruht. Dieser beschreibt das Entstehen einer Spannung in einem stromdurchflossenen Leiter, der sich in einem äußeren Magnetfeld befindet.
 
-Diese Spannung lässt sich aus der Tatsache ableiten, dass Strom durch bewegte Elektronen hervorgerufen wird. Da Elektronen geladene Teilchen sind, wirkt bei der Bewegung im Magnetfeld die Lorenzkraft $$\vec{F_L} = q \cdot \vec{v} \times \vec{B}$$
+Diese Spannung lässt sich aus der Tatsache ableiten, dass Strom durch bewegte Elektronen hervorgerufen wird. Da Elektronen geladene Teilchen sind, wirkt bei der Bewegung im Magnetfeld die Lorentzkraft $$\vec{F_L} = q \cdot \vec{v} \times \vec{B}$$
 
 Beschränkt man sich auf die Messung der Magnetfeldkomponente senkrecht zur Ausrichtung des Leiters bzw.\ der Hall-Sonde, so lässt sich diese Gleichung o.b.d.A. schreiben als
 $$\vec{F_L} = q \cdot v \cdot \vec{e_x} \times B \cdot \vec{e_z}$$
 $$\vec{F_L} = q \cdot v  \cdot B \cdot \vec{e_y}$$
 
-Diese Kraft auf die bewegten Elektronen führt zu einer inhomogenen Ladungsverteilung der Elektronen , wodurch ein Elektrisches Feld aufgebaut wird. Dieses übt ebenfalls eine Kraft 
+Diese Kraft auf die bewegten Elektronen führt zu einer inhomogenen Ladungsverteilung der Elektronen, wodurch ein elektrisches Feld aufgebaut wird. Dieses übt ebenfalls eine Kraft 
 $$\vec{F_E}=q \cdot \vec{E}$$
-auf die Elektronen aus, welche der Lorenzraft entgegengerichtet ist. Bereits nach sehr kurzer Zeit stellt sich somit ein Gleichgewichtszustand ein:
+auf die Elektronen aus, welche der Lorentzkraft entgegengerichtet ist. Bereits nach sehr kurzer Zeit stellt sich somit ein Gleichgewichtszustand ein:
 $$q \cdot \vec{E} = q \cdot v  \cdot B \cdot \vec{e_y}$$
-Geht man von einem homogenen elektrischen Feld in einem Leiter der Breite b entlang der y-Richung aus, so lässt sich das Feld schreiben als 
+Geht man von einem homogenen elektrischen Feld in einem Leiter der Breite b entlang der y-Richtung aus, so lässt sich das Feld schreiben als 
 $$\vec{E} = \frac{U_H}{b}\cdot \vec{e_y}$$
 Einsetzen in die Gleichgewichtsgleichung und Auflösen nach $U_H$ ergibt
 $$U_H = b \cdot v \cdot B$$
 
 Leider ist die Geschwindigkeit $v$ der Elektronen in der Regel nicht direkt messbar, weswegen diese durch die angelegten Stromstärke 
 $$I= n\cdot q \cdot b \cdot d \cdot v$$
-mit den Leiterspezifischen Größen für die Dicke $d$ und der Ladungsträgerdichte $n$, ausgedrückt werden muss.
+mit den leiterspezifischen Größen für die Dicke $d$ und der Ladungsträgerdichte $n$ ausgedrückt werden muss.
 
-Fasst man zusätzlich noch alle Sondenspezifischen größen in der Hall-Konstanten $R_H = \frac{1}{n\cdot q}$ zusammen, erhält man die Formel
+Fasst man zusätzlich noch alle sondenspezifischen Größen in der Hall-Konstanten $R_H = \frac{1}{n\cdot q}$ zusammen, erhält man die Formel
 
 $$U_H = R_H \frac{I\cdot B}{d}$$
 
 \section{Elektromagnetismus}
 \subsection{Ferromagnetismus}
 
-Ferromagnetische Stoffe sind im inneren aus sogenannten Weißschen Bezirken aufgebaut, welche aus parlell angeordneten magnetischen Dipolen, sogenannten Elementarmagneten bestehen.
-Diese Bezirke kommen dadurch Zustande, dass die zuerst zufällig ausgerichteten Elementarmagnete mit benachtbarten Elementarmagneten wechselwirken und sich paralell zueinander ausrichten. Dadurch wird deren magnetische Kraft verstärkt und die Wechselwirkungsreichweite steigt an, es richten sich immer mehr benachtbarte Elementarmagnete gleich aus. Durch den statistischen Charakter der ursprünglichen Ausrichtung der Elementarmagnete, sind die Magnetisierungsrichtungen zweier so herangewachsener benachtbarter Bezirke allerdings in der Regel nicht gleich ausgerichtet.
+Ferromagnetische Stoffe sind im Inneren aus sogenannten Weißschen Bezirken aufgebaut, welche aus parallel angeordneten magnetischen Dipolen, sogenannten Elementarmagneten bestehen.
+Diese Bezirke kommen dadurch zustande, dass die zuerst zufällig ausgerichteten Elementarmagnete mit benachbarten Elementarmagneten wechselwirken und sich parallel zueinander ausrichten. Dadurch wird deren magnetische Kraft verstärkt und die Wechselwirkungsreichweite steigt an, es richten sich immer mehr benachbarte Elementarmagnete gleich aus. Durch den statistischen Charakter der ursprünglichen Ausrichtung der Elementarmagnete, sind die Magnetisierungsrichtungen zweier so herangewachsener benachbarter Bezirke allerdings in der Regel nicht gleich ausgerichtet.
 
-Wird jedoch jetzt ein äußeres Magnetfeld angelegt, können zum Magnetfeld ähnlich ausgerichtete Bezirke "`umklappen"', wodurch die Anzahl der paralell zum äußeren Magnetfeld ausgerichteten Bezirke erhöht wird, was wiederrum das angelegte Magnetfeld verstärkt. Je stärke das von außen angelegte Magnetfeld ist, desto mehr Weißsche Bezirke werden zur änderung ihrer Magnetisierungsrichtung gezwungen, und desto stärker wird das äußere Magnetfeld verstärkt. Ab einer Gewissen äußeren Magnetfeldstärke sind allerdings nahezu alle Bezirke paralell ausgerichtet und es wird eine Sättigung der Verstärkung erreicht. Bei den meisten Ferromagneten geschieht dies ab einer Magnetfeldstärke von etwa $1T$.
+Wird jedoch jetzt ein äußeres Magnetfeld angelegt, können zum Magnetfeld ähnlich ausgerichtete Bezirke "`umklappen"', wodurch die Anzahl der parallel zum äußeren Magnetfeld ausgerichteten Bezirke erhöht wird, was wiederum das angelegte Magnetfeld verstärkt. Je stärker das von außen angelegte Magnetfeld ist, desto mehr Weißsche Bezirke werden zur Änderung ihrer Magnetisierungsrichtung gezwungen, und desto stärker wird das äußere Magnetfeld verstärkt. Ab einer gewissen äußeren Magnetfeldstärke sind allerdings nahezu alle Bezirke parallel ausgerichtet und es wird eine Sättigung der Verstärkung erreicht. Bei den meisten Ferromagneten geschieht dies ab einer Magnetfeldstärke von etwa $1T$.
 
-Wird nach einmaliger Magnetisierung das äußere Magnetfeld wieder abgeschaltet, so wird die paralelle Ausrichtung der Weißschen Bezirke im Ferromagneten durch thermische Prozesse nur zum Teil weider aufgehoben, es bleibt einer gewisse Restmagnetisierung des Ferromagneten bestehen. Dieser Effekt wird Hysterese genannt.
+Wird nach einmaliger Magnetisierung das äußere Magnetfeld wieder abgeschaltet, so wird die parallele Ausrichtung der Weißschen Bezirke im Ferromagneten durch thermische Prozesse nur zum Teil wieder aufgehoben, es bleibt eine gewisse Restmagnetisierung des Ferromagneten bestehen. Dieser Effekt wird Hysterese genannt.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=80mm]{img/hysterese.png}
-\caption{Typische Hysteresekurve eines Ferromagneten. Der rote Pfeil beschreibt die erstmalige Magnetisierung des Materials. Als Remanz wird die verbleibende Magnetisierung bezeichnet, die nach Abschalten des äußeren Feldes übrig bleibt. Die Koerzitivfäldstärke beschreibt dagegen die Feldstärke die entgegen der ursprügnlichen Richtung angegelgt werden muss, um die Magnetisierung des Ferromagneten aufzuheben.\cite{hysterese}}
+\caption{Typische Hysteresekurve eines Ferromagneten. Der rote Pfeil beschreibt die erstmalige Magnetisierung des Materials. Als Remanenz wird die verbleibende Magnetisierung bezeichnet, die nach Abschalten des äußeren Feldes übrig bleibt. Die Koerzitivfeldstärke beschreibt dagegen die Feldstärke, die entgegen der ursprünglichen Richtung angelegt werden muss, um die Magnetisierung des Ferromagneten aufzuheben\cite{hysterese}.}
 \end{figure}
 
 \subsection{Dipolmagnete}
 
-Dipolmagnete werden häufig in der Beschleunigerphysik zur Umlenkung von hochenergetischen Teilchenstrahlen verwendet. Sie bestehen aus einem magnetischen Nord- und einem Südpol, zwischen welchem im Idealfall ein homogenes Magnetfeld besteht. Passiert ein Teilchenstrahl dieses Magnetfeld, so wird er auf Grund der Lorenzkraft $\vec{F_L} = q \cdot \vec{v} \times \vec{B}$ senkrecht zur Magnetfeld und seiner Bewegungsrechtung abgelenkt. Anstatt eines Dipolmagneten kann man zwar theoretisch auch ein elektrisches Feld, z.B. das Feld zwischen den Platten eines Plattenkondensators, benutzen, allerdings skaliert die auf einen Teilchenstrahl ausgeübte Kraft beim Magnetfeld im Gegensatz zum elektrischen Feld linear mit der Geschwindigkeit. Aus diesem Grund finden elektrische Felder in Teilchenbeschelunigern meist nur in Bereichen Anwendung, in denen der Teilchenstrahl relativ geringe Geschwindigkeiten aufweist.
+Dipolmagnete werden häufig in der Beschleunigerphysik zur Umlenkung von hochenergetischen Teilchenstrahlen verwendet. Sie bestehen aus einem magnetischen Nord- und einem Südpol, zwischen welchen im Idealfall ein homogenes Magnetfeld besteht. Passiert ein Teilchenstrahl dieses Magnetfeld, so wird er auf Grund der Lorentzkraft $\vec{F_L} = q \cdot \vec{v} \times \vec{B}$ senkrecht zum Magnetfeld und seiner Bewegungsrichtung abgelenkt. Anstatt eines Dipolmagneten kann man zwar theoretisch auch ein elektrisches Feld, z.B. das Feld zwischen den Platten eines Plattenkondensators, benutzen, allerdings skaliert die auf einen Teilchenstrahl ausgeübte Kraft beim Magnetfeld im Gegensatz zum elektrischen Feld linear mit der Geschwindigkeit. Aus diesem Grund finden elektrische Felder in Teilchenbeschleunigern meist nur in Bereichen Anwendung, in denen der Teilchenstrahl relativ geringe Geschwindigkeiten aufweist.
 
-In Beschelunigern finden bei benötigten Magnetfeldern von bis zu 1T meist C-Förmige Dipolmagnete mit ferromagnetischem Joch Anwendung. Sollte die benötigte Magnetfeldstärke diesen Wert überschreiten, bietet es sich auf Grund der Sättigung der feldverstärkenden Eigenschaften von Ferromagneten oft an, statdessen Supraleiter für die Herstellung von Dipolamagneten zu verwenden.
+In Beschleunigern finden bei benötigten Magnetfeldern von bis zu 1 T meist C-Förmige Dipolmagnete mit ferromagnetischem Joch Anwendung. Sollte die benötigte Magnetfeldstärke diesen Wert überschreiten, bietet es sich auf Grund der Sättigung der feldverstärkenden Eigenschaften von Ferromagneten oft an, stattdessen Supraleiter für die Herstellung von Dipolmagneten zu verwenden.
 
 \begin{figure}[H]
 \centering
@@ -177,24 +177,24 @@ In Beschelunigern finden bei benötigten Magnetfeldern von bis zu 1T meist C-Fö
 
 \subsection{Quadrupolmagnete}
 
-Während Dipole in Beschleunigern zur Umleitung von Teilchenstrahlen verwendet werden, benutzt man Quadrupole zur Fokusierung von Strahlen. Wird ein ausgedehnter Teilchenstrahl entlang der  magnetischen Achse des Quadrupols geleitet, so wird er in einer Achsenrichtung senkrecht zum Geschwindigkeitsvektor fokusiert und in die andere Richtung defokusiert. Aus diesem Grund werdenzur Fokusierung von Teilchenstrahlen immer mehrere in Reihe geschaltete Quadrupole benötigt: Der erste Quadrupol fokusiert o.b.d.A. in x-Richtung und defokusiert in y-Richtung, während der 2. in x-Richtung defokusiert und in y-Richtung fokusiert. Da die Magnetfeldstärke und somit die auf ein bewegtes Teilchen wirkende Lorenzkraft mit zunehmendem Abstand zur magnetischen Achse zunimmt, ist bei richtiger Kalibrierung die defokusierende Wirkung des 2. Quadrupols in der x-Achse geringer als dessen fokusierende Wirkung in Richtung der y-Achse.
+Während Dipole in Beschleunigern zur Umleitung von Teilchenstrahlen verwendet werden, benutzt man Quadrupole zur Fokussierung von Strahlen. Wird ein ausgedehnter Teilchenstrahl entlang der  magnetischen Achse des Quadrupols geleitet, so wird er in einer Achsenrichtung senkrecht zum Geschwindigkeitsvektor fokussiert und in die andere Richtung (also senkrecht zum Geschwindigkeitsvektor und senkrecht zur Fokussierungsrichtung) defokussiert. Aus diesem Grund werden zur Fokussierung von Teilchenstrahlen immer mehrere in Reihe geschaltete Quadrupole benötigt: Der erste Quadrupol fokussiert o.b.d.A. in x-Richtung und defokussiert in y-Richtung, während der 2. in x-Richtung defokussiert und in y-Richtung fokussiert. Da die Magnetfeldstärke und somit die auf ein bewegtes Teilchen wirkende Lorentzkraft mit zunehmendem Abstand zur magnetischen Achse zunimmt, ist bei richtiger Kalibrierung die defokussierende Wirkung des 2. Quadrupols in der x-Achse geringer als dessen fokussierende Wirkung in Richtung der y-Achse.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=60mm]{img/quadrupol.png}
-\caption{Schematische Darstellung eines Quadrupols mit Magnetfeldlinien und Kräften, die auf ein in Zeichenebende durch den Quadrupol geleitetes negativ geladenes Teilche wirken \cite{anleitung}.}
+\caption{Schematische Darstellung eines Quadrupols mit Magnetfeldlinien und Kräften, die auf ein in Zeichenebene durch den Quadrupol geleitetes negativ geladenes Teilchen wirken \cite{anleitung}.}
 \end{figure}
 
-Im Idealfall sind die Polschuhe dabei von unendlich ausgedehnter, hyperbolischer Form, was sich in der Realität jedoch als unpraktikabel erweist. Aus diesem Grund werden heutzutage häufig durch numerische Näherungsverfahren für die Anwendung optimierte Polschuhe eingesetzt, um unerwünschte Dipol- oder Multipolanteile höhrer Ordnung zu unterdrücken. 
+Im Idealfall sind die Polschuhe dabei von unendlich ausgedehnter, hyperbolischer Form, was sich in der Realität jedoch als unpraktikabel erweist. Aus diesem Grund werden heutzutage häufig durch numerische Näherungsverfahren für die Anwendung optimierte Polschuhe eingesetzt, um unerwünschte Dipol- oder Multipolanteile höherer Ordnung zu unterdrücken. 
 
 \section{Diskrete Fourier-Transformation}
-Bei der Messung der Multipolkomponenten im Quadrupol kommt eine rotierende Spule zum Einsatz, wobei mit einem Oszilloskop die vom Magneten induzierte Spannung aufgenommen wird. Die so aufgenommene Spanungskurve setzt sich aus verschiedenen Sinusschwingungen zusammen, welche den jeweiligen im Quadrupol vorhandenen Multipolkomponenten entsprechen. Um diese Daten weitterzuverarbeiten, müssen zuerst die aufgneommenen Frequenzen mit Hilfer der diskreten Fourier-Transformation (DFT) isoliert werden. Vorraussetzung hierfür ist, dass die Messpunkte $x(n)$ bekannt sind und sich in konstantem zeitlichen Abstand $T$ zueinander befinden. Abgeleitet aus der Fourier-Transformation ergibt sich für die DFT:
+Bei der Messung der Multipolkomponenten im Quadrupol kommt eine rotierende Spule zum Einsatz, wobei mit einem Oszilloskop die vom Magneten induzierte Spannung aufgenommen wird. Die so aufgenommene Spannungskurve setzt sich aus verschiedenen Sinusschwingungen zusammen, welche den jeweiligen im Quadrupol vorhandenen Multipolkomponenten entsprechen. Um diese Daten weiterzuverarbeiten, müssen zuerst die aufgenommenen Frequenzen mit Hilfe der diskreten Fourier-Transformation (DFT) isoliert werden. Voraussetzung hierfür ist, dass die Messpunkte $x(n)$ bekannt sind und sich in konstantem zeitlichen Abstand $T$ zueinander befinden. Abgeleitet aus der Fourier-Transformation ergibt sich für die DFT:
 $$X[k]= \sum_{n=0}^{N-1} x\left( n \right) \cdot \exp{-jkn \frac{2\pi}{N}}, k = 0, 1, 2, \dots, N-1$$
 Mit der Anzahl der Abtastwerte N. Eine hohe Zahl für N vergrößert dabei die Feinheit der Abtastung, da das durch die DFT erhaltenen Frequenzraster k direkt von N abhängen. Die bestimmten Frequenzen ergeben sich zu 
 $X[k]=k\frac{f_s}{N}$
 wobei $f_s$ die Abtastfrequenz bei der Datenaufnahme angibt.
 
-Um optimale Ergebnisse mit der DFT zu erhalten, sollte die Abtastfrequenz ein ganzzahliges Vielfache der auftretenden Schwingungsfrequenzen sein, da sie sonst durch benachtbarte Frequenzen angenähert werden müssen. Des weiteren ist darauf zu Achten, dass das aufgenommene Signal periodisch fortsetzbar ist, das Ende also möglichst sprungfrei an den Anfang anschließt. Gegebenenfalls empfiehlt es sich, Messdaten am Ende zu verwerfen, um eine möglichst gute fortsetzbarkeit zu erreichen.
+Um optimale Ergebnisse mit der DFT zu erhalten, sollte die Abtastfrequenz ein ganzzahliges Vielfache der auftretenden Schwingungsfrequenzen sein, da sie sonst durch benachbarte Frequenzen angenähert werden müssen. Des Weiteren ist darauf zu achten, dass das aufgenommene Signal periodisch fortsetzbar ist, das Ende also möglichst sprungfrei an den Anfang anschließt. Gegebenenfalls empfiehlt es sich, Messdaten am Ende zu verwerfen, um eine möglichst gute Fortsetzbarkeit zu erreichen.
 \chapter{Durchführung}
 \section{Vermessung des Gradientenprofils des Quadrupols}
 
@@ -235,21 +235,21 @@ table[x expr=\thisrowno{0} * 5, y expr=\thisrowno{2} * (-1)] {data/Ausrichtung.t
 \end{figure}
 \end{center}
 
-Zur Vermessung des Quadrupols wird die Magnetfeldstärke im zuerst bei $0 A$ betriebenen Magneten mit einer Hall-Sonde an 45 Messpunkte in $5 mm$ Abständen entlang der X-Achse der CNC-Einheit aufgenommen, wobei sich sowohl die ersten als auch die letzten 6 Messpunkte außerhalb des Quadrupols befinden. Um nicht nur die Magnetfeldstärke, sondern auch ihren Gradienten bestimmen zu können, muss diese Messreihe anschließend für 5 weitere Positionen im Quadrupol in Abständen von $8mm$ entlang der Y-Achse der CNC-Einheit wiederholt werden. Diese Messreihe aus insgesamt 270 Messpunkten wurde von einem Computerprogramm nach Eingabe der gewünschten Parameter automatisch durchgeführt.
+Zur Vermessung des Quadrupols wird die Magnetfeldstärke im zuerst bei $0~A$ betriebenen Magneten mit einer Hall-Sonde an 45 Messpunkte in $5~mm$ Abständen entlang der X-Achse der CNC-Einheit aufgenommen, wobei sich sowohl die ersten als auch die letzten 6 Messpunkte außerhalb des Quadrupols befinden. Um nicht nur die Magnetfeldstärke, sondern auch ihren Gradienten bestimmen zu können, muss diese Messreihe anschließend für 5 weitere Positionen im Quadrupol in Abständen von $8~mm$ entlang der Y-Achse der CNC-Einheit wiederholt werden. Diese Messreihe aus insgesamt 270 Messpunkten wurde von einem Computerprogramm nach Eingabe der gewünschten Parameter automatisch durchgeführt.
 
 Im Anschluss wird die Messung für 5 weitere Stromstärken in Schritten von 2 A von 10 A bis 2 A wiederholt.
 
 \section{Vermessung des Dipols in der xy-Ebene}
-Analog zur Vermessung des Quadrupols wird der der "`Steerer"' Dipol vermessen. Entlang der s-Achse des Magneten bzw.\ der x-Achse der CNC-Einheit werden bei $5 A$ Betriebsstrom 51 Messpunkte im Abstand von $1 cm$ aufgenommen. Diese Messreihe wird für 11 verschiedene Positionen entlang der y-Achse mit einem Abstand von $2 mm$ automatisiert durchgeführt.
+Analog zur Vermessung des Quadrupols wird der "`Steerer"' Dipol vermessen. Entlang der s-Achse des Magneten bzw.\ der x-Achse der CNC-Einheit werden bei $5~A$ Betriebsstrom 51 Messpunkte im Abstand von $1~cm$ aufgenommen. Diese Messreihe wird für 11 verschiedene Positionen entlang der y-Achse mit einem Abstand von $2~mm$ automatisiert durchgeführt.
 
-Im Gegensatz zum Quadrupol besitzt der Dipol keine abschirmende Eisenplatte an den offenen Enden des Magneten, wodurch das vom Dipol erzeugte Magnetfeld außerhalb der geometrischen Länge des Magneten deutlich langsamer abfällt. Aus diesem Grund werden jeweils 10 Magnetfeldmessungen (entsprechen $10 cm$) außerhalb des Magneten durchgeführt.
+Im Gegensatz zum Quadrupol besitzt der Dipol keine abschirmende Eisenplatte an den offenen Enden des Magneten, wodurch das vom Dipol erzeugte Magnetfeld außerhalb der geometrischen Länge des Magneten deutlich langsamer abfällt. Aus diesem Grund werden jeweils 10 Magnetfeldmessungen (entsprechen $10~cm$) außerhalb des Magneten durchgeführt.
 
 \section{Magnetfeld des Dipols in Abhängigkeit des Spulenstroms}
 
-Um den Effekt der Hysterese auf den verwendeten Dipolmagneten zu bestimmen, wird an einer festen Position im Dipol bei Stromstärken in 1 A-Schritten von 5 A bis 0 A die Magnetfeldstärke gemessen. Bei dieser Messung ist besonders darauf zu Achten, die Stromstärke monoton auf den nächsten Messwert herunter zu regeln, da sonst durch die Eigenschaften der Hysterese die Messung verfälscht werden würde.
+Um den Effekt der Hysterese auf den verwendeten Dipolmagneten zu bestimmen, wird an einer festen Position im Dipol bei Stromstärken in 1 A-Schritten von 5 A bis 0 A die Magnetfeldstärke gemessen. Bei dieser Messung ist besonders darauf zu achten, die Stromstärke monoton auf den nächsten Messwert herunter zu regeln, da sonst durch die Eigenschaften der Hysterese die Messung verfälscht werden würde.
 
 \section{Messung der Multipolanteile mit rotierender Spule}
-Die Vermessung der Multipolanteile im Quadrupol wird mit einer rotierenden Spule im Zentrum des Magneten durchgeführt. Allerdings ergibt sich bei einer solchen Messung das Problem, dass sich durch die Symmetrie des Quadrupols in einer um ihre Symmetrieachse rotierenden Spule alle induzierten Ströme aufheben. Aus diesem Grund wurde die Messspule außermittig an die rotierende Achse des Messgerätes angebracht, was bei korrekter Ausrichtung im Quadrupol zu einer kreisförmigen Rotation der Messspule um den Mittelpol des Magneten führt.
+Die Vermessung der Multipolanteile im Quadrupol wird mit einer rotierenden Spule im Zentrum des Magneten durchgeführt. Allerdings ergibt sich bei einer solchen Messung das Problem, dass sich durch die Symmetrie des Quadrupols in einer um ihre Symmetrieachse rotierenden Spule alle induzierten Ströme aufheben. Aus diesem Grund wurde die Messspule außermittig an die rotierende Achse des Messgerätes angebracht, was bei korrekter Ausrichtung im Quadrupol zu einer kreisförmigen Rotation der Messspule um die Mittelachse des Magneten führt.
 
 Die zentrale Positionierung der Rotationsachse der Spule erwies sich dabei als kein triviales Unterfangen, da wir keine Möglichkeit hatten, das innere des Quadrupols und die Position der Sonde genau zu vermessen.
 
@@ -257,7 +257,7 @@ Die zentrale Positionierung der Rotationsachse der Spule erwies sich dabei als k
 \chapter{Auswertung}
 
 \section{Vermessung des Remanenzgradientenprofils des Quadrupols}
-Zuerst wird das Remanenzgradientenprofil, also das Gradientenprofil des Quadrupols ohne angelegten Strom bestimmt. Dazu werden bei festgehaltenem x-Wert in y-Richtung benachbarte Messwerte des Magnetfeldes voneinander subtrahiert, was für jeden x-Wert 5 Gradienten in y-Richtung ergibt. Anschließende Mittelung über all 5 Werte und Bildung der Standardabweichung ergeben die Werte sowie die Fehler für das Gradientenprofil.
+Zuerst wird das Remanenzgradientenprofil, also das Gradientenprofil des Quadrupols ohne angelegten Strom bestimmt. Dazu werden bei festgehaltenem x-Wert in y-Richtung benachbarte Messwerte des Magnetfeldes voneinander subtrahiert, was für jeden x-Wert 5 Gradienten in y-Richtung ergibt. Anschließende Mittelung über alle 5 Werte und Bildung der Standardabweichung ergeben die Werte sowie die Fehler für das Gradientenprofil.
 \begin{center}
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -326,7 +326,7 @@ Plateaubereich:
 \end{center}
 
 \section{Vermessung der Gradientenprofile des Quadrupols}
-Analog zum Remanenzgradientenprofils wurden die Gradientenprofile des Quadrupols für Stromstärken von $I=2A$ bis $I=10A$ vermessen und ausgewertet.
+Analog zum Remanenzgradientenprofils wurden die Gradientenprofile des Quadrupols für Stromstärken von $I=2~A$ bis $I=10~A$ vermessen und ausgewertet.
 \begin{center}
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -366,7 +366,7 @@ table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-2A-MeanGradien
 \addlegendentry{I=2A}
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{Gradientenverlauf des Quadrupols für angelegte Stromstärken von 2A bis 10A. Bei zunehmender Stromstärke ist ein deutlicher Anstieg des Magnetfeldgradienten zu beobachten.}
+\captionof{figure}{Gradientenverlauf des Quadrupols für angelegte Stromstärken von 2 A bis 10 A. Bei zunehmender Stromstärke ist ein deutlicher Anstieg des Magnetfeldgradienten zu beobachten.}
 \end{figure}
 \end{center}
 
@@ -378,7 +378,6 @@ Einsetzen der zuvor bestimmten Werte für alle von uns verwendeten Stromstärken
   \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|}
     \hline
     Strom in $A$ & $L_m$ in $mm$ & $\Delta L_m$ in $mm$ \\ \hline
-    0            & 123.1         & 2.2                  \\ \hline
     2            & 126.2         & 1.4                  \\ \hline
     4            & 126.2         & 1.4                  \\ \hline
     6            & 126.3         & 1.3                  \\ \hline
@@ -389,7 +388,7 @@ Einsetzen der zuvor bestimmten Werte für alle von uns verwendeten Stromstärken
 
 Aus den einzelnen Werten der magnetischen Länge lässt sich durch Bilden des Mittelwerts ein endgültiger Wert für $L_m$ berechnen. Wir erhalten $$L_m=125,7mm\pm0,6mm$$
 
-Dieser Wert liegt wie erwartet etwas oberhalb der geometrische Länge, welche wir auf $(120 \pm 10)mm$ abgeschätzt haben. Der relativ große Fehler von 1 cm beim Messen der geometrischen Länge liegt in der Tatsache begründet, dass sich eine Längenmessung mit Hilfe eines Zollstocks im Inneren des abgeschirmten Quadrupols selbst zu zweit als äußerst schwierig herausgestellt hat.
+Dieser Wert liegt wie erwartet etwas oberhalb der geometrische Länge, welche wir auf $(120 \pm 10)mm$ bestimmt haben. Der relativ große Fehler von 1 cm beim Messen der geometrischen Länge liegt in der Tatsache begründet, dass sich eine Längenmessung mit Hilfe eines Zollstocks im Inneren des abgeschirmten Quadrupols selbst zu zweit als äußerst schwierig herausgestellt hat.
 
 \section{Strom-Gradienten-Kalibrierung}
 Wie schon bei Vermessung des Remanenzgradientenprofils angemerkt, erzeugt der Quadrupol auf Grund von Remanenz selbst ohne Stromzufuhr ein magnetisches Feld in seinem Inneren. Es genügt somit für den Betrieb in Beschleunigern nicht, einen unbenutzten Magneten im Teilchenstrahl einfach auszuschalten. Um im Inneren des Magneten kein Feld und somit auch keinen Magnetfeldgradienten zu erzeugen, muss ein Strom mit einer Flussrichtung entgegen der Betriebsrichtung angelegt werden.
@@ -458,7 +457,7 @@ Zur Strom-Gradienten-Kalibrierung wurde ein linear Fit der Form $g(I) = m \cdot 
 \clearpage{}
 \section{Vermessung des Dipols in der xy-Ebene}
 
-Dipole werden in Beschleunigern zum Umlenken des Teilchenstrahls verwendet. Dabei muss man jedoch darauf achten, dass das vom Teilchenstrahl passierte Feld möglichst homogen ist, da sonst der Strahl defokussiert wird. Aus diesem Grund erscheint es vernünftig, die Magnetfeldstärke im Inneren des Dipols vor der Verwendung zu vermessen.
+Dipole werden in Beschleunigern zum Ablenken des Teilchenstrahls verwendet. Dabei muss man jedoch darauf achten, dass das vom Teilchenstrahl passierte Feld möglichst homogen ist, da sonst der Strahl defokussiert wird. Aus diesem Grund erscheint es vernünftig, die Magnetfeldstärke im Inneren des Dipols vor der Verwendung zu vermessen.
 
 \begin{figure}[H]
 \centering
@@ -491,7 +490,7 @@ Dies deckt sich mit dem von uns durch Abzählen der Windungen geschätzten Wert 
 
 Im Idealfall besitzt ein Quadrupol nur eine Quadrupolkomponente. Eine Dipolkomponente oder Komponenten höherer Ordnung sind unerwünscht, treten jedoch in geringen Maßen bei den meisten Quadrupolen auf. Da der von uns benutzte Quadrupol zu einer Zeit hergestellt wurde, in dem durch numerische Optimationsverfahren optimierte Quadrupole, insbesondere die benötigten Polschuhe, nur schwer herzustellen waren, erwarten wir einen signifikanten Anteil an unerwünschten Komponenten.
 
-Ein noch größerer Anteil unerwünschter Komponenten kommt vermutlich von der verwendeten Messmethode, insbesondere war die einzige uns zur Verfügung stehende Methode zur genauen Positionierung der rotierenden Spule unser Augenmaß. Des weiteren war aus messtechnischen Gründen die Spule außermittig an die Rotationsachse angebracht, was ein genaues Abschätzen der Positionierung weiter erschwerte. Um dies auszugleichen haben wir 3 Messungen an unterschiedlichen Positionen entlang der y-Achse durchgeführt.
+Ein noch größerer Anteil unerwünschter Komponenten kommt vermutlich von der verwendeten Messmethode, insbesondere war die einzige uns zur Verfügung stehende Methode zur genauen Positionierung der rotierenden Spule unser Augenmaß. Des Weiteren war aus messtechnischen Gründen die Spule außermittig an die Rotationsachse angebracht, was ein genaues Abschätzen der Positionierung weiter erschwerte. Um dies auszugleichen haben wir 3 Messungen an unterschiedlichen Positionen entlang der y-Achse durchgeführt.
 
 \begin{center}
 \begin{figure}[H]
@@ -536,7 +535,7 @@ Sogar die höheren Multipolkomponenten, welche im Vergleich zur Dipolkomponente 
 
 
 \chapter{Fazit}
-Im diesem Versuch ist es uns gelungen, einen Quadrupolmagneten sowohl im Bezug auf sein Gradientenprofil als auch auf seine Multipolkomponenten zu vermessen. Die Vermessung des Gradientenprofils war auf Grund der verwendeten Messaparatur sehr genau möglich, was es uns ermöglicht hat, die magnetische Länge des Quadrupols mit geringer Messunsicherheit von weniger als 0.5\$ anzugeben. Die Vermessung der Multipolkomponenten hat sich als schwieriger erwiesen, da für uns eine exakte Positionierung der rotierenden Spule im Inneren des Quadrupols nicht möglich war. Dies haben wir durch wiederholte Messungen an leicht unterschiedlichen Positionen versucht auszugleichen.
+Im diesem Versuch ist es uns gelungen, einen Quadrupolmagneten sowohl im Bezug auf sein Gradientenprofil als auch auf seine Multipolkomponenten zu vermessen. Die Vermessung des Gradientenprofils war auf Grund der verwendeten Messapparatur sehr genau möglich, was es uns ermöglicht hat, die magnetische Länge des Quadrupols mit geringer Messunsicherheit von weniger als 0.5 cm anzugeben. Die Vermessung der Multipolkomponenten hat sich als schwieriger erwiesen, da für uns eine exakte Positionierung der rotierenden Spule im Inneren des Quadrupols nicht möglich war. Dies haben wir durch wiederholte Messungen an leicht unterschiedlichen Positionen versucht auszugleichen.
 
 Weiterhin konnten wir eine genaue Vermessung des Magnetfeldes in einer Ebene im Inneren des Dipols durchführen. Dabei haben wir festgestellt, dass das vom Dipol erzeugte Feld keinesfalls homogen ist, sondern deutliche Unregelmäßigkeiten aufweist. Dies stammt möglicherweise von der nicht genauen Wicklung des Spulendrahtes.
 
