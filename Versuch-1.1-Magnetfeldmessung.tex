@@ -283,22 +283,74 @@ Zuerst wird das Remanenzgradientenprofil, also das Gradientenprofil des Quadrupo
 \addplot[red, only marks, mark=x, mark size=1pt, error bars/.cd, x dir=both, x fixed=0.25, y dir=both, y explicit]
 table[x index=0, y index=1, y error index=2] {data/parsed/m3-quad-0A-MeanGradients.txt};
 \addlegendentry{Magnetfeldgradient}
-\addplot[pink, mark=x, mark size=0pt, samples=20, domain=60:170] {0.0606932 + 0.0000131731*x};
-\addlegendentry{Fitgerade Plateaubereich}
-\addplot[teal, mark=x, mark size=0pt, samples=20, domain=20:85] {-0.0387665 + 0.00130992*x};
-\addlegendentry{Fitgerade des Randfeldes}
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{Plateauförmiges Gradientenprofil des Quadrupols, der auf Grund von Hysterese auch ohne angelegten Strom trotzdem ein Magnetfeld erzeugt. Zu sehen sind weiterhin Fitgeraden im Plateau- und Randfeld, welche Aufschluss über die Abschirmung und Ausrichtung des Quadrupolmagneten geben.}
+\captionof{figure}{Plateauförmiges Gradientenprofil des Quadrupols, der auf Grund von Hysterese auch ohne angelegten Strom trotzdem ein Magnetfeld erzeugt.}
 \end{figure}
 \end{center}
 
-Der Anstieg des Magnetfeldgradienten im Randfeld des Quadrupols gibt Aufschluss darüber, wie gut der Magnet nach außen hin abgeschirmt ist. Je höher die Steigung der durch das Randfeld gefitteten Geraden, desto effektiver werden sowohl äußere als auch vom Quadrupol selbst erzeugte Magnetfelder abgeschirmt. Eine gute Abschirmung ist insbesondere beim Betrieb mehrerer Magnete in geringem Abstand wichtig, wie es zum Beispiel bei der Fokussierung von Teilchenstrahlen der Fall sein kann.
+\begin{figure}[h]
+\begin{tikzpicture}
+\begin{axis}[
+    legend pos=south west,
+    title={Magnetfeldprofil im Randfeld (x=40mm)},
+    xlabel=$y$ in $mm$,
+    ylabel=$B$ in $mT$,
+    width=0.48\textwidth,
+    height=9cm,
+    xmin=0,
+    xmax=40,
+    grid=both,
+    ymin=-0.3,
+    ymax=0.25,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin},
+    seperators,
+    name=first
+]
+\addplot[red, only marks, mark=x, mark size=2pt] table[x index=0,y index=1] {data/parsed/m3-quad-example-r.txt};
+\addlegendentry{Magnetfeldstärke}
+\addplot[teal, mark=x, mark size=0pt, samples=10, domain=-0:40] {0.230871 - 0.0124586*x};
+\addlegendentry{Fitgerade}
+\end{axis}
 
+\begin{axis}[
+    legend pos=south west,
+    title={Magnetfeldprofil im Plateaufeld (x=100mm)},
+    xlabel=$y$ in $mm$,
+    ylabel=$B$ in $mT$,
+    width=0.48\textwidth,
+    height=9cm,
+    xmin=0,
+    xmax=40,
+    grid=both,
+    ymin=-1.35,
+    ymax=1.25,
+    tick align=outside,
+    tickpos=left,
+    minor x tick num=3,
+    minor y tick num=4,
+    minor grid style={dotted,thin},
+    seperators,
+  name=second,
+  at=(first.outer south east),
+  anchor=outer south west
+]
+\addplot[red, only marks, mark=x, mark size=2pt] table[x index=0,y index=1] {data/parsed/m3-quad-example-p.txt};
+\addlegendentry{Magnetfeldstärke}
+\addplot[teal, mark=x, mark size=0pt, samples=10, domain=0:40] {1.1324 - 0.0605425*x};
+\addlegendentry{Fitgerade}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Zur Bestimmung der Gradientenwerte vewendete Messpunkte und Fitgeraden am beispielhaft für X-Werten von 40mm und 100mm. In beiden Fällen liegen die gemessenen Punkte gut auf der Fitgeraden.}
+\end{figure}
 
+Sowohl im Randfeld als auch im Plateaufeld des Quadrupols sind alle gemessenen Magnetfeldstärken sehr nahe an der gefitteten Gerade gelegen, der Fitfehler für den Gradienten an den beiden als Beispiel herangezogenen Stellen entlang der x-Achse ist in beiden fällen geringer als 1\% der Magnetfeldstärke.
 
-Während die Steigung der Fitgeraden durch den Gradienten des Randfeldes möglichst groß sein soll, ist bei Messung entlang der Teilchenstrahlachse eine geringe Steigung erstrebenswert. Eine betragsmäßig große Steigung im Plateaugradienten weist entweder auf einen großen Winkel zwischen Teilchenstrahlachse und magnetischer Achse des Quadrupols oder auf einen Defekt im Magneten hin.
-
+\FloatBarrier
 \subsection{Fitwerte}
 Sowohl im Rand- als auch im Plateaubereich des Magneten haben wir lineare Fits verwendet: 
 $$f(x) = a \cdot x + b$$
@@ -306,22 +358,22 @@ Folgende Werte haben sich ergeben:
 
 Randbereich:
 \begin{center}
-  \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.5cm}|}
+  \begin{tabular}{|p{2.6cm}|p{5cm}|p{5cm}|}
     \hline
-    Fitparameter & Wert  in   &  Standardabweichung \\ \hline
-    a            & $1,31 \cdot 10^{-3} (\frac{mT}{mm})^2$  & $4 \cdot 10^{-5}$   \\ \hline
-    b            & $-3,88 \cdot 10^{-2} \frac{mT}{mm}$  & $2,2 \cdot 10^{-3}$ \\ \hline
+    Fitparameter & Wert                                   & Standardabweichung  \\ \hline
+    a            & $-1,25 \cdot 10^{-2} \frac{mT}{mm^2}$ & $2 \cdot 10^{-4} \frac{mT}{mm^2}$   \\ \hline
+    b            & $0,23 \cdot 10^{-2} \frac{mT}{mm}$    & $0,01 \frac{mT}{mm}$ \\ \hline
 	\end{tabular}
 \end{center}
 
 
 Plateaubereich:
 \begin{center}
-  \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{3.5cm}|}
+  \begin{tabular}{|p{2.6cm}|p{5cm}|p{5cm}|}
     \hline
-    Fitparameter & Wert                  & Standardabweichung  \\ \hline
-    a            & $1,31 \cdot 10^{-5} (\frac{mT}{mm})^2$  & $1,7 \cdot 10^{-6}$ \\ \hline
-    b            & $6.07 \cdot 10^{-2} \frac{mT}{mm}$  & $2 \cdot 10^{-4}$   \\ \hline
+    Fitparameter & Wert                                   & Standardabweichung  \\ \hline
+    a            & $-6,05 \cdot 10^{-2} \frac{mT}{mm^2}$ & $1 \cdot 10^{-4} \frac{mT}{mm^2}$   \\ \hline
+    b            & $1,13 \cdot 10^{-2} \frac{mT}{mm}$    & $0,00 \frac{mT}{mm}$ \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -388,7 +440,7 @@ Einsetzen der zuvor bestimmten Werte für alle von uns verwendeten Stromstärken
 
 Aus den einzelnen Werten der magnetischen Länge lässt sich durch Bilden des Mittelwerts ein endgültiger Wert für $L_m$ berechnen. Wir erhalten $$L_m=126,26mm\pm0,3mm$$
 
-Dieser Wert liegt wie erwartet etwas oberhalb der geometrische Länge, welche wir auf $(120 \pm 10)mm$ bestimmt haben. Der relativ große Fehler von 1 cm ist in der manuellen Messung mittels Zollstock begründet, welchen man auch von außen aufgrund der Form des Magnets nicht genauer anlegen bzw. ablesen kann.
+Dieser Wert liegt wie erwartet etwas oberhalb der geometrische Länge, welche wir auf $(120 \pm 10)mm$ bestimmt haben. Der relativ große Fehler von 1 cm ist in der manuellen Messung mittels Zollstock begründet, welchen man auch von außen aufgrund der Form des Magnets nicht genauer anlegen bzw.\ ablesen kann.
 
 \section{Strom-Gradienten-Kalibrierung}
 Wie schon bei Vermessung des Remanenzgradientenprofils angemerkt, erzeugt der Quadrupol auf Grund von Remanenz selbst ohne Stromzufuhr ein magnetisches Feld in seinem Inneren. Es genügt somit für den Betrieb in Beschleunigern nicht, einen unbenutzten Magneten im Teilchenstrahl einfach auszuschalten. Um im Inneren des Magneten kein Feld und somit auch keinen Magnetfeldgradienten zu erzeugen, muss ein Strom mit einer Flussrichtung entgegen der Betriebsrichtung angelegt werden.
